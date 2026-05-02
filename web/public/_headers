@@ -1,0 +1,9 @@
+# Cloudflare Pages Headers
+# マスタ JSON は不変なので長期キャッシュ
+/master/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Apple Universal Links: AASA は application/json で返す必要あり (拡張子なしファイルなので明示)
+/.well-known/apple-app-site-association
+  Content-Type: application/json
+  Cache-Control: public, max-age=300

@@ -1,0 +1,12 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": ["27AEDK3C9F.com.kishikawakatsumi.RelicForge"],
+        "components": [
+          { "/": "/s/*", "comment": "共有データ URL を iOS アプリで開く" }
+        ]
+      }
+    ]
+  }
+}

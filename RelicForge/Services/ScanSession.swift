@@ -1,0 +1,101 @@
+import Foundation
+import SwiftUI
+internal import Combine
+
+/// ライブスキャン中に蓄積する候補。確定 = 自動追加でこのリストに乗る。
+/// ユーザーは後から一覧で確認 / 不要なものを除外 / 効果を選び直して、
+/// まとめて永続化する。
+struct ScanCandidate: Identifiable {
+  let id: UUID
+  let recognized: RecognizedRelic
+  let addedAt: Date
+  /// 一覧での「保存対象」フラグ。デフォルトは true。
+  var isSelected: Bool
+  /// ユーザーがOCR結果を上書きするための編集状態。
+  /// 初期値は `RecognizedRelic.resolvedSlots` の通り。
+  var edits: CandidateEdits
+
+  init(recognized: RecognizedRelic) {
+    self.id = UUID()
+    self.recognized = recognized
+    self.addedAt = .now
+    self.isSelected = true
+    self.edits = CandidateEdits(from: recognized)
+  }
+
+  /// 編集を反映した最終的なスロット配列（保存・表示時に使う）
+  var finalSlots: [ResolvedSlot] {
+    edits.apply()
+  }
+}
+
+/// 候補内の各スロットの上書き内容。
+struct CandidateEdits: Equatable {
+  /// スロットごとのメイン効果（length = スロット数）。nil は「効果なし」。
+  var mains: [RelicEffect?]
+  /// スロットごとのデメリット効果（length = スロット数）。nil = デメリット無し。
+  var demerits: [RelicEffect?]
+
+  init(from recognized: RecognizedRelic) {
+    let resolved = recognized.resolvedSlots
+    self.mains = resolved.map { $0.main }
+    self.demerits = resolved.map { $0.demerit }
+  }
+
+  func apply() -> [ResolvedSlot] {
+    let n = max(mains.count, demerits.count)
+    return (0..<n).map { i in
+      ResolvedSlot(
+        main: i < mains.count ? mains[i] : nil,
+        demerit: i < demerits.count ? demerits[i] : nil
+      )
+    }
+  }
+}
+
+@MainActor
+final class ScanSession: ObservableObject {
+  @Published var candidates: [ScanCandidate] = []
+
+  var selectedCount: Int { candidates.filter { $0.isSelected }.count }
+  var count: Int { candidates.count }
+
+  func add(_ recognized: RecognizedRelic) {
+    candidates.append(ScanCandidate(recognized: recognized))
+  }
+
+  func remove(id: UUID) {
+    candidates.removeAll { $0.id == id }
+  }
+
+  func setSelected(_ selected: Bool, id: UUID) {
+    if let i = candidates.firstIndex(where: { $0.id == id }) {
+      candidates[i].isSelected = selected
+    }
+  }
+
+  func selectAll(_ selected: Bool) {
+    for i in candidates.indices { candidates[i].isSelected = selected }
+  }
+
+  func clear() {
+    candidates.removeAll()
+  }
+
+  /// 選択中の候補だけをリポジトリに保存。編集された効果を反映する。
+  @discardableResult
+  func commitSelected(to repository: RelicRepository) -> Int {
+    let toSave = candidates.filter { $0.isSelected }
+    for c in toSave {
+      repository.save(
+        color: c.recognized.color,
+        slotCount: c.recognized.slotCount,
+        depth: c.recognized.depth,
+        uniqueId: c.recognized.uniqueMatch?.relic.id,
+        slots: c.finalSlots
+      )
+    }
+    candidates.removeAll { c in toSave.contains(where: { $0.id == c.id }) }
+    return toSave.count
+  }
+}

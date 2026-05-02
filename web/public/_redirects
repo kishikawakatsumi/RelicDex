@@ -1,0 +1,3 @@
+# SPA fallback: 静的ファイルにも Functions にも該当しないパスは index.html を返す
+# (例: /s/{key} などのフロント側ルート)
+/*    /index.html   200

@@ -1,0 +1,1337 @@
+{
+  "version": 1,
+  "vessels": [
+    {
+      "id": "v_001",
+      "nameJa": "巨人樹の聖杯",
+      "nameEn": "Giant's Cradle Grail",
+      "characterId": null,
+      "baseSlots": [
+        "blue",
+        "blue",
+        "blue"
+      ],
+      "deepSlots": [
+        "blue",
+        "blue",
+        "blue"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Obtainable after defeating 7 Nightlords, excluding Heolstor the Nightlord.\nPurchased from the Small Jar Bazaar shop at the Roundtable Hold for 3000 Murk."
+    },
+    {
+      "id": "v_002",
+      "nameJa": "黄金樹の聖杯",
+      "nameEn": "Sacred Erdtree Grail",
+      "characterId": null,
+      "baseSlots": [
+        "yellow",
+        "yellow",
+        "yellow"
+      ],
+      "deepSlots": [
+        "yellow",
+        "yellow",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Obtainable after defeating Heolstor the Nightlord.\nPurchased from the Small Jar Bazaar shop at the Roundtable Hold for 3000 Murk."
+    },
+    {
+      "id": "v_003",
+      "nameJa": "霊樹の聖杯",
+      "nameEn": "Spirit Shelter Grail",
+      "characterId": null,
+      "baseSlots": [
+        "green",
+        "green",
+        "green"
+      ],
+      "deepSlots": [
+        "green",
+        "green",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Obtainable after defeating 4 different Nightlords.\nPurchased from the Small Jar Bazaar shop at the Roundtable Hold for 3000 Murk."
+    },
+    {
+      "id": "v_004",
+      "nameJa": "影樹の聖杯",
+      "nameEn": "Scadutree Grail",
+      "characterId": null,
+      "baseSlots": [
+        "red",
+        "red",
+        "red"
+      ],
+      "deepSlots": [
+        "red",
+        "red",
+        "red"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Obtainable after defeating Dreglord.\nPurchased from the Small Jar Bazaar shop at the Roundtable Hold for 3000 Murk."
+    },
+    {
+      "id": "v_005",
+      "nameJa": "レディの高杯",
+      "nameEn": "Duchess' Chalice",
+      "characterId": "duchess",
+      "baseSlots": [
+        "blue",
+        "yellow",
+        "white"
+      ],
+      "deepSlots": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Obtained as a reward for completing the second part of the Duchess' Remembrance Quest."
+    },
+    {
+      "id": "v_006",
+      "nameJa": "レディの盃",
+      "nameEn": "Duchess' Goblet",
+      "characterId": "duchess",
+      "baseSlots": [
+        "yellow",
+        "yellow",
+        "green"
+      ],
+      "deepSlots": [
+        "yellow",
+        "yellow",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from the Small Jar Bazaar shop at the Roundtable Hold for 1200 Murk."
+    },
+    {
+      "id": "v_007",
+      "nameJa": "レディの器",
+      "nameEn": "Duchess' Urn",
+      "characterId": "duchess",
+      "baseSlots": [
+        "red",
+        "blue",
+        "blue"
+      ],
+      "deepSlots": [
+        "red",
+        "blue",
+        "blue"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Starting vessel."
+    },
+    {
+      "id": "v_008",
+      "nameJa": "煤けたレディの器",
+      "nameEn": "Soot-Covered Duchess' Urn",
+      "characterId": "duchess",
+      "baseSlots": [
+        "red",
+        "red",
+        "green"
+      ],
+      "deepSlots": [
+        "red",
+        "red",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_009",
+      "nameJa": "封じられたレディの器",
+      "nameEn": "Sealed Duchess' Urn",
+      "characterId": "duchess",
+      "baseSlots": [
+        "blue",
+        "blue",
+        "red"
+      ],
+      "deepSlots": [
+        "green",
+        "green",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_010",
+      "nameJa": "朽ちたレディの盃",
+      "nameEn": "Decrepit Duchess' Goblet",
+      "characterId": "duchess",
+      "baseSlots": [
+        "blue",
+        "green",
+        "green"
+      ],
+      "deepSlots": [
+        "blue",
+        "green",
+        "green"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_011",
+      "nameJa": "忘れられたレディの盃",
+      "nameEn": "Forgotten Duchess' Urn",
+      "characterId": "duchess",
+      "baseSlots": [
+        "green",
+        "yellow",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "green",
+        "white"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_012",
+      "nameJa": "執行者の高杯",
+      "nameEn": "Executor's Chalice",
+      "characterId": "executor",
+      "baseSlots": [
+        "blue",
+        "yellow",
+        "white"
+      ],
+      "deepSlots": [
+        "yellow",
+        "yellow",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Obtained as a reward for completing the first part of the Executor's Remembrance Quest."
+    },
+    {
+      "id": "v_013",
+      "nameJa": "執行者の盃",
+      "nameEn": "Executor's Goblet",
+      "characterId": "executor",
+      "baseSlots": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "deepSlots": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from the Small Jar Bazaar shop at the Roundtable Hold for 1200 Murk."
+    },
+    {
+      "id": "v_014",
+      "nameJa": "執行者の器",
+      "nameEn": "Executor's Urn",
+      "characterId": "executor",
+      "baseSlots": [
+        "red",
+        "yellow",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "yellow",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Starting vessel."
+    },
+    {
+      "id": "v_015",
+      "nameJa": "煤けた執行者の器",
+      "nameEn": "Soot-Covered Executor's Urn",
+      "characterId": "executor",
+      "baseSlots": [
+        "red",
+        "red",
+        "blue"
+      ],
+      "deepSlots": [
+        "red",
+        "red",
+        "blue"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_016",
+      "nameJa": "封じられた執行者の器",
+      "nameEn": "Sealed Executor's Urn",
+      "characterId": "executor",
+      "baseSlots": [
+        "yellow",
+        "yellow",
+        "red"
+      ],
+      "deepSlots": [
+        "green",
+        "green",
+        "blue"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_017",
+      "nameJa": "朽ちた執行者の盃",
+      "nameEn": "Decrepit Executor's Goblet",
+      "characterId": "executor",
+      "baseSlots": [
+        "red",
+        "red",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "red",
+        "yellow"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_018",
+      "nameJa": "忘れられた執行者の盃",
+      "nameEn": "Forgotten Executor's Goblet",
+      "characterId": "executor",
+      "baseSlots": [
+        "green",
+        "blue",
+        "red"
+      ],
+      "deepSlots": [
+        "yellow",
+        "green",
+        "white"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_019",
+      "nameJa": "守護者の高杯",
+      "nameEn": "Guardian's Chalice",
+      "characterId": "guardian",
+      "baseSlots": [
+        "blue",
+        "yellow",
+        "white"
+      ],
+      "deepSlots": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Obtained as a reward for completing the Guardian's Remembrance Quest."
+    },
+    {
+      "id": "v_020",
+      "nameJa": "守護者の盃",
+      "nameEn": "Guardian's Goblet",
+      "characterId": "guardian",
+      "baseSlots": [
+        "blue",
+        "blue",
+        "green"
+      ],
+      "deepSlots": [
+        "blue",
+        "blue",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from the Small Jar Bazaar shop at the Roundtable Hold for 1200 Murk."
+    },
+    {
+      "id": "v_021",
+      "nameJa": "守護者の器",
+      "nameEn": "Guardian's Urn",
+      "characterId": "guardian",
+      "baseSlots": [
+        "red",
+        "yellow",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "yellow",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Starting vessel."
+    },
+    {
+      "id": "v_022",
+      "nameJa": "煤けた守護者の器",
+      "nameEn": "Soot-Covered Guardian's Urn",
+      "characterId": "guardian",
+      "baseSlots": [
+        "red",
+        "green",
+        "green"
+      ],
+      "deepSlots": [
+        "red",
+        "green",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_023",
+      "nameJa": "封じられた守護者の器",
+      "nameEn": "Sealed Guardian's Urn",
+      "characterId": "guardian",
+      "baseSlots": [
+        "yellow",
+        "yellow",
+        "red"
+      ],
+      "deepSlots": [
+        "green",
+        "green",
+        "blue"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_024",
+      "nameJa": "朽ちた守護者の盃",
+      "nameEn": "Decrepit Guardian's Goblet",
+      "characterId": "guardian",
+      "baseSlots": [
+        "yellow",
+        "green",
+        "green"
+      ],
+      "deepSlots": [
+        "yellow",
+        "green",
+        "green"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_025",
+      "nameJa": "忘れられた守護者の盃",
+      "nameEn": "Forgotten Guardian's Goblet",
+      "characterId": "guardian",
+      "baseSlots": [
+        "green",
+        "blue",
+        "blue"
+      ],
+      "deepSlots": [
+        "red",
+        "blue",
+        "white"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_026",
+      "nameJa": "鉄の目の高杯",
+      "nameEn": "Ironeye's Chalice",
+      "characterId": "ironeye",
+      "baseSlots": [
+        "red",
+        "green",
+        "white"
+      ],
+      "deepSlots": [
+        "red",
+        "red",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Obtained as a reward for completing the Ironeye's Remembrance Quest."
+    },
+    {
+      "id": "v_027",
+      "nameJa": "鉄の目の盃",
+      "nameEn": "Ironeye's Goblet",
+      "characterId": "ironeye",
+      "baseSlots": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from the Small Jar Bazaar shop at the Roundtable Hold for 1200 Murk."
+    },
+    {
+      "id": "v_028",
+      "nameJa": "鉄の目の器",
+      "nameEn": "Ironeye's Urn",
+      "characterId": "ironeye",
+      "baseSlots": [
+        "yellow",
+        "green",
+        "green"
+      ],
+      "deepSlots": [
+        "yellow",
+        "green",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Starting vessel."
+    },
+    {
+      "id": "v_029",
+      "nameJa": "煤けた鉄の目の器",
+      "nameEn": "Soot-Covered Ironeye's Urn",
+      "characterId": "ironeye",
+      "baseSlots": [
+        "blue",
+        "yellow",
+        "yellow"
+      ],
+      "deepSlots": [
+        "blue",
+        "yellow",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_030",
+      "nameJa": "封じられた鉄の目の器",
+      "nameEn": "Sealed Ironeye's Urn",
+      "characterId": "ironeye",
+      "baseSlots": [
+        "green",
+        "green",
+        "yellow"
+      ],
+      "deepSlots": [
+        "blue",
+        "blue",
+        "red"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_031",
+      "nameJa": "朽ちた鉄の目の盃",
+      "nameEn": "Decrepit Ironeye's Goblet",
+      "characterId": "ironeye",
+      "baseSlots": [
+        "blue",
+        "blue",
+        "green"
+      ],
+      "deepSlots": [
+        "blue",
+        "blue",
+        "green"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_032",
+      "nameJa": "忘れられた鉄の目の盃",
+      "nameEn": "Forgotten Ironeye's Goblet",
+      "characterId": "ironeye",
+      "baseSlots": [
+        "yellow",
+        "blue",
+        "red"
+      ],
+      "deepSlots": [
+        "yellow",
+        "green",
+        "white"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_033",
+      "nameJa": "無頼漢の高杯",
+      "nameEn": "Raider's Chalice",
+      "characterId": "raider",
+      "baseSlots": [
+        "red",
+        "red",
+        "white"
+      ],
+      "deepSlots": [
+        "red",
+        "yellow",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Obtained as a reward for completing the second part of the Raider's Remembrance Quest."
+    },
+    {
+      "id": "v_034",
+      "nameJa": "無頼漢の盃",
+      "nameEn": "Raider's Goblet",
+      "characterId": "raider",
+      "baseSlots": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from the Small Jar Bazaar shop at the Roundtable Hold for 1200 Murk."
+    },
+    {
+      "id": "v_035",
+      "nameJa": "無頼漢の器",
+      "nameEn": "Raider's Urn",
+      "characterId": "raider",
+      "baseSlots": [
+        "red",
+        "green",
+        "green"
+      ],
+      "deepSlots": [
+        "red",
+        "green",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Starting vessel."
+    },
+    {
+      "id": "v_036",
+      "nameJa": "煤けた無頼漢の器",
+      "nameEn": "Soot-Covered Raider's Urn",
+      "characterId": "raider",
+      "baseSlots": [
+        "blue",
+        "blue",
+        "green"
+      ],
+      "deepSlots": [
+        "blue",
+        "blue",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_037",
+      "nameJa": "封じられた無頼漢の器",
+      "nameEn": "Sealed Raider's Urn",
+      "characterId": "raider",
+      "baseSlots": [
+        "green",
+        "green",
+        "red"
+      ],
+      "deepSlots": [
+        "yellow",
+        "blue",
+        "blue"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_038",
+      "nameJa": "朽ちた無頼漢の盃",
+      "nameEn": "Decrepit Raider's Goblet",
+      "characterId": "raider",
+      "baseSlots": [
+        "yellow",
+        "yellow",
+        "green"
+      ],
+      "deepSlots": [
+        "yellow",
+        "yellow",
+        "green"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_039",
+      "nameJa": "忘れられた無頼漢の盃",
+      "nameEn": "Forgotten Raider's Goblet",
+      "characterId": "raider",
+      "baseSlots": [
+        "yellow",
+        "blue",
+        "red"
+      ],
+      "deepSlots": [
+        "red",
+        "green",
+        "white"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_040",
+      "nameJa": "隠者の高杯",
+      "nameEn": "Recluse's Chalice",
+      "characterId": "recluse",
+      "baseSlots": [
+        "yellow",
+        "green",
+        "white"
+      ],
+      "deepSlots": [
+        "blue",
+        "green",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Obtained as a reward for completing the first part of the Recluse's Remembrance Quest."
+    },
+    {
+      "id": "v_041",
+      "nameJa": "隠者の盃",
+      "nameEn": "Recluse's Goblet",
+      "characterId": "recluse",
+      "baseSlots": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "blue",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from the Small Jar Bazaar shop at the Roundtable Hold for 1200 Murk."
+    },
+    {
+      "id": "v_042",
+      "nameJa": "隠者の器",
+      "nameEn": "Recluse's Urn",
+      "characterId": "recluse",
+      "baseSlots": [
+        "blue",
+        "blue",
+        "green"
+      ],
+      "deepSlots": [
+        "blue",
+        "blue",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Starting vessel."
+    },
+    {
+      "id": "v_043",
+      "nameJa": "煤けた隠者の器",
+      "nameEn": "Soot-Covered Recluse's Urn",
+      "characterId": "recluse",
+      "baseSlots": [
+        "red",
+        "red",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "red",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_044",
+      "nameJa": "封じられた隠者の器",
+      "nameEn": "Sealed Recluse's Urn",
+      "characterId": "recluse",
+      "baseSlots": [
+        "green",
+        "blue",
+        "blue"
+      ],
+      "deepSlots": [
+        "yellow",
+        "yellow",
+        "red"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_045",
+      "nameJa": "朽ちた隠者の盃",
+      "nameEn": "Decrepit Recluse's Goblet",
+      "characterId": "recluse",
+      "baseSlots": [
+        "red",
+        "red",
+        "blue"
+      ],
+      "deepSlots": [
+        "red",
+        "red",
+        "blue"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_046",
+      "nameJa": "忘れられた隠者の盃",
+      "nameEn": "Forgotten Recluse's Goblet",
+      "characterId": "recluse",
+      "baseSlots": [
+        "yellow",
+        "blue",
+        "red"
+      ],
+      "deepSlots": [
+        "blue",
+        "green",
+        "white"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_047",
+      "nameJa": "復讐者の高杯",
+      "nameEn": "Revenant's Chalice",
+      "characterId": "revenant",
+      "baseSlots": [
+        "blue",
+        "green",
+        "white"
+      ],
+      "deepSlots": [
+        "blue",
+        "yellow",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Obtained as a reward for completing the second part of the Revenant's Remembrance Quest."
+    },
+    {
+      "id": "v_048",
+      "nameJa": "復讐者の盃",
+      "nameEn": "Revenant's Goblet",
+      "characterId": "revenant",
+      "baseSlots": [
+        "red",
+        "red",
+        "green"
+      ],
+      "deepSlots": [
+        "red",
+        "red",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from the Small Jar Bazaar shop at the Roundtable Hold for 1200 Murk."
+    },
+    {
+      "id": "v_049",
+      "nameJa": "復讐者の器",
+      "nameEn": "Revenant's Urn",
+      "characterId": "revenant",
+      "baseSlots": [
+        "blue",
+        "blue",
+        "yellow"
+      ],
+      "deepSlots": [
+        "blue",
+        "blue",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Starting vessel."
+    },
+    {
+      "id": "v_050",
+      "nameJa": "煤けた復讐者の器",
+      "nameEn": "Soot-Covered Revenant's Urn",
+      "characterId": "revenant",
+      "baseSlots": [
+        "red",
+        "yellow",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "yellow",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_051",
+      "nameJa": "封じられた復讐者の器",
+      "nameEn": "Sealed Revenant's Urn",
+      "characterId": "revenant",
+      "baseSlots": [
+        "yellow",
+        "blue",
+        "blue"
+      ],
+      "deepSlots": [
+        "green",
+        "green",
+        "red"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_052",
+      "nameJa": "朽ちた復讐者の盃",
+      "nameEn": "Decrepit Revenant's Goblet",
+      "characterId": "revenant",
+      "baseSlots": [
+        "red",
+        "red",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "red",
+        "yellow"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_053",
+      "nameJa": "忘れられた復讐者の盃",
+      "nameEn": "Forgotten Revenant's Goblet",
+      "characterId": "revenant",
+      "baseSlots": [
+        "green",
+        "red",
+        "red"
+      ],
+      "deepSlots": [
+        "yellow",
+        "green",
+        "white"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_054",
+      "nameJa": "追跡者の高杯",
+      "nameEn": "Wylder's Chalice",
+      "characterId": "wylder",
+      "baseSlots": [
+        "red",
+        "yellow",
+        "white"
+      ],
+      "deepSlots": [
+        "red",
+        "blue",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Obtained as a reward for completing the Wylder's Remembrance Quest."
+    },
+    {
+      "id": "v_055",
+      "nameJa": "追跡者の盃",
+      "nameEn": "Wylder's Goblet",
+      "characterId": "wylder",
+      "baseSlots": [
+        "yellow",
+        "green",
+        "green"
+      ],
+      "deepSlots": [
+        "yellow",
+        "green",
+        "green"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from the Small Jar Bazaar shop at the Roundtable Hold for 1200 Murk."
+    },
+    {
+      "id": "v_056",
+      "nameJa": "追跡者の器",
+      "nameEn": "Wylder's Urn",
+      "characterId": "wylder",
+      "baseSlots": [
+        "red",
+        "red",
+        "blue"
+      ],
+      "deepSlots": [
+        "red",
+        "red",
+        "blue"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Starting vessel."
+    },
+    {
+      "id": "v_057",
+      "nameJa": "煤けた追跡者の器",
+      "nameEn": "Soot-Covered Wylder's Urn",
+      "characterId": "wylder",
+      "baseSlots": [
+        "blue",
+        "blue",
+        "yellow"
+      ],
+      "deepSlots": [
+        "blue",
+        "blue",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_058",
+      "nameJa": "封じられた追跡者の器",
+      "nameEn": "Sealed Wylder's Urn",
+      "characterId": "wylder",
+      "baseSlots": [
+        "blue",
+        "red",
+        "red"
+      ],
+      "deepSlots": [
+        "green",
+        "yellow",
+        "yellow"
+      ],
+      "isForsaken": false,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_059",
+      "nameJa": "朽ちた追跡者の盃",
+      "nameEn": "Decrepit Wylder's Goblet",
+      "characterId": "wylder",
+      "baseSlots": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "deepSlots": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_060",
+      "nameJa": "忘れられた追跡者の盃",
+      "nameEn": "Forgotten Wylder's Goblet",
+      "characterId": "wylder",
+      "baseSlots": [
+        "green",
+        "green",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "green",
+        "white"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_061",
+      "nameJa": "葬儀屋の器",
+      "nameEn": "Undertaker's Urn",
+      "characterId": "undertaker",
+      "baseSlots": [
+        "blue",
+        "green",
+        "green"
+      ],
+      "deepSlots": [
+        "blue",
+        "green",
+        "green"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Starting vessel."
+    },
+    {
+      "id": "v_062",
+      "nameJa": "葬儀屋の盃",
+      "nameEn": "Undertaker's Goblet",
+      "characterId": "undertaker",
+      "baseSlots": [
+        "red",
+        "yellow",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "yellow",
+        "yellow"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from the Small Jar Bazaar shop at the Roundtable Hold for 1200 Murk."
+    },
+    {
+      "id": "v_063",
+      "nameJa": "葬儀屋の高杯",
+      "nameEn": "Undertaker's Chalice",
+      "characterId": "undertaker",
+      "baseSlots": [
+        "green",
+        "yellow",
+        "white"
+      ],
+      "deepSlots": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Obtained as a reward for completing Part 2 of the Undertaker's Remembrance Quest."
+    },
+    {
+      "id": "v_064",
+      "nameJa": "煤けた葬儀屋の器",
+      "nameEn": "Soot-Covered Undertaker's Urn",
+      "characterId": "undertaker",
+      "baseSlots": [
+        "red",
+        "red",
+        "blue"
+      ],
+      "deepSlots": [
+        "red",
+        "red",
+        "blue"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_065",
+      "nameJa": "封じられた葬儀屋の盃",
+      "nameEn": "Sealed Undertaker's Urn",
+      "characterId": "undertaker",
+      "baseSlots": [
+        "green",
+        "green",
+        "blue"
+      ],
+      "deepSlots": [
+        "yellow",
+        "red",
+        "red"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_066",
+      "nameJa": "朽ちた葬儀屋の盃",
+      "nameEn": "Decrepit Undertaker's Goblet",
+      "characterId": "undertaker",
+      "baseSlots": [
+        "red",
+        "blue",
+        "blue"
+      ],
+      "deepSlots": [
+        "red",
+        "blue",
+        "blue"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_067",
+      "nameJa": "忘れられた葬儀屋の盃",
+      "nameEn": "Forgotten Undertaker's Goblet",
+      "characterId": "undertaker",
+      "baseSlots": [
+        "yellow",
+        "yellow",
+        "red"
+      ],
+      "deepSlots": [
+        "blue",
+        "yellow",
+        "white"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_068",
+      "nameJa": "学者の器",
+      "nameEn": "Scholar's Urn",
+      "characterId": "scholar",
+      "baseSlots": [
+        "red",
+        "red",
+        "yellow"
+      ],
+      "deepSlots": [
+        "red",
+        "red",
+        "yellow"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Starting vessel."
+    },
+    {
+      "id": "v_069",
+      "nameJa": "学者の盃",
+      "nameEn": "Scholar's Goblet",
+      "characterId": "scholar",
+      "baseSlots": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "deepSlots": [
+        "blue",
+        "green",
+        "yellow"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from the Small Jar Bazaar shop at the Roundtable Hold for 1200 Murk."
+    },
+    {
+      "id": "v_070",
+      "nameJa": "学者の高杯",
+      "nameEn": "Scholar's Chalice",
+      "characterId": "scholar",
+      "baseSlots": [
+        "red",
+        "blue",
+        "white"
+      ],
+      "deepSlots": [
+        "red",
+        "yellow",
+        "yellow"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Obtained as a reward for completing Part 1 of the Scholar's Remembrance Quest."
+    },
+    {
+      "id": "v_071",
+      "nameJa": "煤けた学者の器",
+      "nameEn": "Soot-Covered Scholar's Urn",
+      "characterId": "scholar",
+      "baseSlots": [
+        "blue",
+        "green",
+        "green"
+      ],
+      "deepSlots": [
+        "blue",
+        "green",
+        "green"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_072",
+      "nameJa": "封じられた学者の器",
+      "nameEn": "Sealed Scholar's Urn",
+      "characterId": "scholar",
+      "baseSlots": [
+        "yellow",
+        "red",
+        "red"
+      ],
+      "deepSlots": [
+        "green",
+        "blue",
+        "blue"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_073",
+      "nameJa": "朽ちた学者の盃",
+      "nameEn": "Decrepit Scholar's Goblet",
+      "characterId": "scholar",
+      "baseSlots": [
+        "blue",
+        "blue",
+        "green"
+      ],
+      "deepSlots": [
+        "blue",
+        "blue",
+        "green"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    },
+    {
+      "id": "v_074",
+      "nameJa": "忘れられた学者の盃",
+      "nameEn": "Forgotten Scholar's Goblet",
+      "characterId": "scholar",
+      "baseSlots": [
+        "yellow",
+        "green",
+        "blue"
+      ],
+      "deepSlots": [
+        "red",
+        "green",
+        "white"
+      ],
+      "isForsaken": true,
+      "descriptionEn": "Purchased from Collector Signboard for 4 Sovereign Sigil."
+    }
+  ]
+}

@@ -1,0 +1,853 @@
+{
+  "version": 1,
+  "uniqueRelics": [
+    {
+      "id": "u_001",
+      "nameJa": "獣の夜",
+      "nameEn": "Night of the Beast",
+      "color": "green",
+      "effects": [
+        {
+          "textJa": "攻撃命中時、スタミナ回復＋１",
+          "effectId": "e_3563f953"
+        },
+        {
+          "textJa": "出撃時の武器に炎攻撃力を付加",
+          "effectId": "e_f6b1c045"
+        }
+      ]
+    },
+    {
+      "id": "u_002",
+      "nameJa": "爵の夜",
+      "nameEn": "Night of the Baron",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "致命の一撃強化＋１",
+          "effectId": "e_2fdf83e9"
+        },
+        {
+          "textJa": "敵を倒した時、アーツゲージ増加",
+          "effectId": "e_d90cca59"
+        },
+        {
+          "textJa": "致命の一撃で、スタミナ回復速度上昇",
+          "effectId": "e_f529b212"
+        }
+      ]
+    },
+    {
+      "id": "u_003",
+      "nameJa": "識の夜",
+      "nameEn": "Night of the Wise",
+      "color": "yellow",
+      "effects": [
+        {
+          "textJa": "最大ＦＰ上昇",
+          "effectId": "e_559715f7"
+        },
+        {
+          "textJa": "出撃時の武器に毒の状態異常を付加",
+          "effectId": "e_0c225bbf"
+        },
+        {
+          "textJa": "周囲で毒／腐敗状態の発生時、攻撃力上昇",
+          "effectId": "e_98927f2a"
+        }
+      ]
+    },
+    {
+      "id": "u_004",
+      "nameJa": "深海の夜",
+      "nameEn": "Night of the Fathom",
+      "color": "red",
+      "effects": [
+        {
+          "textJa": "最大ＨＰ上昇",
+          "effectId": "e_191c1deb"
+        },
+        {
+          "textJa": "聖杯瓶の回復を、周囲の味方に分配",
+          "effectId": "e_3f2e25d8"
+        },
+        {
+          "textJa": "アイテムの効果が周囲の味方にも発動",
+          "effectId": "e_43f65400"
+        }
+      ]
+    },
+    {
+      "id": "u_005",
+      "nameJa": "魔の夜",
+      "nameEn": "Night of the Demon",
+      "color": "red",
+      "effects": [
+        {
+          "textJa": "出撃中、ショップでの購入に必要なルーンが大割引",
+          "effectId": "e_729630a0"
+        },
+        {
+          "textJa": "ジェスチャー「あぐら」により、発狂が蓄積",
+          "effectId": "e_39c380be"
+        },
+        {
+          "textJa": "発狂状態になると、ＦＰ持続回復",
+          "effectId": "e_957dffd1"
+        }
+      ]
+    },
+    {
+      "id": "u_006",
+      "nameJa": "狩人の夜",
+      "nameEn": "Night of the Champion",
+      "color": "green",
+      "effects": [
+        {
+          "textJa": "最大スタミナ上昇",
+          "effectId": "e_1a0545ef"
+        },
+        {
+          "textJa": "ガードカウンターに、自身の現在ＨＰの一部を加える",
+          "effectId": "e_c8875ba4"
+        },
+        {
+          "textJa": "刺突カウンター発生時、ＨＰ回復",
+          "effectId": "e_e7503811"
+        }
+      ]
+    },
+    {
+      "id": "u_007",
+      "nameJa": "霞の夜",
+      "nameEn": "Night of the Miasma",
+      "color": "yellow",
+      "effects": [
+        {
+          "textJa": "周囲で凍傷状態の発生時、自身の姿を隠す",
+          "effectId": "e_32e2943a"
+        },
+        {
+          "textJa": "出撃時の武器の戦技を「冷気の霧」にする\n※適用可能な武器種のみ",
+          "effectId": "e_8bf6688a"
+        },
+        {
+          "textJa": "凍傷状態の敵に対する攻撃を強化",
+          "effectId": "e_d0731591"
+        }
+      ]
+    },
+    {
+      "id": "u_008",
+      "nameJa": "王の夜",
+      "nameEn": "Night of the Lord",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "武器の持ち替え時、いずれかの属性攻撃力を付加",
+          "effectId": "e_c90457ed"
+        },
+        {
+          "textJa": "属性攻撃力が付加された時、属性攻撃力上昇",
+          "effectId": "e_7fc8039c"
+        },
+        {
+          "textJa": "武器の持ち替え時、物理攻撃力上昇",
+          "effectId": "e_12e78d4c"
+        }
+      ]
+    },
+    {
+      "id": "u_009",
+      "nameJa": "安寧者の遺志",
+      "nameEn": "The Will of the Balancers",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "近接攻撃力上昇",
+          "effectId": "e_e9f11aba"
+        },
+        {
+          "textJa": "戦技攻撃力上昇",
+          "effectId": "e_6d5248c1"
+        },
+        {
+          "textJa": "ＦＰ持続回復",
+          "effectId": "e_064edefb"
+        }
+      ]
+    },
+    {
+      "id": "u_010",
+      "nameJa": "瓦礫の夜",
+      "nameEn": "The Night of Dregs",
+      "color": "red",
+      "effects": [
+        {
+          "textJa": "状態異常ゲージがある時、徐々に攻撃力上昇",
+          "effectId": "e_c82c3431"
+        },
+        {
+          "textJa": "被ダメージ時、腐敗の状態異常を付加",
+          "effectId": "e_171f950c"
+        },
+        {
+          "textJa": "周囲で腐敗状態の発生時、ＨＰ持続回復",
+          "effectId": "e_8d089bb9"
+        }
+      ]
+    },
+    {
+      "id": "u_011",
+      "nameJa": "獣の暗き夜",
+      "nameEn": "Dark Night of the Beast",
+      "color": "yellow",
+      "effects": [
+        {
+          "textJa": "攻撃命中時、スタミナ回復＋１",
+          "effectId": "e_3563f953"
+        },
+        {
+          "textJa": "攻撃を受けると攻撃力上昇",
+          "effectId": "e_43697d35"
+        },
+        {
+          "textJa": "炎攻撃力上昇＋２",
+          "effectId": "e_4b87a91a"
+        }
+      ]
+    },
+    {
+      "id": "u_012",
+      "nameJa": "爵の暗き夜",
+      "nameEn": "Dark Night of the Baron",
+      "color": "red",
+      "effects": [
+        {
+          "textJa": "致命の一撃強化＋１",
+          "effectId": "e_2fdf83e9"
+        },
+        {
+          "textJa": "致命の一撃強化",
+          "effectId": "e_a5483d36"
+        },
+        {
+          "textJa": "致命の一撃で、ルーンを取得",
+          "effectId": "e_e6b1c3cf"
+        }
+      ]
+    },
+    {
+      "id": "u_013",
+      "nameJa": "識の暗き夜",
+      "nameEn": "Dark Night of the Wise",
+      "color": "green",
+      "effects": [
+        {
+          "textJa": "最大ＦＰ上昇",
+          "effectId": "e_559715f7"
+        },
+        {
+          "textJa": "攻撃連続時、ＦＰ回復",
+          "effectId": "e_a0bc3ae3"
+        },
+        {
+          "textJa": "魔術師等の仕掛けが解除される度、最大ＦＰ上昇",
+          "effectId": "e_7da4dc34"
+        }
+      ]
+    },
+    {
+      "id": "u_014",
+      "nameJa": "深海の暗き夜",
+      "nameEn": "Dark Night of the Fathom",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "最大ＨＰ上昇",
+          "effectId": "e_191c1deb"
+        },
+        {
+          "textJa": "ＨＰ持続回復",
+          "effectId": "e_f1fb9ccc"
+        },
+        {
+          "textJa": "ＨＰ低下時、周囲の味方を含めＨＰをゆっくりと回復",
+          "effectId": "e_f78dbb55"
+        }
+      ]
+    },
+    {
+      "id": "u_015",
+      "nameJa": "魔の暗き夜",
+      "nameEn": "Dark Night of the Demon",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "攻撃を受けると攻撃力上昇",
+          "effectId": "e_43697d35"
+        },
+        {
+          "textJa": "ジェスチャー「あぐら」により、発狂が蓄積",
+          "effectId": "e_39c380be"
+        },
+        {
+          "textJa": "発狂状態になると、ＦＰ持続回復",
+          "effectId": "e_957dffd1"
+        }
+      ]
+    },
+    {
+      "id": "u_016",
+      "nameJa": "狩人の暗き夜",
+      "nameEn": "Dark Night of the Champion",
+      "color": "yellow",
+      "effects": [
+        {
+          "textJa": "最大スタミナ上昇",
+          "effectId": "e_1a0545ef"
+        },
+        {
+          "textJa": "属性攻撃力が付加された時、属性攻撃力上昇",
+          "effectId": "e_7fc8039c"
+        },
+        {
+          "textJa": "敵を倒した時、アーツゲージ増加",
+          "effectId": "e_d90cca59"
+        }
+      ]
+    },
+    {
+      "id": "u_017",
+      "nameJa": "霞の暗き夜",
+      "nameEn": "Dark Night of the Miasma",
+      "color": "green",
+      "effects": [
+        {
+          "textJa": "周囲で凍傷状態の発生時、自身の姿を隠す",
+          "effectId": "e_32e2943a"
+        },
+        {
+          "textJa": "出撃時の武器に冷気の状態異常を付加",
+          "effectId": "e_7fb3ef2d"
+        },
+        {
+          "textJa": "物理カット率上昇",
+          "effectId": "e_df4eb74d"
+        }
+      ]
+    },
+    {
+      "id": "u_018",
+      "nameJa": "安寧の遺志",
+      "nameEn": "The Will of Balance",
+      "color": "red",
+      "effects": [
+        {
+          "textJa": "近接攻撃力上昇",
+          "effectId": "e_e9f11aba"
+        },
+        {
+          "textJa": "戦技攻撃力上昇",
+          "effectId": "e_6d5248c1"
+        },
+        {
+          "textJa": "カット率低下時、稀に敵から受ける攻撃を無効化",
+          "effectId": "e_367d5c8a"
+        }
+      ]
+    },
+    {
+      "id": "u_019",
+      "nameJa": "古びた懐中時計",
+      "nameEn": "Old Pocketwatch",
+      "color": "green",
+      "effects": [
+        {
+          "textJa": "攻撃連続時、ＦＰ回復",
+          "effectId": "e_a0bc3ae3"
+        },
+        {
+          "textJa": "技量＋３",
+          "effectId": "e_b1396d00"
+        }
+      ]
+    },
+    {
+      "id": "u_020",
+      "nameJa": "薄汚れたフレーム",
+      "nameEn": "Besmirched Freame",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "攻撃を受けると攻撃力上昇",
+          "effectId": "e_43697d35"
+        },
+        {
+          "textJa": "信仰＋３",
+          "effectId": "e_31735667"
+        }
+      ]
+    },
+    {
+      "id": "u_021",
+      "nameJa": "忌み鬼の呪物",
+      "nameEn": "Fell Omen Fetish",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "武器の持ち替え時、物理攻撃力上昇",
+          "effectId": "e_12e78d4c"
+        },
+        {
+          "textJa": "投擲ナイフの攻撃力上昇",
+          "effectId": "e_dab2905e"
+        },
+        {
+          "textJa": "生命力＋１",
+          "effectId": "e_f3565562"
+        }
+      ]
+    },
+    {
+      "id": "u_022",
+      "nameJa": "にび色の砥石",
+      "nameEn": "Slate Whetstone",
+      "color": "red",
+      "effects": [
+        {
+          "textJa": "【追跡者】スキル使用時、通常攻撃で\n炎を纏った追撃を行う（大剣のみ）",
+          "effectId": "e_b5ce3dc9"
+        },
+        {
+          "textJa": "物理攻撃力上昇",
+          "effectId": "e_7a6d9326"
+        }
+      ]
+    },
+    {
+      "id": "u_023",
+      "nameJa": "追跡者の耳飾り",
+      "nameEn": "The Wylder's Earring",
+      "color": "red",
+      "effects": [
+        {
+          "textJa": "【追跡者】スキルの使用回数＋１",
+          "effectId": "e_0c082461"
+        },
+        {
+          "textJa": "【追跡者】アーツ発動時、周囲を延焼",
+          "effectId": "e_bac30918"
+        },
+        {
+          "textJa": "攻撃命中時、スタミナ回復",
+          "effectId": "e_6b035cce"
+        }
+      ]
+    },
+    {
+      "id": "u_024",
+      "nameJa": "銀の雫",
+      "nameEn": "Silver Tear",
+      "color": "red",
+      "effects": [
+        {
+          "textJa": "【追跡者】アビリティ発動時、アーツゲージ増加",
+          "effectId": "e_7f3ea857"
+        },
+        {
+          "textJa": "神秘＋３",
+          "effectId": "e_682807b8"
+        },
+        {
+          "textJa": "アーツゲージ自然蓄積＋３",
+          "effectId": "e_5692db23"
+        }
+      ]
+    },
+    {
+      "id": "u_025",
+      "nameJa": "三冊目の本",
+      "nameEn": "Third Volume",
+      "color": "red",
+      "effects": [
+        {
+          "textJa": "【守護者】斧槍タメ攻撃時、つむじ風が発生",
+          "effectId": "e_a1e497b4"
+        },
+        {
+          "textJa": "斧槍の攻撃でＨＰ回復",
+          "effectId": "e_a7390ad2"
+        }
+      ]
+    },
+    {
+      "id": "u_026",
+      "nameJa": "石の杭",
+      "nameEn": "Stone Stake",
+      "color": "red",
+      "effects": [
+        {
+          "textJa": "【守護者】スキルの持続時間延長",
+          "effectId": "e_6e30dd82"
+        },
+        {
+          "textJa": "スキルクールタイム軽減＋３",
+          "effectId": "e_f07f0f7d"
+        }
+      ]
+    },
+    {
+      "id": "u_027",
+      "nameJa": "魔女のブローチ",
+      "nameEn": "Witch's Brooch",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "【守護者】アーツ発動時、周囲の味方ＨＰを徐々に回復",
+          "effectId": "e_b12c7c2e"
+        },
+        {
+          "textJa": "【守護者】アビリティ発動中\nガード成功時、衝撃波が発生",
+          "effectId": "e_08ba15fc"
+        },
+        {
+          "textJa": "生命力＋３",
+          "effectId": "e_14c52d1a"
+        }
+      ]
+    },
+    {
+      "id": "u_028",
+      "nameJa": "砕けた魔女のブローチ",
+      "nameEn": "Cracked Witch's Brooch",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "【守護者】アーツ発動時、周囲の味方ＨＰを徐々に回復",
+          "effectId": "e_b12c7c2e"
+        },
+        {
+          "textJa": "【守護者】アビリティ発動中\nガード成功時、衝撃波が発生",
+          "effectId": "e_08ba15fc"
+        },
+        {
+          "textJa": "生命力＋３",
+          "effectId": "e_14c52d1a"
+        }
+      ]
+    },
+    {
+      "id": "u_029",
+      "nameJa": "割れた封蝋",
+      "nameEn": "Cracked Sealing Wax",
+      "color": "yellow",
+      "effects": [
+        {
+          "textJa": "【鉄の目】弱点の持続時間を延長させる",
+          "effectId": "e_79428fa6"
+        },
+        {
+          "textJa": "致命の一撃で、ルーンを取得",
+          "effectId": "e_e6b1c3cf"
+        }
+      ]
+    },
+    {
+      "id": "u_030",
+      "nameJa": "聖律の刃",
+      "nameEn": "Edge of Order",
+      "color": "yellow",
+      "effects": [
+        {
+          "textJa": "【鉄の目】アーツ発動後、刺突カウンター強化",
+          "effectId": "e_f7f7c851"
+        },
+        {
+          "textJa": "弓の攻撃力上昇",
+          "effectId": "e_a2a5c5a2"
+        },
+        {
+          "textJa": "出撃時の武器に聖攻撃力を付加",
+          "effectId": "e_5288d888"
+        }
+      ]
+    },
+    {
+      "id": "u_031",
+      "nameJa": "金色の露",
+      "nameEn": "Golden Dew",
+      "color": "yellow",
+      "effects": [
+        {
+          "textJa": "【レディ】スキルのダメージ上昇",
+          "effectId": "e_423ef5d0"
+        },
+        {
+          "textJa": "属性攻撃力が付加された時、属性攻撃力上昇",
+          "effectId": "e_7fc8039c"
+        }
+      ]
+    },
+    {
+      "id": "u_032",
+      "nameJa": "頭冠のメダル",
+      "nameEn": "Crown Medal",
+      "color": "green",
+      "effects": [
+        {
+          "textJa": "【レディ】短剣による攻撃連続時\n周囲の敵に、直近の出来事を再演",
+          "effectId": "e_7422225e"
+        },
+        {
+          "textJa": "短剣の攻撃力上昇",
+          "effectId": "e_01f98bcf"
+        }
+      ]
+    },
+    {
+      "id": "u_033",
+      "nameJa": "祝福された鉄貨",
+      "nameEn": "Blessed Iron Coin",
+      "color": "green",
+      "effects": [
+        {
+          "textJa": "【レディ】アーツ発動中、敵撃破で攻撃力上昇",
+          "effectId": "e_cf431bd0"
+        },
+        {
+          "textJa": "ＨＰ持続回復",
+          "effectId": "e_f1fb9ccc"
+        },
+        {
+          "textJa": "生命力＋３",
+          "effectId": "e_14c52d1a"
+        }
+      ]
+    },
+    {
+      "id": "u_034",
+      "nameJa": "ちぎれた組み紐",
+      "nameEn": "Torn Braided Cord",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "【無頼漢】スキル中に攻撃を受けると\n攻撃力と最大スタミナ上昇",
+          "effectId": "e_829c8e57"
+        },
+        {
+          "textJa": "筋力＋３",
+          "effectId": "e_7726ab03"
+        }
+      ]
+    },
+    {
+      "id": "u_035",
+      "nameJa": "黒爪の首飾り",
+      "nameEn": "Black Claw Necklace",
+      "color": "yellow",
+      "effects": [
+        {
+          "textJa": "トーテム・ステラの周囲で敵を倒した時、ＨＰ回復",
+          "effectId": "e_f1cee33e"
+        },
+        {
+          "textJa": "敵を倒した時、アーツゲージ増加",
+          "effectId": "e_d90cca59"
+        },
+        {
+          "textJa": "強靭度＋３",
+          "effectId": "e_8576a476"
+        }
+      ]
+    },
+    {
+      "id": "u_036",
+      "nameJa": "小さな化粧道具",
+      "nameEn": "Small Makeup Brush",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "【復讐者】ファミリーと共闘中の間、自身を強化",
+          "effectId": "e_b5edfe95"
+        },
+        {
+          "textJa": "自身と味方の取得ルーン増加",
+          "effectId": "e_81678243"
+        }
+      ]
+    },
+    {
+      "id": "u_037",
+      "nameJa": "古びたミニアチュール",
+      "nameEn": "Old Portrait",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "【復讐者】アーツ発動時、霊炎の爆発を発生",
+          "effectId": "e_47518d87"
+        },
+        {
+          "textJa": "【復讐者】アーツ発動時\n自身のＨＰと引き換えに周囲の味方のＨＰを全回復",
+          "effectId": "e_e45b0d76"
+        },
+        {
+          "textJa": "敵を倒した時、アーツゲージ増加",
+          "effectId": "e_d90cca59"
+        }
+      ]
+    },
+    {
+      "id": "u_038",
+      "nameJa": "夜の痕跡",
+      "nameEn": "Vestige of Night",
+      "color": "green",
+      "effects": [
+        {
+          "textJa": "【隠者】属性痕を集めた時、「魔術の地」が発動",
+          "effectId": "e_3258b3e1"
+        },
+        {
+          "textJa": "魔力攻撃力上昇＋２",
+          "effectId": "e_c5db98cd"
+        }
+      ]
+    },
+    {
+      "id": "u_039",
+      "nameJa": "骨のような石",
+      "nameEn": "Bone-Like Stone",
+      "color": "green",
+      "effects": [
+        {
+          "textJa": "【隠者】アーツ発動時、最大ＨＰ上昇",
+          "effectId": "e_fd1c1ad3"
+        },
+        {
+          "textJa": "【隠者】アーツ発動時\n自身が出血状態になり、攻撃力上昇",
+          "effectId": "e_2df7bfbb"
+        },
+        {
+          "textJa": "知力＋３",
+          "effectId": "e_6b4523d5"
+        }
+      ]
+    },
+    {
+      "id": "u_040",
+      "nameJa": "祝福された花",
+      "nameEn": "Blessed Flowers",
+      "color": "green",
+      "effects": [
+        {
+          "textJa": "【執行者】スキル中、妖刀が解放状態になるとＨＰ回復",
+          "effectId": "e_2ef4a7c2"
+        },
+        {
+          "textJa": "技量＋３",
+          "effectId": "e_b1396d00"
+        }
+      ]
+    },
+    {
+      "id": "u_041",
+      "nameJa": "黄金の萌芽",
+      "nameEn": "Golden Sprout",
+      "color": "red",
+      "effects": [
+        {
+          "textJa": "【執行者】アーツ発動中、咆哮でＨＰ回復",
+          "effectId": "e_8022dc23"
+        },
+        {
+          "textJa": "ガード成功時、ＨＰ回復",
+          "effectId": "e_080ae27a"
+        },
+        {
+          "textJa": "ＨＰ低下時、周囲の味方を含めＨＰをゆっくりと回復",
+          "effectId": "e_f78dbb55"
+        }
+      ]
+    },
+    {
+      "id": "u_042",
+      "nameJa": "清浄の雫",
+      "nameEn": "Cleansing Tear",
+      "color": "red",
+      "effects": [
+        {
+          "textJa": "【学者】アーツでリンクした敵対象に、継続ダメージ",
+          "effectId": "e_35b39904"
+        },
+        {
+          "textJa": "敵を倒した時、アーツゲージ増加",
+          "effectId": "e_d90cca59"
+        },
+        {
+          "textJa": "属性カット率上昇",
+          "effectId": "e_4adf5e5a"
+        }
+      ]
+    },
+    {
+      "id": "u_043",
+      "nameJa": "記録「後継者へ」",
+      "nameEn": "Note \"My Dear Successor\"",
+      "color": "yellow",
+      "effects": [
+        {
+          "textJa": "【学者】スキルの進捗率の低下を抑制",
+          "effectId": "e_c8fef797"
+        },
+        {
+          "textJa": "【学者】スキル使用時、対象に含まれた味方の攻撃力上昇",
+          "effectId": "e_a6ebd1a3"
+        },
+        {
+          "textJa": "スキルクールタイム軽減＋３",
+          "effectId": "e_f07f0f7d"
+        }
+      ]
+    },
+    {
+      "id": "u_044",
+      "nameJa": "片眼鏡の革袋",
+      "nameEn": "Leather Monocle Case",
+      "color": "blue",
+      "effects": [
+        {
+          "textJa": "【葬儀屋】祈祷を使用して、自身に補助効果発生時\n物理攻撃力上昇",
+          "effectId": "e_b0d2ecff"
+        },
+        {
+          "textJa": "魔術／祈祷、効果時間延長",
+          "effectId": "e_22506256"
+        },
+        {
+          "textJa": "物理攻撃力上昇＋２",
+          "effectId": "e_80e27d25"
+        }
+      ]
+    },
+    {
+      "id": "u_045",
+      "nameJa": "ガラスの首飾り",
+      "nameEn": "Glass Necklace",
+      "color": "green",
+      "effects": [
+        {
+          "textJa": "【葬儀屋】アーツ発動時、攻撃力上昇",
+          "effectId": "e_475cd5e0"
+        },
+        {
+          "textJa": "攻撃連続時、攻撃力上昇",
+          "effectId": "e_d0e28d64"
+        },
+        {
+          "textJa": "アーツゲージ自然蓄積＋３",
+          "effectId": "e_5692db23"
+        }
+      ]
+    }
+  ]
+}

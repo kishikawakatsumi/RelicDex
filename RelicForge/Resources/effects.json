@@ -1,0 +1,5305 @@
+{
+  "version": 1,
+  "effects": [
+    {
+      "id": "e_191c1deb",
+      "textJa": "最大ＨＰ上昇",
+      "textEn": "Increased Maximum HP",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_559715f7",
+      "textJa": "最大ＦＰ上昇",
+      "textEn": "Increased Maximum FP",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_1a0545ef",
+      "textJa": "最大スタミナ上昇",
+      "textEn": "Increased Maximum Stamina",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_f3565562",
+      "textJa": "生命力＋１",
+      "textEn": "Vigor +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_bd75daa6",
+      "textJa": "生命力＋２",
+      "textEn": "Vigor +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_14c52d1a",
+      "textJa": "生命力＋３",
+      "textEn": "Vigor +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_3c559d4d",
+      "textJa": "精神力＋１",
+      "textEn": "Mind +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_e797c34b",
+      "textJa": "精神力＋２",
+      "textEn": "Mind +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_34734719",
+      "textJa": "精神力＋３",
+      "textEn": "Mind +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_df968fac",
+      "textJa": "持久力＋１",
+      "textEn": "Endurance +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_0af413b2",
+      "textJa": "持久力＋２",
+      "textEn": "Endurance +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_25886527",
+      "textJa": "持久力＋３",
+      "textEn": "Endurance +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_d68adaf8",
+      "textJa": "筋力＋１",
+      "textEn": "Strength +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_9838a831",
+      "textJa": "筋力＋２",
+      "textEn": "Strength +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_7726ab03",
+      "textJa": "筋力＋３",
+      "textEn": "Strength +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_b8b76325",
+      "textJa": "技量＋１",
+      "textEn": "Dexterity +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_d1b7bd75",
+      "textJa": "技量＋２",
+      "textEn": "Dexterity +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_b1396d00",
+      "textJa": "技量＋３",
+      "textEn": "Dexterity +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_ed695ab2",
+      "textJa": "知力＋１",
+      "textEn": "Intelligence +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_2fba1a5d",
+      "textJa": "知力＋２",
+      "textEn": "Intelligence +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_6b4523d5",
+      "textJa": "知力＋３",
+      "textEn": "Intelligence +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_a02f6848",
+      "textJa": "信仰＋１",
+      "textEn": "Faith +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_73b2e58b",
+      "textJa": "信仰＋２",
+      "textEn": "Faith +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_31735667",
+      "textJa": "信仰＋３",
+      "textEn": "Faith +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_62518b21",
+      "textJa": "神秘＋１",
+      "textEn": "Arcane +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_2dac9339",
+      "textJa": "神秘＋２",
+      "textEn": "Arcane +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_682807b8",
+      "textJa": "神秘＋３",
+      "textEn": "Arcane +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_67b0b956",
+      "textJa": "強靭度＋１",
+      "textEn": "Poise +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_403d7593",
+      "textJa": "強靭度＋２",
+      "textEn": "Poise +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_8576a476",
+      "textJa": "強靭度＋３",
+      "textEn": "Poise +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_7da4dc34",
+      "textJa": "魔術師等の仕掛けが解除される度、最大ＦＰ上昇",
+      "textEn": "Max FP increased for each Sorcerer's Rise unlocked",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_397aa9a7",
+      "textJa": "小砦の強敵を倒す度、取得ルーン増加、発見力上昇",
+      "textEn": "Runes and Item Discovery increased for each great enemy defeated at a Fort",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_ff281f08",
+      "textJa": "大教会の強敵を倒す度、最大ＨＰ上昇",
+      "textEn": "Max HP increased for each great enemy defeated at a Great Church",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_1ce4eda6",
+      "textJa": "大野営地の強敵を倒す度、最大スタミナ上昇",
+      "textEn": "Max stamina increased for each great enemy defeated at a Great Encampment",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_f0e72457",
+      "textJa": "遺跡の強敵を倒す度、神秘上昇",
+      "textEn": "Arcane increased for each great enemy defeated at a Ruin",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "能力値",
+      "categoryEn": "Attributes",
+      "category": "attributes"
+    },
+    {
+      "id": "e_7a6d9326",
+      "textJa": "物理攻撃力上昇",
+      "textEn": "Physical Attack Up",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_008bff42",
+      "textJa": "物理攻撃力上昇＋１",
+      "textEn": "Physical Attack Up +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_80e27d25",
+      "textJa": "物理攻撃力上昇＋２",
+      "textEn": "Physical Attack Up +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_cffbe8d9",
+      "textJa": "物理攻撃力上昇＋３",
+      "textEn": "Physical Attack Up +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_1d69a8d6",
+      "textJa": "物理攻撃力上昇＋４",
+      "textEn": "Physical Attack Up +4",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_759e6487",
+      "textJa": "属性攻撃力上昇",
+      "textEn": "Improved Affinity Attack Power",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_74c0e9ab",
+      "textJa": "属性攻撃力上昇＋１",
+      "textEn": "Improved Affinity Attack Power +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_680ed32c",
+      "textJa": "属性攻撃力上昇＋２",
+      "textEn": "Improved Affinity Attack Power +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_0bc5a052",
+      "textJa": "魔力攻撃力上昇",
+      "textEn": "Magic Attack Power Up",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_e7a0855e",
+      "textJa": "魔力攻撃力上昇＋１",
+      "textEn": "Magic Attack Power Up +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_c5db98cd",
+      "textJa": "魔力攻撃力上昇＋２",
+      "textEn": "Magic Attack Power Up +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_ff1a7062",
+      "textJa": "魔力攻撃力上昇＋３",
+      "textEn": "Magic Attack Power Up +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_5ff0986c",
+      "textJa": "魔力攻撃力上昇＋４",
+      "textEn": "Magic Attack Power Up +4",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_2365fb9f",
+      "textJa": "炎攻撃力上昇",
+      "textEn": "Fire Attack Power Up",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_8352619f",
+      "textJa": "炎攻撃力上昇＋１",
+      "textEn": "Fire Attack Power Up +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_4b87a91a",
+      "textJa": "炎攻撃力上昇＋２",
+      "textEn": "Fire Attack Power Up +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_5801e3a5",
+      "textJa": "炎攻撃力上昇＋３",
+      "textEn": "Fire Attack Power Up +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_b7e65db1",
+      "textJa": "炎攻撃力上昇＋４",
+      "textEn": "Fire Attack Power Up +4",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_4fde0a23",
+      "textJa": "雷攻撃力上昇",
+      "textEn": "Lightning Attack Power Up",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_4a7400df",
+      "textJa": "雷攻撃力上昇＋１",
+      "textEn": "Lightning Attack Power Up +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_2d9c27cf",
+      "textJa": "雷攻撃力上昇＋２",
+      "textEn": "Lightning Attack Power Up +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_6f5b6d41",
+      "textJa": "雷攻撃力上昇＋３",
+      "textEn": "Lightning Attack Power Up +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_71d84a2b",
+      "textJa": "雷攻撃力上昇＋４",
+      "textEn": "Lightning Attack Power Up +4",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_7a0692bb",
+      "textJa": "聖攻撃力上昇",
+      "textEn": "Holy Attack Power Up",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_a09adf95",
+      "textJa": "聖攻撃力上昇＋１",
+      "textEn": "Holy Attack Power Up +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_753aa90b",
+      "textJa": "聖攻撃力上昇＋２",
+      "textEn": "Holy Attack Power Up +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_44af6fd7",
+      "textJa": "聖攻撃力上昇＋３",
+      "textEn": "Holy Attack Power Up +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_b2e1b96b",
+      "textJa": "聖攻撃力上昇＋４",
+      "textEn": "Holy Attack Power Up +4",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_e9f11aba",
+      "textJa": "近接攻撃力上昇",
+      "textEn": "Improved Melee Attack Power",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_6d5248c1",
+      "textJa": "戦技攻撃力上昇",
+      "textEn": "Improved Skill Attack Power",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_add211ef",
+      "textJa": "通常攻撃の１段目強化",
+      "textEn": "Improved Initial Attack Power",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_d0e28d64",
+      "textJa": "攻撃連続時、攻撃力上昇",
+      "textEn": "Successive Attacks Boost Attack Power",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_a5483d36",
+      "textJa": "致命の一撃強化",
+      "textEn": "Improved Critical Hits",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_2fdf83e9",
+      "textJa": "致命の一撃強化＋１",
+      "textEn": "Improved Critical Hits +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_01bf95ed",
+      "textJa": "魔術強化",
+      "textEn": "Improved Sorceries",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_f3631d7a",
+      "textJa": "魔術強化＋１",
+      "textEn": "Improved Sorceries +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_982b1d44",
+      "textJa": "魔術強化＋２",
+      "textEn": "Improved Sorceries +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_77095d6b",
+      "textJa": "祈祷強化",
+      "textEn": "Improved Incantations",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_3d4350af",
+      "textJa": "祈祷強化＋１",
+      "textEn": "Improved Incantations +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_21a62837",
+      "textJa": "祈祷強化＋２",
+      "textEn": "Improved Incantations +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_69249cca",
+      "textJa": "咆哮とブレス強化",
+      "textEn": "Improved Roar & Breath Attacks",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_c35cb91e",
+      "textJa": "両手持ちの、体勢を崩す力上昇",
+      "textEn": "Improved Stance-Breaking when Two-Handing",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_04338ee2",
+      "textJa": "二刀持ちの、体勢を崩す力上昇",
+      "textEn": "Improved Stance-Breaking when Wielding Two Armaments",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_12e78d4c",
+      "textJa": "武器の持ち替え時、物理攻撃力上昇",
+      "textEn": "Switching Weapons Boosts Attack Power",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_7fc8039c",
+      "textJa": "属性攻撃力が付加された時、属性攻撃力上昇",
+      "textEn": "Boosts Attack Power of Added Affinity Attacks",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_43697d35",
+      "textJa": "攻撃を受けると攻撃力上昇",
+      "textEn": "Taking attacks improves attack power",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_c82c3431",
+      "textJa": "状態異常ゲージがある時、徐々に攻撃力上昇",
+      "textEn": "Status Ailment Gauges Slowly Increase Attack Power",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_a1bd6b3e",
+      "textJa": "封牢の囚を倒す度、攻撃力上昇",
+      "textEn": "Attack power increased for each evergaol prisoner defeated",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_9c834f73",
+      "textJa": "夜の侵入者を倒す度、攻撃力上昇",
+      "textEn": "Attack power increased for each Night Invader defeated",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_088d41de",
+      "textJa": "ガードカウンター強化",
+      "textEn": "Improved Guard Counters",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_e051cc25",
+      "textJa": "ガードカウンター強化＋１",
+      "textEn": "Improved Guard Counters +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_88c16332",
+      "textJa": "ガードカウンター強化＋２",
+      "textEn": "Improved Guard Counters +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_c8875ba4",
+      "textJa": "ガードカウンターに、自身の現在ＨＰの一部を加える",
+      "textEn": "Guard counter is given a boost based on current HP",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_8786e1da",
+      "textJa": "脂アイテム使用時、追加で物理攻撃力上昇",
+      "textEn": "Physical attack power increases after using grease items",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_ab623754",
+      "textJa": "脂アイテム使用時、追加で物理攻撃力上昇＋１",
+      "textEn": "Physical attack power increases after using grease items +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_eb706fa6",
+      "textJa": "脂アイテム使用時、追加で物理攻撃力上昇＋２",
+      "textEn": "Physical attack power increases after using grease items +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_ecd0d3df",
+      "textJa": "投擲壺の攻撃力上昇",
+      "textEn": "Improved Throwing Pot Damage",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_f9f783df",
+      "textJa": "投擲壺の攻撃力上昇＋１",
+      "textEn": "Improved Throwing Pot Damage +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_aca8c521",
+      "textJa": "投擲壺の攻撃力上昇＋２",
+      "textEn": "Improved Throwing Pot Damage +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_dab2905e",
+      "textJa": "投擲ナイフの攻撃力上昇",
+      "textEn": "Improved Throwing Knife Damage",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_95dfb945",
+      "textJa": "投擲ナイフの攻撃力上昇＋１",
+      "textEn": "Improved Throwing Pot Damage +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_99e1579e",
+      "textJa": "投擲ナイフの攻撃力上昇＋２",
+      "textEn": "Improved Throwing Pot Damage +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_130d8ea4",
+      "textJa": "輝石、重力石アイテムの攻撃力上昇",
+      "textEn": "Improved Glintstone and Gravity Stone Damage",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_eb559cf5",
+      "textJa": "輝石、重力石アイテムの攻撃力上昇＋１",
+      "textEn": "Improved Glintstone and Gravity Stone Damage +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_183d1347",
+      "textJa": "輝石、重力石アイテムの攻撃力上昇＋２",
+      "textEn": "Improved Glintstone and Gravity Stone Damage +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_7f81b114",
+      "textJa": "調香術強化",
+      "textEn": "Improved Perfuming Arts",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_6d1a6c10",
+      "textJa": "調香術強化＋１",
+      "textEn": "Improved Perfuming Arts +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "攻撃力",
+      "categoryEn": "Attack Power",
+      "category": "attackPower"
+    },
+    {
+      "id": "e_c75413de",
+      "textJa": "スキルクールタイム軽減＋１",
+      "textEn": "Character Skill Cooldown Reduction +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "スキル／アーツ",
+      "categoryEn": "Character Skills / Ultimate Arts",
+      "category": "characterSkills"
+    },
+    {
+      "id": "e_6cbf118d",
+      "textJa": "スキルクールタイム軽減＋２",
+      "textEn": "Character Skill Cooldown Reduction +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "スキル／アーツ",
+      "categoryEn": "Character Skills / Ultimate Arts",
+      "category": "characterSkills"
+    },
+    {
+      "id": "e_f07f0f7d",
+      "textJa": "スキルクールタイム軽減＋３",
+      "textEn": "Character Skill Cooldown Reduction +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "スキル／アーツ",
+      "categoryEn": "Character Skills / Ultimate Arts",
+      "category": "characterSkills"
+    },
+    {
+      "id": "e_e1949358",
+      "textJa": "アーツゲージ自然蓄積＋１",
+      "textEn": "Ultimate Art Auto Charge +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "スキル／アーツ",
+      "categoryEn": "Character Skills / Ultimate Arts",
+      "category": "characterSkills"
+    },
+    {
+      "id": "e_e690d5c4",
+      "textJa": "アーツゲージ自然蓄積＋２",
+      "textEn": "Ultimate Art Auto Charge +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "スキル／アーツ",
+      "categoryEn": "Character Skills / Ultimate Arts",
+      "category": "characterSkills"
+    },
+    {
+      "id": "e_5692db23",
+      "textJa": "アーツゲージ自然蓄積＋３",
+      "textEn": "Ultimate Art Auto Charge +3",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "スキル／アーツ",
+      "categoryEn": "Character Skills / Ultimate Arts",
+      "category": "characterSkills"
+    },
+    {
+      "id": "e_d90cca59",
+      "textJa": "敵を倒した時、アーツゲージ増加",
+      "textEn": "Defeating enemies fills more of the Art gauge",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "スキル／アーツ",
+      "categoryEn": "Character Skills / Ultimate Arts",
+      "category": "characterSkills"
+    },
+    {
+      "id": "e_7c399e99",
+      "textJa": "敵を倒した時、アーツゲージ増加＋１",
+      "textEn": "Defeating enemies fills more of the Art gauge +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "スキル／アーツ",
+      "categoryEn": "Character Skills / Ultimate Arts",
+      "category": "characterSkills"
+    },
+    {
+      "id": "e_012c4446",
+      "textJa": "致命の一撃で、アーツゲージ増加",
+      "textEn": "Critical hits fill more of the Art gauge",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "スキル／アーツ",
+      "categoryEn": "Character Skills / Ultimate Arts",
+      "category": "characterSkills"
+    },
+    {
+      "id": "e_bccb1197",
+      "textJa": "致命の一撃で、アーツゲージ増加＋１",
+      "textEn": "Critical hits fill more of the Art gauge +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "スキル／アーツ",
+      "categoryEn": "Character Skills / Ultimate Arts",
+      "category": "characterSkills"
+    },
+    {
+      "id": "e_6cf5ac9a",
+      "textJa": "ガード成功時、アーツゲージ増加",
+      "textEn": "Successful guarding fills more of the Art gauge",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "スキル／アーツ",
+      "categoryEn": "Character Skills / Ultimate Arts",
+      "category": "characterSkills"
+    },
+    {
+      "id": "e_c5b165af",
+      "textJa": "ガード成功時、アーツゲージ増加＋１",
+      "textEn": "Successful guarding fills more of the Art gauge +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "スキル／アーツ",
+      "categoryEn": "Character Skills / Ultimate Arts",
+      "category": "characterSkills"
+    },
+    {
+      "id": "e_22506256",
+      "textJa": "魔術／祈祷、効果時間延長",
+      "textEn": "Extended Spell Duration",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_e733bc9a",
+      "textJa": "輝剣の魔術を強化",
+      "textEn": "Improved Glintblade Sorcery",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_7f528309",
+      "textJa": "石掘りの魔術を強化",
+      "textEn": "Improved Stonedigger Sorcery",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_9e828570",
+      "textJa": "カーリアの剣の魔術を強化",
+      "textEn": "Improved Carian Sword Sorcery",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_fed498de",
+      "textJa": "不可視の魔術を強化",
+      "textEn": "Improved Invisibility Sorcery",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_755a07b9",
+      "textJa": "結晶人の魔術を強化",
+      "textEn": "Improved Crystalian Sorcery",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_126630ad",
+      "textJa": "重力の魔術を強化",
+      "textEn": "Improved Gravity Sorcery",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_40897e79",
+      "textJa": "茨の魔術を強化",
+      "textEn": "Improved Thorn Sorcery",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_4b1b7f61",
+      "textJa": "黄金律原理主義の祈祷を強化",
+      "textEn": "Improved Fundamentalist Incantations",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_278072b7",
+      "textJa": "王都古竜信仰の祈祷を強化",
+      "textEn": "Improved Dragon Cult Incantations",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_a2fa96d7",
+      "textJa": "巨人の火の祈祷を強化",
+      "textEn": "Improved Giants' Flame Incantations",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_6bd91c60",
+      "textJa": "神狩りの祈祷を強化",
+      "textEn": "Improved Godslayer Incantations",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_12f37f05",
+      "textJa": "獣の祈祷を強化",
+      "textEn": "Improved Bestial Incantations",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_2316ebd7",
+      "textJa": "狂い火の祈祷を強化",
+      "textEn": "Improved Frenzied Flame Incantations",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_bcdbd006",
+      "textJa": "竜餐の祈祷を強化",
+      "textEn": "Improved Dragon Communion Incantations",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "魔術／祈祷",
+      "categoryEn": "Sorceries / Incantations",
+      "category": "spells"
+    },
+    {
+      "id": "e_df4eb74d",
+      "textJa": "物理カット率上昇",
+      "textEn": "Improved Physical Damage Negation",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_5308993d",
+      "textJa": "物理カット率上昇＋１",
+      "textEn": "Improved Physical Damage Negation +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_519b302e",
+      "textJa": "物理カット率上昇＋２",
+      "textEn": "Improved Physical Damage Negation +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_4adf5e5a",
+      "textJa": "属性カット率上昇",
+      "textEn": "Improved Affinity Damage Negation",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_07603bdd",
+      "textJa": "属性カット率上昇＋１",
+      "textEn": "Improved Affinity Damage Negation +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_4da63984",
+      "textJa": "属性カット率上昇＋２",
+      "textEn": "Improved Affinity Damage Negation +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_f9a26021",
+      "textJa": "魔力カット率上昇",
+      "textEn": "Magic Damage Negation Up",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_36d3a7d2",
+      "textJa": "魔力カット率上昇＋１",
+      "textEn": "Magic Damage Negation Up +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_94aef042",
+      "textJa": "魔力カット率上昇＋２",
+      "textEn": "Magic Damage Negation Up +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_420d1ce2",
+      "textJa": "炎カット率上昇",
+      "textEn": "Fire Damage Negation Up",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_46198d91",
+      "textJa": "炎カット率上昇＋１",
+      "textEn": "Fire Damage Negation Up +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_374d3d7a",
+      "textJa": "炎カット率上昇＋２",
+      "textEn": "Fire Damage Negation Up +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_8b2e9a55",
+      "textJa": "雷カット率上昇",
+      "textEn": "Lightning Damage Negation Up",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_d0b48956",
+      "textJa": "雷カット率上昇＋１",
+      "textEn": "Lightning Damage Negation Up +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_cccf406c",
+      "textJa": "雷カット率上昇＋２",
+      "textEn": "Lightning Damage Negation Up +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_c4d04a48",
+      "textJa": "聖カット率上昇",
+      "textEn": "Holy Damage Negation Up",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_e6f6a8fc",
+      "textJa": "聖カット率上昇＋１",
+      "textEn": "Holy Damage Negation Up +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_3f994f98",
+      "textJa": "聖カット率上昇＋２",
+      "textEn": "Holy Damage Negation Up +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_0f7814a3",
+      "textJa": "ＨＰ低下時、カット率上昇",
+      "textEn": "Improved Physical Damage Negation at Low HP",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_895f264c",
+      "textJa": "ダメージで吹き飛ばされた時、強靭度とカット率上昇",
+      "textEn": "Improved Poise & Damage Negation When Knocked Back by Damage",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "カット率",
+      "categoryEn": "Damage Negation",
+      "category": "damageNegation"
+    },
+    {
+      "id": "e_02db28d7",
+      "textJa": "毒耐性上昇",
+      "textEn": "Improved Poison Resistance",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_db046261",
+      "textJa": "毒耐性上昇＋１",
+      "textEn": "Improved Poison Resistance +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_aaea5bc7",
+      "textJa": "毒耐性上昇＋２",
+      "textEn": "Improved Poison Resistance +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_c1431927",
+      "textJa": "腐敗耐性上昇",
+      "textEn": "Improved Rot Resistance",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_737a2f41",
+      "textJa": "腐敗耐性上昇＋１",
+      "textEn": "Improved Rot Resistance +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_7ac4a732",
+      "textJa": "腐敗耐性上昇＋２",
+      "textEn": "Improved Rot Resistance +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_4624c00a",
+      "textJa": "出血耐性上昇",
+      "textEn": "Improved Blood Loss Resistance",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_5da639b0",
+      "textJa": "出血耐性上昇＋１",
+      "textEn": "Improved Blood Loss Resistance +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_12850cf6",
+      "textJa": "出血耐性上昇＋２",
+      "textEn": "Improved Blood Loss Resistance +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_76af01fe",
+      "textJa": "冷気耐性上昇",
+      "textEn": "Improved Frost Resistance",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_d794d1fd",
+      "textJa": "冷気耐性上昇＋１",
+      "textEn": "Improved Frost Resistance +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_7deb81e2",
+      "textJa": "冷気耐性上昇＋２",
+      "textEn": "Improved Frost Resistance +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_adc7faad",
+      "textJa": "睡眠耐性上昇",
+      "textEn": "Improved Sleep Resistance",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_c7183c12",
+      "textJa": "睡眠耐性上昇＋１",
+      "textEn": "Improved Sleep Resistance +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_5b6230a2",
+      "textJa": "睡眠耐性上昇＋２",
+      "textEn": "Improved Sleep Resistance +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_4072abea",
+      "textJa": "発狂耐性上昇",
+      "textEn": "Improved Madness Resistance",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_92d659e4",
+      "textJa": "発狂耐性上昇＋１",
+      "textEn": "Improved Madness Resistance +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_58820bd3",
+      "textJa": "発狂耐性上昇＋２",
+      "textEn": "Improved Madness Resistance +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_d5a7ea09",
+      "textJa": "抗死耐性上昇",
+      "textEn": "Improved Death Blight Resistance",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_b7861a5c",
+      "textJa": "抗死耐性上昇＋１",
+      "textEn": "Improved Death Blight Resistance +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_782f604f",
+      "textJa": "抗死耐性上昇＋２",
+      "textEn": "Improved Death Blight Resistance +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "状態異常耐性",
+      "categoryEn": "Status Ailment Resistances",
+      "category": "ailmentResistance"
+    },
+    {
+      "id": "e_f1fb9ccc",
+      "textJa": "ＨＰ持続回復",
+      "textEn": "Continuous HP Recovery",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_f78dbb55",
+      "textJa": "ＨＰ低下時、周囲の味方を含めＨＰをゆっくりと回復",
+      "textEn": "Slowly restore HP for self and nearby allies when HP\nis low",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_080ae27a",
+      "textJa": "ガード成功時、ＨＰ回復",
+      "textEn": "HP Recovery From Successful Grding",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_e7503811",
+      "textJa": "刺突カウンター発生時、ＨＰ回復",
+      "textEn": "HP Restoration upon Thrusting Counterattack",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_84ffe41e",
+      "textJa": "刺突カウンター発生時、ＨＰ回復＋１",
+      "textEn": "HP Restoration upon Thrusting Counterattack +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_8b84c9b7",
+      "textJa": "ダメージを受けた直後、攻撃によりＨＰの一部を回復",
+      "textEn": "Partial HP Restoration upon Post-Damage Attack",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_7b2024fc",
+      "textJa": "ダメージを受けた直後、攻撃によりＨＰの一部を回復＋１",
+      "textEn": "Partial HP Restoration upon Post-Damage Attack +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_039fa09b",
+      "textJa": "ダメージを受けた直後、攻撃によりＨＰの一部を回復＋２",
+      "textEn": "Partial HP Restoration upon Post-Damage Attack +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_1cd3a606",
+      "textJa": "苔薬などのアイテム使用でＨＰ回復",
+      "textEn": "HP restored when using medicinal boluses, etc.",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_183d01d5",
+      "textJa": "苔薬などのアイテム使用でＨＰ回復＋１",
+      "textEn": "HP restored when using medicinal boluses, etc. +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_14611e54",
+      "textJa": "苔薬などのアイテム使用でＨＰ回復＋２",
+      "textEn": "HP restored when using medicinal boluses, etc. +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_8d089bb9",
+      "textJa": "周囲で腐敗状態の発生時、ＨＰ持続回復",
+      "textEn": "Rot in Vicinity Causes Continuous HP Recovery",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_4d3b3118",
+      "textJa": "聖杯瓶の回復量上昇",
+      "textEn": "Improved Flask HP Restoration",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_b516f8a9",
+      "textJa": "消費ＦＰ軽減",
+      "textEn": "Reduced FP Comsumption",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_064edefb",
+      "textJa": "ＦＰ持続回復",
+      "textEn": "Continuous FP Recovery",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_a0bc3ae3",
+      "textJa": "攻撃連続時、ＦＰ回復",
+      "textEn": "FP Restoration upon Successive Attacks",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_957dffd1",
+      "textJa": "発狂状態になると、ＦＰ持続回復",
+      "textEn": "Madness Continually Recovers FP",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_6b035cce",
+      "textJa": "攻撃命中時、スタミナ回復",
+      "textEn": "Stamina Recovery upon Landing Attacks",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_3563f953",
+      "textJa": "攻撃命中時、スタミナ回復＋１",
+      "textEn": "Stamina Recovery upon Landing Attacks +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_f529b212",
+      "textJa": "致命の一撃で、スタミナ回復速度上昇",
+      "textEn": "Critical Hit Boosts Stamina Recovery Speed",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_75259580",
+      "textJa": "致命の一撃で、スタミナ回復速度上昇＋１",
+      "textEn": "Critical Hit Boosts Stamina Recovery Speed +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "回復",
+      "categoryEn": "Restoration",
+      "category": "restoration"
+    },
+    {
+      "id": "e_e6b1c3cf",
+      "textJa": "致命の一撃で、ルーンを取得",
+      "textEn": "Critical Hits Earn Runes",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_c90457ed",
+      "textJa": "武器の持ち替え時、いずれかの属性攻撃力を付加",
+      "textEn": "Switching Weapons Adds an Affinity Attack",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_171f950c",
+      "textJa": "被ダメージ時、腐敗の状態異常を付加",
+      "textEn": "Attacks Inflict Rot when Damage is Taken",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_ae6e98be",
+      "textJa": "ガード中、敵に狙われやすくする",
+      "textEn": "Draw enemy attention while guarding",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_39c380be",
+      "textJa": "ジェスチャー「あぐら」により、発狂が蓄積",
+      "textEn": "Gesture \"Crossed Legs\" Builds Up Madness",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_367d5c8a",
+      "textJa": "カット率低下時、稀に敵から受ける攻撃を無効化",
+      "textEn": "Occasionally Nullify Attacks When Damage Negation is Lowered",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_7ae76a13",
+      "textJa": "毒状態の敵に対する攻撃を強化",
+      "textEn": "Attack power up when facing poison-affected enemy",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_9a008cc0",
+      "textJa": "毒状態の敵に対する攻撃を強化＋１",
+      "textEn": "Attack power up when facing poison-affected enemy +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_eb2efb64",
+      "textJa": "毒状態の敵に対する攻撃を強化＋２",
+      "textEn": "Attack power up when facing poison-affected enemy +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_90993550",
+      "textJa": "腐敗状態の敵に対する攻撃を強化",
+      "textEn": "Attack power up when facing rot-affected\nenemy",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_9b5b0511",
+      "textJa": "腐敗状態の敵に対する攻撃を強化＋１",
+      "textEn": "Attack power up when facing rot-affected\nenemy +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_756c4473",
+      "textJa": "腐敗状態の敵に対する攻撃を強化＋２",
+      "textEn": "Attack power up when facing rot-affected\nenemy +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_d0731591",
+      "textJa": "凍傷状態の敵に対する攻撃を強化",
+      "textEn": "Attack power up when facing frostbite-affected\nenemy",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_682842fd",
+      "textJa": "凍傷状態の敵に対する攻撃を強化＋１",
+      "textEn": "Attack power up when facing frostbite-affected\nenemy +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_d25e1bf2",
+      "textJa": "凍傷状態の敵に対する攻撃を強化＋２",
+      "textEn": "Attack power up when facing frostbite-affected\nenemy +2",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_98927f2a",
+      "textJa": "周囲で毒／腐敗状態の発生時、攻撃力上昇",
+      "textEn": "Poison & Rot in Vicinity Increases Attack Power",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_32e2943a",
+      "textJa": "周囲で凍傷状態の発生時、自身の姿を隠す",
+      "textEn": "Frostbite in Vicinity Conceals Self",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_feac2c2a",
+      "textJa": "周囲で睡眠状態の発生時、攻撃力上昇",
+      "textEn": "Sleep in Vicinity Improves Attack Power",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_f8cda881",
+      "textJa": "周囲で睡眠状態の発生時、攻撃力上昇＋１",
+      "textEn": "Sleep in Vicinity Improves Attack Power +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_b96a2c78",
+      "textJa": "周囲で発狂状態の発生時、攻撃力上昇",
+      "textEn": "Madness in Vicinity Improves Attack Power",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_ada0c4a9",
+      "textJa": "周囲で発狂状態の発生時、攻撃力上昇＋１",
+      "textEn": "Madness in Vicinity Improves Attack Power +1",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "アクション",
+      "categoryEn": "Actions",
+      "category": "actions"
+    },
+    {
+      "id": "e_a3259a89",
+      "textJa": "出撃時の武器の戦技を「我慢」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Endure at\nstart of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_d6cc1752",
+      "textJa": "出撃時の武器の戦技を「クイックステップ」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Quickstep at\nstart of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_9d7e937b",
+      "textJa": "出撃時の武器の戦技を「嵐脚」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Storm Stomp\nat start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_6935e12b",
+      "textJa": "出撃時の武器の戦技を「デターミネーション」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Determination\nat start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_dfd5ce26",
+      "textJa": "出撃時の武器の戦技を「輝剣の円陣」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Glintblade\nPhalanx at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_30d7feb5",
+      "textJa": "出撃時の武器の戦技を「グラビタス」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Gravitas at\nstart of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_cb1769e0",
+      "textJa": "出撃時の武器の戦技を「炎撃」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Flaming\nStrike at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_be495d50",
+      "textJa": "出撃時の武器の戦技を「溶岩噴火」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to\nEruption at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_3dda5067",
+      "textJa": "出撃時の武器の戦技を「落雷」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Thunderbolt\nat start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_2be78a3a",
+      "textJa": "出撃時の武器の戦技を「雷撃斬」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Lightning\nSlash at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_68b11bfd",
+      "textJa": "出撃時の武器の戦技を「聖なる刃」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Sacred Blade\nat start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_394a0108",
+      "textJa": "出撃時の武器の戦技を「祈りの一撃」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Prayerful\nStrike at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_b34dcffc",
+      "textJa": "出撃時の武器の戦技を「毒の霧」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Poisonous\nMist at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_9a053472",
+      "textJa": "出撃時の武器の戦技を「毒蛾は二度舞う」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Poison Moth\nFlight at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_d6ab3557",
+      "textJa": "出撃時の武器の戦技を「血の刃」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Blood Blade\nat start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_458a7a53",
+      "textJa": "出撃時の武器の戦技を「切腹」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Seppuku at\nstart of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_8bf6688a",
+      "textJa": "出撃時の武器の戦技を「冷気の霧」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Chilling Mist\nat start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_e9d64258",
+      "textJa": "出撃時の武器の戦技を「霜踏み」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Hoarfrost\nStomp at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_4ca0f0f4",
+      "textJa": "出撃時の武器の戦技を「白い影の誘い」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to White\nShadow's Lure at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_bb7c6d27",
+      "textJa": "出撃時の武器の戦技を「アローレイン」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's skill to Rain of\nArrows at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（戦技）",
+      "categoryEn": "Starting Armaments (Skill)",
+      "category": "startingArmamentSkill"
+    },
+    {
+      "id": "e_124f8c17",
+      "textJa": "出撃時の武器に魔力攻撃力を付加",
+      "textEn": "Starting armament deals magic damage",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（付加）",
+      "categoryEn": "Starting Armaments (Imbue)",
+      "category": "startingArmamentImbue"
+    },
+    {
+      "id": "e_f6b1c045",
+      "textJa": "出撃時の武器に炎攻撃力を付加",
+      "textEn": "Starting armament deals fire damage",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（付加）",
+      "categoryEn": "Starting Armaments (Imbue)",
+      "category": "startingArmamentImbue"
+    },
+    {
+      "id": "e_67c6fe8c",
+      "textJa": "出撃時の武器に雷攻撃力を付加",
+      "textEn": "Starting armament deals lightning damage",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（付加）",
+      "categoryEn": "Starting Armaments (Imbue)",
+      "category": "startingArmamentImbue"
+    },
+    {
+      "id": "e_5288d888",
+      "textJa": "出撃時の武器に聖攻撃力を付加",
+      "textEn": "Starting armament deals holy damage",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（付加）",
+      "categoryEn": "Starting Armaments (Imbue)",
+      "category": "startingArmamentImbue"
+    },
+    {
+      "id": "e_0c225bbf",
+      "textJa": "出撃時の武器に毒の状態異常を付加",
+      "textEn": "Starting armament inflicts poison",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（付加）",
+      "categoryEn": "Starting Armaments (Imbue)",
+      "category": "startingArmamentAilment"
+    },
+    {
+      "id": "e_bf3e01e5",
+      "textJa": "出撃時の武器に出血の状態異常を付加",
+      "textEn": "Starting armament inflicts blood loss",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（付加）",
+      "categoryEn": "Starting Armaments (Imbue)",
+      "category": "startingArmamentAilment"
+    },
+    {
+      "id": "e_7fb3ef2d",
+      "textJa": "出撃時の武器に冷気の状態異常を付加",
+      "textEn": "Starting armament inflicts frost",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（付加）",
+      "categoryEn": "Starting Armaments (Imbue)",
+      "category": "startingArmamentAilment"
+    },
+    {
+      "id": "e_66763e23",
+      "textJa": "出撃時の武器の魔術を「魔術の輝剣」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's sorcery to Magic\nGlintblade at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（魔術／祈祷）",
+      "categoryEn": "Starting Armaments (Spell)",
+      "category": "startingArmamentSpell"
+    },
+    {
+      "id": "e_d6daa231",
+      "textJa": "出撃時の武器の魔術を「カーリアの大剣」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's sorcery to Carian\nGreatsword at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（魔術／祈祷）",
+      "categoryEn": "Starting Armaments (Spell)",
+      "category": "startingArmamentSpell"
+    },
+    {
+      "id": "e_0dd2d5ef",
+      "textJa": "出撃時の武器の魔術を「夜のつぶて」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's sorcery to Night\nShard at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（魔術／祈祷）",
+      "categoryEn": "Starting Armaments (Spell)",
+      "category": "startingArmamentSpell"
+    },
+    {
+      "id": "e_6a15c0b1",
+      "textJa": "出撃時の武器の魔術を「溶岩弾」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's sorcery to Magma\nShot at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（魔術／祈祷）",
+      "categoryEn": "Starting Armaments (Spell)",
+      "category": "startingArmamentSpell"
+    },
+    {
+      "id": "e_a0f213f1",
+      "textJa": "出撃時の武器の魔術を「罰の茨」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's sorcery to Briars of\nPunishment at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（魔術／祈祷）",
+      "categoryEn": "Starting Armaments (Spell)",
+      "category": "startingArmamentSpell"
+    },
+    {
+      "id": "e_17b916c8",
+      "textJa": "出撃時の武器の祈祷を「黄金の怒り」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's incantation to\nWrath of Gold at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（魔術／祈祷）",
+      "categoryEn": "Starting Armaments (Spell)",
+      "category": "startingArmamentSpell"
+    },
+    {
+      "id": "e_fdc8df0b",
+      "textJa": "出撃時の武器の祈祷を「雷の槍」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's incantation to\nLightning Spear at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（魔術／祈祷）",
+      "categoryEn": "Starting Armaments (Spell)",
+      "category": "startingArmamentSpell"
+    },
+    {
+      "id": "e_3561cb28",
+      "textJa": "出撃時の武器の祈祷を「火よ！」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's incantation to\nO, Flame! at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（魔術／祈祷）",
+      "categoryEn": "Starting Armaments (Spell)",
+      "category": "startingArmamentSpell"
+    },
+    {
+      "id": "e_afe4e254",
+      "textJa": "出撃時の武器の祈祷を「獣爪」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's incantation to\nBeast Claw at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（魔術／祈祷）",
+      "categoryEn": "Starting Armaments (Spell)",
+      "category": "startingArmamentSpell"
+    },
+    {
+      "id": "e_fd79219b",
+      "textJa": "出撃時の武器の祈祷を「竜炎」にする\n※適用可能な武器種のみ",
+      "textEn": "Changes compatible armament's incantation to\nDragonfire at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時の武器（魔術／祈祷）",
+      "categoryEn": "Starting Armaments (Spell)",
+      "category": "startingArmamentSpell"
+    },
+    {
+      "id": "e_a94ec1d6",
+      "textJa": "出撃時に「星光の欠片」を持つ",
+      "textEn": "Starlight Shards in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_4e799e41",
+      "textJa": "出撃時に「火焔壺」を持つ",
+      "textEn": "Fire Pots in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_3a7b228d",
+      "textJa": "出撃時に「魔力壺」を持つ",
+      "textEn": "Magic Pots in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_21524f05",
+      "textJa": "出撃時に「雷壺」を持つ",
+      "textEn": "Lightning Pots in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_806ea27c",
+      "textJa": "出撃時に「聖水壺」を持つ",
+      "textEn": "Holy Pots in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_9aeb347b",
+      "textJa": "出撃時に「骨の毒投げ矢」を持つ",
+      "textEn": "Poisonbone Darts in possession at start of\nexpedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_56a45a6a",
+      "textJa": "出撃時に「結晶投げ矢」を持つ",
+      "textEn": "Crystal Darts in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_69f27393",
+      "textJa": "出撃時に「スローイングダガー」を持つ",
+      "textEn": "Throwing Daggers in possession at start of\nexpedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_d9167533",
+      "textJa": "出撃時に「屑輝石」を持つ",
+      "textEn": "Glintstone Scrap in possession at start of\nexpedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_38adf780",
+      "textJa": "出撃時に「塊の重力石」を持つ",
+      "textEn": "Gravity Stone Chunks in possession at start of\nexpedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_327dbd7b",
+      "textJa": "出撃時に「誘惑の枝」を持つ",
+      "textEn": "Bewitching Branches in possession at start of\nexpedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_17f2867e",
+      "textJa": "出撃時に「火花の香り」を持つ",
+      "textEn": "Spark Aromatic in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_522abcca",
+      "textJa": "出撃時に「毒の噴霧」を持つ",
+      "textEn": "Poison Spraymist in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_c98aa532",
+      "textJa": "出撃時に「鉄壺の香薬」を持つ",
+      "textEn": "Ironjar Aromatic in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_9109cc25",
+      "textJa": "出撃時に「高揚の香り」を持つ",
+      "textEn": "Uplifting Aromatic in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_00a24b96",
+      "textJa": "出撃時に「酸の噴霧」を持つ",
+      "textEn": "Acid Spraymist in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_38d808fd",
+      "textJa": "出撃時に「狂熱の香薬」を持つ",
+      "textEn": "Bloodboil Aromatic in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_d05e55ac",
+      "textJa": "出撃時に「呪霊呼びの鈴」を持つ",
+      "textEn": "Wraith Calling Bell in possession at start of\nexpedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_93d0525e",
+      "textJa": "出撃時に「火脂」を持つ",
+      "textEn": "Fire Grease in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_b4179ae8",
+      "textJa": "出撃時に「魔力脂」を持つ",
+      "textEn": "Magic Grease in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_18b9f18b",
+      "textJa": "出撃時に「雷脂」を持つ",
+      "textEn": "Lightning Grease in possession at start of\nexpedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_54f85282",
+      "textJa": "出撃時に「聖脂」を持つ",
+      "textEn": "Holy Grease in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_e6e73f4c",
+      "textJa": "出撃時に「盾脂」を持つ",
+      "textEn": "Shield Grease in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_f81bf8ae",
+      "textJa": "出撃時に「小さなポーチ」を持つ",
+      "textEn": "Small Pouch in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_74f7464a",
+      "textJa": "出撃時に「石剣の鍵」を持つ",
+      "textEn": "Stonesword Key in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム",
+      "categoryEn": "Starting Item",
+      "category": "startingItem"
+    },
+    {
+      "id": "e_fe373052",
+      "textJa": "出撃時に「緋色の結晶雫」を持つ",
+      "textEn": "Crimson Crystal Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_68c74461",
+      "textJa": "出撃時に「緋溢れの結晶雫」を持つ",
+      "textEn": "Crimsonspill Crystal Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_f7aa461e",
+      "textJa": "出撃時に「緋湧きの結晶雫」を持つ",
+      "textEn": "Crimsonburst Crystal Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_3aa99a8f",
+      "textJa": "出撃時に「青色の結晶雫」を持つ",
+      "textEn": "Cerulean Crystal Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_8957cb28",
+      "textJa": "出撃時に「緑溢れの結晶雫」を持つ",
+      "textEn": "Greenspill Crystal Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_b30afc38",
+      "textJa": "出撃時に「緑湧きの結晶雫」を持つ",
+      "textEn": "Greenburst Crystal Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_289ca075",
+      "textJa": "出撃時に「真珠色の硬雫」を持つ",
+      "textEn": "Opaline Hardtear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_2e0b6984",
+      "textJa": "出撃時に「斑彩色の硬雫」を持つ",
+      "textEn": "Sparkled Hardtear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_35172a04",
+      "textJa": "出撃時に「鉛色の硬雫」を持つ",
+      "textEn": "Leaden Hardtear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_b8ab7ae9",
+      "textJa": "出撃時に「魔力纏いの割れ雫」を持つ",
+      "textEn": "Magic-Shrouding Cracked Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_3778667f",
+      "textJa": "出撃時に「炎纏いの割れ雫」を持つ",
+      "textEn": "Flame-Shrouding Cracked Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_353895e1",
+      "textJa": "出撃時に「雷纏いの割れ雫」を持つ",
+      "textEn": "Lightning-Shrouding Cracked Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_ae2a48b3",
+      "textJa": "出撃時に「聖纏いの割れ雫」を持つ",
+      "textEn": "Holy-Shrouding Cracked Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_18af6b14",
+      "textJa": "出撃時に「岩棘の割れ雫」を持つ",
+      "textEn": "Stonebarb Cracked Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_44363322",
+      "textJa": "出撃時に「大棘の割れ雫」を持つ",
+      "textEn": "Spiked Cracked Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_bc991fd0",
+      "textJa": "出撃時に「連棘の割れ雫」を持つ",
+      "textEn": "Thorny Cracked Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_33ab11d9",
+      "textJa": "出撃時に「細枝の割れ雫」を持つ",
+      "textEn": "Twiggy Cracked Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_d50c33d4",
+      "textJa": "出撃時に「風の結晶雫」を持つ",
+      "textEn": "Windy Crystal Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_58d0671f",
+      "textJa": "出撃時に「緋色の泡雫」を持つ",
+      "textEn": "Crimson Bubbletear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_f5d83999",
+      "textJa": "出撃時に「緋色渦の泡雫」を持つ",
+      "textEn": "Crimsonwhorl Bubbletear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_1c7863cc",
+      "textJa": "出撃時に「真珠色の泡雫」を持つ",
+      "textEn": "Opaline Bubbletear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_cfb34e17",
+      "textJa": "出撃時に「青色の秘雫」を持つ",
+      "textEn": "Cerulean Hidden Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_a289439f",
+      "textJa": "出撃時に「破裂した結晶雫」を持つ",
+      "textEn": "Ruptured Crystal Tear in possession at start of expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "出撃時のアイテム（結晶の雫）",
+      "categoryEn": "Starting Item (Tear)",
+      "category": "startingItemTear"
+    },
+    {
+      "id": "e_dce4c3ad",
+      "textJa": "埋もれ宝の位置を地図に表示",
+      "textEn": "Treasure marked upon map",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "マップ環境",
+      "categoryEn": "Environment",
+      "category": "environment"
+    },
+    {
+      "id": "e_663de19f",
+      "textJa": "出撃中、ショップでの購入に必要なルーンが割引",
+      "textEn": "Rune discount for shop purchases while on expedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "マップ環境",
+      "categoryEn": "Environment",
+      "category": "environment"
+    },
+    {
+      "id": "e_729630a0",
+      "textJa": "出撃中、ショップでの購入に必要なルーンが大割引",
+      "textEn": "Huge rune discount for shop purchases while on\nexpedition",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "マップ環境",
+      "categoryEn": "Environment",
+      "category": "environment"
+    },
+    {
+      "id": "e_81678243",
+      "textJa": "自身と味方の取得ルーン増加",
+      "textEn": "Increased rune acquisition for self and allies",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "チームメンバー",
+      "categoryEn": "Team members",
+      "category": "teamMembers"
+    },
+    {
+      "id": "e_a6b38e1b",
+      "textJa": "自身を除く、周囲の味方のスタミナ回復速度上昇",
+      "textEn": "Raised stamina recovery for nearby allies, but not\nfor self",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "チームメンバー",
+      "categoryEn": "Team members",
+      "category": "teamMembers"
+    },
+    {
+      "id": "e_3f2e25d8",
+      "textJa": "聖杯瓶の回復を、周囲の味方に分配",
+      "textEn": "Flask Also Heals Allies",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "チームメンバー",
+      "categoryEn": "Team members",
+      "category": "teamMembers"
+    },
+    {
+      "id": "e_bf826405",
+      "textJa": "敵を倒した時、自身を除く周囲の味方のＨＰを回復",
+      "textEn": "Defeating enemies restores HP for allies but not for\nself",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "チームメンバー",
+      "categoryEn": "Team members",
+      "category": "teamMembers"
+    },
+    {
+      "id": "e_43f65400",
+      "textJa": "アイテムの効果が周囲の味方にも発動",
+      "textEn": "Items confer effect to all nearby allies",
+      "groupJa": "全般",
+      "groupEn": "General",
+      "categoryJa": "チームメンバー",
+      "categoryEn": "Team members",
+      "category": "teamMembers"
+    },
+    {
+      "id": "e_7f3ea857",
+      "textJa": "【追跡者】アビリティ発動時、アーツゲージ増加",
+      "textEn": "[Wylder] Art gauge greatly filled when ability is\nactivated",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "追跡者",
+      "categoryEn": "Wylder",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_b5ce3dc9",
+      "textJa": "【追跡者】スキル使用時、通常攻撃で\n炎を纏った追撃を行う（大剣のみ）",
+      "textEn": "[Wylder] Standard attacks enhanced with fiery\nfollow-ups when using Character Skill (greatsword only)",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "追跡者",
+      "categoryEn": "Wylder",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_0c082461",
+      "textJa": "【追跡者】スキルの使用回数＋１",
+      "textEn": "[Wylder] +1 additional Character Skill use",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "追跡者",
+      "categoryEn": "Wylder",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_bac30918",
+      "textJa": "【追跡者】アーツ発動時、周囲を延焼",
+      "textEn": "[Wylder] Art activation spreads fire in area",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "追跡者",
+      "categoryEn": "Wylder",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_5ee22f85",
+      "textJa": "【追跡者】精神力上昇、生命力低下",
+      "textEn": "[Wylder] Improved Mind, Reduced Vigor",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "追跡者",
+      "categoryEn": "Wylder",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_639ddf1c",
+      "textJa": "【追跡者】知力／信仰上昇、筋力／技量低下",
+      "textEn": "[Wylder] Improved Intelligence and Faith, Reduced Strength and Dexterity",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "追跡者",
+      "categoryEn": "Wylder",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_f995f244",
+      "textJa": "【追跡者】スキルに、出血の状態異常を付加",
+      "textEn": "[Wylder] Character Skill inflicts Blood Loss",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "追跡者",
+      "categoryEn": "Wylder",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_08ba15fc",
+      "textJa": "【守護者】アビリティ発動中\nガード成功時、衝撃波が発生",
+      "textEn": "[Guardian] Successful guards send out shockwaves while\nability is active",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "守護者",
+      "categoryEn": "Guardian",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_6e30dd82",
+      "textJa": "【守護者】スキルの持続時間延長",
+      "textEn": "[Guardian] Increased duration for Character Skill",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "守護者",
+      "categoryEn": "Guardian",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_b12c7c2e",
+      "textJa": "【守護者】アーツ発動時、周囲の味方ＨＰを徐々に回復",
+      "textEn": "[Guardian] Slowly restores nearby allies' HP\nwhile Art is active",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "守護者",
+      "categoryEn": "Guardian",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_a1e497b4",
+      "textJa": "【守護者】斧槍タメ攻撃時、つむじ風が発生",
+      "textEn": "[Guardian] Creates whirlwind when charging halberd\nattacks",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "守護者",
+      "categoryEn": "Guardian",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_7c6d5a8f",
+      "textJa": "【守護者】筋力／技量上昇、生命力低下",
+      "textEn": "[Guardian] Improved Strength and Dexterity, Reduced Vigor",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "守護者",
+      "categoryEn": "Guardian",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_2c325320",
+      "textJa": "【守護者】精神力／信仰上昇、生命力低下",
+      "textEn": "[Guardian] Improved Mind and Faith, Reduced Vigor",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "守護者",
+      "categoryEn": "Guardian",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_64657694",
+      "textJa": "【守護者】スキル使用時、周囲の味方のカット率上昇",
+      "textEn": "[Guardian] Character Skill Boosts Damage Negation of Nearby Allies",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "守護者",
+      "categoryEn": "Guardian",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_a82359fc",
+      "textJa": "【鉄の目】スキルの使用回数＋１",
+      "textEn": "[Ironeye] +1 additional Character Skill use",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "鉄の目",
+      "categoryEn": "Ironeye",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_70f4c3d9",
+      "textJa": "【鉄の目】アーツのタメ発動時、毒の状態異常を付加",
+      "textEn": "[Ironeye] Art Charge Activation Adds Poison Effect",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "鉄の目",
+      "categoryEn": "Ironeye",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_f7f7c851",
+      "textJa": "【鉄の目】アーツ発動後、刺突カウンター強化",
+      "textEn": "[Ironeye] Boosts thrusting counterattacks after executing Art",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "鉄の目",
+      "categoryEn": "Ironeye",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_79428fa6",
+      "textJa": "【鉄の目】弱点の持続時間を延長させる",
+      "textEn": "[Ironeye] Extends duration of weak point",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "鉄の目",
+      "categoryEn": "Ironeye",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_a86f0f67",
+      "textJa": "【鉄の目】生命力／筋力上昇、技量低下",
+      "textEn": "[Ironeye] Improved Vigor and Strength, Reduced Dexterity",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "鉄の目",
+      "categoryEn": "Ironeye",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_a42c5f60",
+      "textJa": "【鉄の目】神秘上昇、技量低下",
+      "textEn": "[Ironeye] Improved Arcane, Reduced Dexterity",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "鉄の目",
+      "categoryEn": "Ironeye",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_b650b739",
+      "textJa": "【鉄の目】スキルに毒の状態異常を付加して\n毒状態の敵に大ダメージ",
+      "textEn": "[Ironeye] Character Skill Inflicts Heavy Poison Damage on Poisoned Enemies",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "鉄の目",
+      "categoryEn": "Ironeye",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_423ef5d0",
+      "textJa": "【レディ】スキルのダメージ上昇",
+      "textEn": "[Duchess] Improved Character Skill Attack Power",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "レディ",
+      "categoryEn": "Duchess",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_cf431bd0",
+      "textJa": "【レディ】アーツ発動中、敵撃破で攻撃力上昇",
+      "textEn": "[Duchess] Defeating enemies while Art is active ups\nattack power",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "レディ",
+      "categoryEn": "Duchess",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_7422225e",
+      "textJa": "【レディ】短剣による攻撃連続時\n周囲の敵に、直近の出来事を再演",
+      "textEn": "[Duchess] Reprise events upon nearby enemies by landing the final blow of a chain attack\nwith dagger",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "レディ",
+      "categoryEn": "Duchess",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_a1c496dc",
+      "textJa": "【レディ】背後からの致命の一撃後\n自身の姿を見え難くし、足音を消す",
+      "textEn": "[Duchess] Become difficult to spot and silence\nfootsteps after landing critical from behind",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "レディ",
+      "categoryEn": "Duchess",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_02cc6722",
+      "textJa": "【レディ】生命力／筋力上昇、精神力低下",
+      "textEn": "[Duchess] Improved Vigor and Strength, Reduced Mind",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "レディ",
+      "categoryEn": "Duchess",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_3a7633be",
+      "textJa": "【レディ】精神力／信仰上昇、知力低下",
+      "textEn": "[Duchess] Improved Mind and Faith, Reduced Intelligence",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "レディ",
+      "categoryEn": "Duchess",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_0b893ff4",
+      "textJa": "【レディ】スキル使用時、僅かに無敵",
+      "textEn": "[Duchess] Use Character Skill for Brief Invulnerability",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "レディ",
+      "categoryEn": "Duchess",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_829c8e57",
+      "textJa": "【無頼漢】スキル中に攻撃を受けると\n攻撃力と最大スタミナ上昇",
+      "textEn": "[Raider] Damage taken while using Character Skill\nimproves attack power and stamina",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "無頼漢",
+      "categoryEn": "Raider",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_e0ce200f",
+      "textJa": "【無頼漢】アーツの効果時間延長",
+      "textEn": "[Raider] Duration of Ultimate Art extended",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "無頼漢",
+      "categoryEn": "Raider",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_f1cee33e",
+      "textJa": "トーテム・ステラの周囲で敵を倒した時、ＨＰ回復",
+      "textEn": "Defeating enemies near Totem Stela restores HP",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "無頼漢",
+      "categoryEn": "Raider",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_33a4dd36",
+      "textJa": "トーテム・ステラの周囲で、強靭度上昇",
+      "textEn": "Improved Pose Near Totem Stela",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "無頼漢",
+      "categoryEn": "Raider",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_09559ce9",
+      "textJa": "【無頼漢】精神力／知力上昇、生命力／持久力低下",
+      "textEn": "[Raider] Improved Mind and Intelligence, Reduced Vigor and Endurance",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "無頼漢",
+      "categoryEn": "Raider",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_f9e736fa",
+      "textJa": "【無頼漢】神秘上昇、生命力低下",
+      "textEn": "[Raider] Improved Arcane, Reduced Vigor",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "無頼漢",
+      "categoryEn": "Raider",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_589eb44e",
+      "textJa": "【無頼漢】スキル命中時、敵の攻撃力低下",
+      "textEn": "[Raider] Hit With Character Skill to Reduce Enemy Attack Power",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "無頼漢",
+      "categoryEn": "Raider",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_47518d87",
+      "textJa": "【復讐者】アーツ発動時、霊炎の爆発を発生",
+      "textEn": "[Revenant] Trigger ghostflame explosion during\nUltimate Art activation",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "復讐者",
+      "categoryEn": "Revenant",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_e45b0d76",
+      "textJa": "【復讐者】アーツ発動時\n自身のＨＰと引き換えに周囲の味方のＨＰを全回復",
+      "textEn": "[Revenant] Expend own HP to fully heal nearby allies\nwhen activating Art",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "復讐者",
+      "categoryEn": "Revenant",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_e5e94b17",
+      "textJa": "【復讐者】アーツ発動時、ファミリーと味方を強化",
+      "textEn": "[Revenant] Strengthens family and allies when Ultimate Art is activated",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "復讐者",
+      "categoryEn": "Revenant",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_b5edfe95",
+      "textJa": "【復讐者】ファミリーと共闘中の間、自身を強化",
+      "textEn": "[Revenant] Power up while fighting alongside family",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "復讐者",
+      "categoryEn": "Revenant",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_b8d4fc17",
+      "textJa": "【復讐者】生命力／持久力上昇、精神力低下",
+      "textEn": "[Revenant] Improved Vigor and Endurance, Reduced Mind",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "復讐者",
+      "categoryEn": "Revenant",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_c5656db0",
+      "textJa": "【復讐者】筋力上昇、信仰低下",
+      "textEn": "[Revenant] Improved Strength, Reduced Faith",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "復讐者",
+      "categoryEn": "Revenant",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_c01634ad",
+      "textJa": "【復讐者】アビリティ発動時、最大ＦＰ上昇",
+      "textEn": "[Revenant] Increased Max FP upon Ability Activation",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "復讐者",
+      "categoryEn": "Revenant",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_2df7bfbb",
+      "textJa": "【隠者】アーツ発動時\n自身が出血状態になり、攻撃力上昇",
+      "textEn": "[Recluse] Suffer blood loss and increase attack power upon Art activation",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "隠者",
+      "categoryEn": "Recluse",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_fd1c1ad3",
+      "textJa": "【隠者】アーツ発動時、最大ＨＰ上昇",
+      "textEn": "[Recluse] Activating Ultimate Art raises Max HP",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "隠者",
+      "categoryEn": "Recluse",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_3258b3e1",
+      "textJa": "【隠者】属性痕を集めた時、「魔術の地」が発動",
+      "textEn": "[Recluse] Collecting affinity residue activates Terra Magica",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "隠者",
+      "categoryEn": "Recluse",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_6408ffe5",
+      "textJa": "【隠者】生命力／持久力／技量上昇、知力／信仰低下",
+      "textEn": "[Recluse] Improved Vigor, Endurance, and Dexterity, Reduced Intelligence and Faith",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "隠者",
+      "categoryEn": "Recluse",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_82bb5208",
+      "textJa": "【隠者】知力／信仰上昇、精神力低下",
+      "textEn": "[Recluse] Improved Intelligence and Faith, Reduced Mind",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "隠者",
+      "categoryEn": "Recluse",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_77fad554",
+      "textJa": "【隠者】属性痕を集めた時、対応する属性カット率上昇",
+      "textEn": "[Recluse] Collect Affinity Residues to Nagate Afinity",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "隠者",
+      "categoryEn": "Recluse",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_ea0d87f2",
+      "textJa": "【執行者】スキル中の攻撃力上昇、攻撃時にカット率低下",
+      "textEn": "[Executor] Character Skill Boosts Attack but Lowers Damage Negation While Attacking",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "執行者",
+      "categoryEn": "Executor",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_2ef4a7c2",
+      "textJa": "【執行者】スキル中、妖刀が解放状態になるとＨＰ回復",
+      "textEn": "[Executor] While Character Skill is active,\nunblocking use of cursed sword restores HP",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "執行者",
+      "categoryEn": "Executor",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_8022dc23",
+      "textJa": "【執行者】アーツ発動中、咆哮でＨＰ回復",
+      "textEn": "[Executor] Roaring restores HP while Art is active",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "執行者",
+      "categoryEn": "Executor",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_b90dc483",
+      "textJa": "【執行者】生命力／持久力上昇、神秘低下",
+      "textEn": "[Executor] Improved Vigor and Endurance, Reduced Arcane",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "執行者",
+      "categoryEn": "Executor",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_0186a1d1",
+      "textJa": "【執行者】技量／神秘上昇、生命力低下",
+      "textEn": "[Executor] Improved Dexterity and Arcane, Reduced Vigor",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "執行者",
+      "categoryEn": "Executor",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_6dc4859d",
+      "textJa": "【執行者】アビリティ発動時、ＨＰをゆっくりと回復",
+      "textEn": "[Executor] Slowly Restore HP upon Ability Activation",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "執行者",
+      "categoryEn": "Executor",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_c8fef797",
+      "textJa": "【学者】スキルの進捗率の低下を抑制",
+      "textEn": "[Scholar] Prevent slowing of Character Skill progress",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "学者",
+      "categoryEn": "Scholar",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_a6ebd1a3",
+      "textJa": "【学者】スキル使用時、対象に含まれた味方の攻撃力上昇",
+      "textEn": "[Scholar] Allies targeted by Character Skill gain boosted attack",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "学者",
+      "categoryEn": "Scholar",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_6f6bd9a7",
+      "textJa": "【学者】スキルによる標本が増える度、ルーンを取得",
+      "textEn": "[Scholar] Earn runes for each additional specimen acquired with Character Skill",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "学者",
+      "categoryEn": "Scholar",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_35b39904",
+      "textJa": "【学者】アーツでリンクした敵対象に、継続ダメージ",
+      "textEn": "[Scholar] Continuous damage inflicted on targets threaded by Ultimate Art",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "学者",
+      "categoryEn": "Scholar",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_b6706adc",
+      "textJa": "【学者】精神力上昇、生命力低下",
+      "textEn": "[Scholar] Improved Mind, Reduced Vigor",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "学者",
+      "categoryEn": "Scholar",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_9cdb6924",
+      "textJa": "【学者】持久力／技量上昇、知力／神秘低下",
+      "textEn": "[Scholar] Improved Endurance and Dexterity, Reduced Intelligence and Arcane",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "学者",
+      "categoryEn": "Scholar",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_dc997e2f",
+      "textJa": "【学者】スキルを自身に使用時、ＦＰ消費軽減",
+      "textEn": "[Scholar] Reduced FP consumption when using Character Skill on self",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "学者",
+      "categoryEn": "Scholar",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_475cd5e0",
+      "textJa": "【葬儀屋】アーツ発動時、攻撃力上昇",
+      "textEn": "[Undertaker] Activating Ultimate Art increases attack power",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "葬儀屋",
+      "categoryEn": "Undertaker",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_57ad33e3",
+      "textJa": "【葬儀屋】アーツ発動時、触れた味方のＨＰ回復",
+      "textEn": "[Undertaker] Contact with allies restores their HP while Ultimate Art is activated",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "葬儀屋",
+      "categoryEn": "Undertaker",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_f4a6ee55",
+      "textJa": "【葬儀屋】連撃の最終攻撃命中時、攻撃力上昇",
+      "textEn": "[Undertaker] Attack power increased by landing the final blow of a chain attack",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "葬儀屋",
+      "categoryEn": "Undertaker",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_b0d2ecff",
+      "textJa": "【葬儀屋】祈祷を使用して、自身に補助効果発生時\n物理攻撃力上昇",
+      "textEn": "[Undertaker] Physical attacks boosted while assist effect from incantation is active for self",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "葬儀屋",
+      "categoryEn": "Undertaker",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_ca0f5624",
+      "textJa": "【葬儀屋】技量上昇、生命力／信仰低下",
+      "textEn": "[Undertaker] Improved Dexterity, Reduced Vigor and Faith",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "葬儀屋",
+      "categoryEn": "Undertaker",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_62143c07",
+      "textJa": "【葬儀屋】精神力／信仰上昇、筋力低下",
+      "textEn": "[Undertaker] Improved Mind and Faith, Reduced Strength",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "葬儀屋",
+      "categoryEn": "Undertaker",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_22e73310",
+      "textJa": "【葬儀屋】アーツ発動後、スキル再使用可能",
+      "textEn": "[Undertaker] Executing Art readies Character Skill",
+      "groupJa": "特定キャラクターのみ",
+      "groupEn": "Character-specific",
+      "categoryJa": "葬儀屋",
+      "categoryEn": "Undertaker",
+      "category": "characterSpecific"
+    },
+    {
+      "id": "e_01f98bcf",
+      "textJa": "短剣の攻撃力上昇",
+      "textEn": "Improved Dagger Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "短剣",
+      "categoryEn": "Dagger",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_a2827826",
+      "textJa": "短剣の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Dagger Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "短剣",
+      "categoryEn": "Dagger",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_b80de5a1",
+      "textJa": "短剣の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Dagger Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "短剣",
+      "categoryEn": "Dagger",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_17ac82a5",
+      "textJa": "短剣の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Daggers Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "短剣",
+      "categoryEn": "Dagger",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_7d771dfc",
+      "textJa": "潜在する力から、短剣を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Daggers",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "短剣",
+      "categoryEn": "Dagger",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_4ca99baa",
+      "textJa": "直剣の攻撃力上昇",
+      "textEn": "Improved Straight Sword Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "直剣",
+      "categoryEn": "Straight Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_e51229d0",
+      "textJa": "直剣の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Straight Sword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "直剣",
+      "categoryEn": "Straight Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_c7a58ee1",
+      "textJa": "直剣の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Straight Sword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "直剣",
+      "categoryEn": "Straight Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_51dbeb35",
+      "textJa": "直剣の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Straight Swords Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "直剣",
+      "categoryEn": "Straight Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_43e4272d",
+      "textJa": "潜在する力から、直剣を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Straight Swords",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "直剣",
+      "categoryEn": "Straight Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_87af684f",
+      "textJa": "大剣の攻撃力上昇",
+      "textEn": "Improved Greatsword Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大剣",
+      "categoryEn": "Greatsword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_65dc22df",
+      "textJa": "大剣の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Greatsword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大剣",
+      "categoryEn": "Greatsword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_3134ff8d",
+      "textJa": "大剣の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Greatsword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大剣",
+      "categoryEn": "Greatsword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_9e238606",
+      "textJa": "大剣の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Greatswords Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大剣",
+      "categoryEn": "Greatsword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_3a062fa3",
+      "textJa": "潜在する力から、大剣を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Greatswords",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大剣",
+      "categoryEn": "Greatsword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_9e46c365",
+      "textJa": "特大剣の攻撃力上昇",
+      "textEn": "Improved Colossal Sword Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "特大剣",
+      "categoryEn": "Colossal Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_c8d3a96c",
+      "textJa": "特大剣の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Colossal Sword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "特大剣",
+      "categoryEn": "Colossal Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_5874142f",
+      "textJa": "特大剣の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Colossal Sword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "特大剣",
+      "categoryEn": "Colossal Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_3d18ab7c",
+      "textJa": "特大剣の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Colossal Swords Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "特大剣",
+      "categoryEn": "Colossal Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_13136069",
+      "textJa": "潜在する力から、特大剣を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Colossal Swords",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "特大剣",
+      "categoryEn": "Colossal Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_21607eba",
+      "textJa": "刺剣の攻撃力上昇",
+      "textEn": "Improved Thrusting Sword Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "刺剣",
+      "categoryEn": "Thrusting Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_74a8a086",
+      "textJa": "刺剣の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Thrusting Sword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "刺剣",
+      "categoryEn": "Thrusting Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_df8b3eff",
+      "textJa": "刺剣の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Thrusting Sword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "刺剣",
+      "categoryEn": "Thrusting Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_b24f6843",
+      "textJa": "刺剣の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Thrusting Swords Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "刺剣",
+      "categoryEn": "Thrusting Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_934f1449",
+      "textJa": "潜在する力から、刺剣を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Thrusting Swords",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "刺剣",
+      "categoryEn": "Thrusting Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_e868847f",
+      "textJa": "重刺剣の攻撃力上昇",
+      "textEn": "Improved Heavy Thrusting Sword Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "重刺剣",
+      "categoryEn": "Heavy Thrusting Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_6675a55d",
+      "textJa": "重刺剣の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Heavy Thrusting Sword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "重刺剣",
+      "categoryEn": "Heavy Thrusting Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_f89d7822",
+      "textJa": "重刺剣の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Heavy Thrusting Sword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "重刺剣",
+      "categoryEn": "Heavy Thrusting Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_a61fe954",
+      "textJa": "重刺剣の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Heavy Thrusting Swords Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "重刺剣",
+      "categoryEn": "Heavy Thrusting Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_936d8722",
+      "textJa": "潜在する力から、重刺剣を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Heavy Thrusting Swords",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "重刺剣",
+      "categoryEn": "Heavy Thrusting Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_6c5e8115",
+      "textJa": "曲剣の攻撃力上昇",
+      "textEn": "Improved Curved Sword Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "曲剣",
+      "categoryEn": "Curved Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_07f4c9d4",
+      "textJa": "曲剣の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Curved Sword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "曲剣",
+      "categoryEn": "Curved Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_f6cda3fc",
+      "textJa": "曲剣の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Curved Sword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "曲剣",
+      "categoryEn": "Curved Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_4d90fa2c",
+      "textJa": "曲剣の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Curved Swords Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "曲剣",
+      "categoryEn": "Curved Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_416aa2aa",
+      "textJa": "潜在する力から、曲剣を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Curved Swords",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "曲剣",
+      "categoryEn": "Curved Sword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_648378e4",
+      "textJa": "大曲剣の攻撃力上昇",
+      "textEn": "Improved Curved Greatsword Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大曲剣",
+      "categoryEn": "Curved Greatsword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_30b2e3aa",
+      "textJa": "大曲剣の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Curved Greatsword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大曲剣",
+      "categoryEn": "Curved Greatsword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_62080427",
+      "textJa": "大曲剣の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Curved Greatsword Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大曲剣",
+      "categoryEn": "Curved Greatsword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_9c2c5d6c",
+      "textJa": "大曲剣の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Curved Greatswords Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大曲剣",
+      "categoryEn": "Curved Greatsword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_25b83955",
+      "textJa": "潜在する力から、大曲剣を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Curved Greatswords",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大曲剣",
+      "categoryEn": "Curved Greatsword",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_cb0183b5",
+      "textJa": "刀の攻撃力上昇",
+      "textEn": "Improved Katana Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "刀",
+      "categoryEn": "Katana",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_1d907481",
+      "textJa": "刀の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Katana Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "刀",
+      "categoryEn": "Katana",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_160cf794",
+      "textJa": "刀の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Katana Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "刀",
+      "categoryEn": "Katana",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_b5ff69c1",
+      "textJa": "刀の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Katana Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "刀",
+      "categoryEn": "Katana",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_788503b5",
+      "textJa": "潜在する力から、刀を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Katana",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "刀",
+      "categoryEn": "Katana",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_c1e535ae",
+      "textJa": "両刃剣の攻撃力上昇",
+      "textEn": "Improved Twinblade Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "両刃剣",
+      "categoryEn": "Twinblade",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_75160b84",
+      "textJa": "両刃剣の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Twinblade Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "両刃剣",
+      "categoryEn": "Twinblade",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_245f76df",
+      "textJa": "両刃剣の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Twinblade Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "両刃剣",
+      "categoryEn": "Twinblade",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_243a4d84",
+      "textJa": "両刃剣の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Twinblades Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "両刃剣",
+      "categoryEn": "Twinblade",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_725383b1",
+      "textJa": "潜在する力から、両刃剣を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Twinblades",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "両刃剣",
+      "categoryEn": "Twinblade",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_167d201f",
+      "textJa": "斧の攻撃力上昇",
+      "textEn": "Improved Axe Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "斧",
+      "categoryEn": "Axe",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_b4d29c19",
+      "textJa": "斧の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Axe Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "斧",
+      "categoryEn": "Axe",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_880a3f53",
+      "textJa": "斧の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Axe Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "斧",
+      "categoryEn": "Axe",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_875ea47c",
+      "textJa": "斧の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Axes Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "斧",
+      "categoryEn": "Axe",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_cf410c99",
+      "textJa": "潜在する力から、斧を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Axes",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "斧",
+      "categoryEn": "Axe",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_a3078916",
+      "textJa": "大斧の攻撃力上昇",
+      "textEn": "Improved Greataxe Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大斧",
+      "categoryEn": "Greataxe",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_9ebd9053",
+      "textJa": "大斧の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Greataxe Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大斧",
+      "categoryEn": "Greataxe",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_9ac71c2d",
+      "textJa": "大斧の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Greataxe Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大斧",
+      "categoryEn": "Greataxe",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_4e5d83a9",
+      "textJa": "大斧の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Greataxes Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大斧",
+      "categoryEn": "Greataxe",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_f3e295e8",
+      "textJa": "潜在する力から、大斧を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Greataxes",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大斧",
+      "categoryEn": "Greataxe",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_94ecd16f",
+      "textJa": "槌の攻撃力上昇",
+      "textEn": "Improved Hammer Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "槌",
+      "categoryEn": "Hammer",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_838f018f",
+      "textJa": "槌の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Hammer Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "槌",
+      "categoryEn": "Hammer",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_e8cc5bc3",
+      "textJa": "槌の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Hammer Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "槌",
+      "categoryEn": "Hammer",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_da80eee6",
+      "textJa": "槌の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Hammers Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "槌",
+      "categoryEn": "Hammer",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_90b3eb31",
+      "textJa": "潜在する力から、槌を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Hammers",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "槌",
+      "categoryEn": "Hammer",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_d417c157",
+      "textJa": "フレイルの攻撃力上昇",
+      "textEn": "Improved Flail Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "フレイル",
+      "categoryEn": "Flail",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_d0aba223",
+      "textJa": "フレイルの攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Flail Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "フレイル",
+      "categoryEn": "Flail",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_3beba3cb",
+      "textJa": "フレイルの攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Flail Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "フレイル",
+      "categoryEn": "Flail",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_cef5126d",
+      "textJa": "フレイルの武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Flails Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "フレイル",
+      "categoryEn": "Flail",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_93da761f",
+      "textJa": "潜在する力から、フレイルを見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Flails",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "フレイル",
+      "categoryEn": "Flail",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_5c49f162",
+      "textJa": "大槌の攻撃力上昇",
+      "textEn": "Improved Great Hammer Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大槌",
+      "categoryEn": "Great Hammer",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_2ee5b503",
+      "textJa": "大槌の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Great Hammer Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大槌",
+      "categoryEn": "Great Hammer",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_f80164b1",
+      "textJa": "大槌の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Great Hammer Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大槌",
+      "categoryEn": "Great Hammer",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_7e4b40e8",
+      "textJa": "大槌の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Great Hammers Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大槌",
+      "categoryEn": "Great Hammer",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_d81c3b3c",
+      "textJa": "潜在する力から、大槌を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Great Hammers",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大槌",
+      "categoryEn": "Great Hammer",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_ca3ea00e",
+      "textJa": "特大武器の攻撃力上昇",
+      "textEn": "Improved Colossal Weapon Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "特大武器",
+      "categoryEn": "Colossal Weapon",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_bd6c252b",
+      "textJa": "特大武器の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Colossal Weapon Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "特大武器",
+      "categoryEn": "Colossal Weapon",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_124bfc87",
+      "textJa": "特大武器の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Colossal Weapon Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "特大武器",
+      "categoryEn": "Colossal Weapon",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_52431829",
+      "textJa": "特大武器の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Colossal Weapons Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "特大武器",
+      "categoryEn": "Colossal Weapon",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_8b4dffe4",
+      "textJa": "潜在する力から、特大武器を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Colossal Weapons",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "特大武器",
+      "categoryEn": "Colossal Weapon",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_d982af88",
+      "textJa": "槍の攻撃力上昇",
+      "textEn": "Improved Spear Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "槍",
+      "categoryEn": "Spear",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_ecfb6149",
+      "textJa": "槍の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Spear Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "槍",
+      "categoryEn": "Spear",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_f5356400",
+      "textJa": "槍の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Spear Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "槍",
+      "categoryEn": "Spear",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_94c338dd",
+      "textJa": "槍の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Spears Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "槍",
+      "categoryEn": "Spear",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_97930f25",
+      "textJa": "潜在する力から、槍を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Spears",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "槍",
+      "categoryEn": "Spear",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_5658401b",
+      "textJa": "大槍の攻撃力上昇",
+      "textEn": "Improved Great Spear Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大槍",
+      "categoryEn": "Great Spear",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_229ed751",
+      "textJa": "大槍の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Great Spear Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大槍",
+      "categoryEn": "Great Spear",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_0de7776d",
+      "textJa": "大槍の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Great Spear Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大槍",
+      "categoryEn": "Great Spear",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_064779e3",
+      "textJa": "大槍の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Great Spears Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大槍",
+      "categoryEn": "Great Spear",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_6b4cde84",
+      "textJa": "潜在する力から、大槍を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Great Spears",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大槍",
+      "categoryEn": "Great Spear",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_891c8a2f",
+      "textJa": "斧槍の攻撃力上昇",
+      "textEn": "Improved Halberd Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "斧槍",
+      "categoryEn": "Halberd",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_a7390ad2",
+      "textJa": "斧槍の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Halberd Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "斧槍",
+      "categoryEn": "Halberd",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_c1c86156",
+      "textJa": "斧槍の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Halberd Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "斧槍",
+      "categoryEn": "Halberd",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_d8f76973",
+      "textJa": "斧槍の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Halberds Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "斧槍",
+      "categoryEn": "Halberd",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_cb63b720",
+      "textJa": "潜在する力から、斧槍を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Halberds",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "斧槍",
+      "categoryEn": "Halberd",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_56cd54a7",
+      "textJa": "鎌の攻撃力上昇",
+      "textEn": "Improved Reaper Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "鎌",
+      "categoryEn": "Reaper",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_bf727e07",
+      "textJa": "鎌の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Reaper Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "鎌",
+      "categoryEn": "Reaper",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_14e7083a",
+      "textJa": "鎌の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Reaper Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "鎌",
+      "categoryEn": "Reaper",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_066004cb",
+      "textJa": "鎌の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Reapers Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "鎌",
+      "categoryEn": "Reaper",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_8fc38bf1",
+      "textJa": "潜在する力から、鎌を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Reapers",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "鎌",
+      "categoryEn": "Reaper",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_4eb961c6",
+      "textJa": "鞭の攻撃力上昇",
+      "textEn": "Improved Whip Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "鞭",
+      "categoryEn": "Whip",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_939f85fc",
+      "textJa": "鞭の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Whip Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "鞭",
+      "categoryEn": "Whip",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_5650d9ee",
+      "textJa": "鞭の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Whip Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "鞭",
+      "categoryEn": "Whip",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_9c8b9e50",
+      "textJa": "鞭の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Whips Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "鞭",
+      "categoryEn": "Whip",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_ea3c981e",
+      "textJa": "潜在する力から、鞭を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Whips",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "鞭",
+      "categoryEn": "Whip",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_c353a041",
+      "textJa": "拳の攻撃力上昇",
+      "textEn": "Improved Fist Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "拳",
+      "categoryEn": "Fist",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_0bdbcb73",
+      "textJa": "拳の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Fist Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "拳",
+      "categoryEn": "Fist",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_b8e0258c",
+      "textJa": "拳の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Fist Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "拳",
+      "categoryEn": "Fist",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_075e7496",
+      "textJa": "拳の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Fists Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "拳",
+      "categoryEn": "Fist",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_2bf4cd18",
+      "textJa": "潜在する力から、拳を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Fists",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "拳",
+      "categoryEn": "Fist",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_6c9cdfa7",
+      "textJa": "爪の攻撃力上昇",
+      "textEn": "Improved Claw Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "爪",
+      "categoryEn": "Claw",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_9e135e4c",
+      "textJa": "爪の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Claw Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "爪",
+      "categoryEn": "Claw",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_4013ce1f",
+      "textJa": "爪の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Claw Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "爪",
+      "categoryEn": "Claw",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_c90a9395",
+      "textJa": "爪の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Claws Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "爪",
+      "categoryEn": "Claw",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_fff8a86c",
+      "textJa": "潜在する力から、爪を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Claws",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "爪",
+      "categoryEn": "Claw",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_a2a5c5a2",
+      "textJa": "弓の攻撃力上昇",
+      "textEn": "Improved Bow Attack Power",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "弓",
+      "categoryEn": "Bow",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_d7aa5315",
+      "textJa": "弓の攻撃でＨＰ回復",
+      "textEn": "HP Restoration upon Bow Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "弓",
+      "categoryEn": "Bow",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_f352c76b",
+      "textJa": "弓の攻撃でＦＰ回復",
+      "textEn": "FP Restoration upon Bow Attacks",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "弓",
+      "categoryEn": "Bow",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_6e1f706d",
+      "textJa": "弓の武器種を３つ以上装備していると攻撃力上昇",
+      "textEn": "Improved Attack Power with 3+ Bows Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "弓",
+      "categoryEn": "Bow",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_721618a9",
+      "textJa": "潜在する力から、弓を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Bows",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "弓",
+      "categoryEn": "Bow",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_8f8c65d5",
+      "textJa": "潜在する力から、大弓を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Greatbows",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大弓",
+      "categoryEn": "Greatbow",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_107236f8",
+      "textJa": "潜在する力から、クロスボウを見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Crossbows",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "クロスボウ",
+      "categoryEn": "Crossbow",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_b0649fff",
+      "textJa": "潜在する力から、バリスタを見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Ballistas",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "バリスタ",
+      "categoryEn": "Ballista",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_d6329758",
+      "textJa": "小盾の武器種を３つ以上装備していると最大ＨＰ上昇",
+      "textEn": "Max FP Up with 3+ Small Shields Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "小盾",
+      "categoryEn": "Small Shield",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_678d5a5c",
+      "textJa": "潜在する力から、小盾を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Small Shields",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "小盾",
+      "categoryEn": "Small Shield",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_7f429d6a",
+      "textJa": "中盾の武器種を３つ以上装備していると最大ＨＰ上昇",
+      "textEn": "Max FP Up with 3+ Medium Shields Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "中盾",
+      "categoryEn": "Medium Shield",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_c977b03e",
+      "textJa": "潜在する力から、中盾を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Medium Shields",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "中盾",
+      "categoryEn": "Medium Shield",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_ae5ff90d",
+      "textJa": "大盾の武器種を３つ以上装備していると最大ＨＰ上昇",
+      "textEn": "Max FP Up with 3+ Greatshields Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大盾",
+      "categoryEn": "Greatshield",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_d3b7a516",
+      "textJa": "潜在する力から、大盾を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Greatshields",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "大盾",
+      "categoryEn": "Greatshield",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_07949312",
+      "textJa": "杖の武器種を３つ以上装備していると最大ＦＰ上昇",
+      "textEn": "Max FP Up with 3+ Staves Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "杖",
+      "categoryEn": "Glintstone Staff",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_b3044620",
+      "textJa": "潜在する力から、杖を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Staves",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "杖",
+      "categoryEn": "Glintstone Staff",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_95177432",
+      "textJa": "聖印の武器種を３つ以上装備していると最大ＦＰ上昇",
+      "textEn": "Max FP Up with 3+ Sacred Seals Equipped",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "聖印",
+      "categoryEn": "Sacred Seal",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_8dd6a232",
+      "textJa": "潜在する力から、聖印を見つけやすくする",
+      "textEn": "Dormant Power Helps Discover Sacred Seals",
+      "groupJa": "特定武器のみ",
+      "groupEn": "Armament-specific",
+      "categoryJa": "聖印",
+      "categoryEn": "Sacred Seal",
+      "category": "armamentSpecific"
+    },
+    {
+      "id": "e_3d2df2c8",
+      "textJa": "生命力と神秘が低下",
+      "textEn": "Reduced Vigor and Arcane",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（能力値）",
+      "categoryEn": "Demerits (Attributes)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_ce42131d",
+      "textJa": "筋力と知力が低下",
+      "textEn": "Reduced Strength and Intelligence",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（能力値）",
+      "categoryEn": "Demerits (Attributes)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_ab095f6d",
+      "textJa": "技量と信仰が低下",
+      "textEn": "Reduced Dexterity and Faith",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（能力値）",
+      "categoryEn": "Demerits (Attributes)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_105fa2af",
+      "textJa": "知力と技量が低下",
+      "textEn": "Reduced Intelligence and Dexterity",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（能力値）",
+      "categoryEn": "Demerits (Attributes)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_81f99672",
+      "textJa": "信仰と筋力が低下",
+      "textEn": "Reduced Faith and Strength",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（能力値）",
+      "categoryEn": "Demerits (Attributes)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_4a3f32d4",
+      "textJa": "取得ルーン減少",
+      "textEn": "Reduced Rune Acquisition",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（能力値）",
+      "categoryEn": "Demerits (Attributes)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_cf8482aa",
+      "textJa": "ＨＰ持続減少",
+      "textEn": "Continuous HP Loss",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（カット率）",
+      "categoryEn": "Demerits (Damage Negation)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_f3e6a75e",
+      "textJa": "すべての状態異常耐性低下",
+      "textEn": "All Resistances Down",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（カット率）",
+      "categoryEn": "Demerits (Damage Negation)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_4ef2508b",
+      "textJa": "聖杯瓶使用時、カット率低下",
+      "textEn": "Reduced Damage Negation for Flask Usage",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（カット率）",
+      "categoryEn": "Demerits (Damage Negation)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_eff7cf61",
+      "textJa": "回避直後、カット率低下",
+      "textEn": "Reduced Damage Negation After Evading",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（カット率）",
+      "categoryEn": "Demerits (Damage Negation)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_9d606c60",
+      "textJa": "回避連続時、カット率低下",
+      "textEn": "Repeated Evasions Lower Damage Negation",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（カット率）",
+      "categoryEn": "Demerits (Damage Negation)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_cf2c92df",
+      "textJa": "被ダメージ時、毒を蓄積",
+      "textEn": "Taking Damage Causes Poison Buildup",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（カット率）",
+      "categoryEn": "Demerits (Damage Negation)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_a50b8822",
+      "textJa": "被ダメージ時、腐敗を蓄積",
+      "textEn": "Taking Damage Causes Rot Buildup",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（カット率）",
+      "categoryEn": "Demerits (Damage Negation)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_4b0eb95b",
+      "textJa": "被ダメージ時、出血を蓄積",
+      "textEn": "Taking Damage Causes Blood Loss Buildup",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（カット率）",
+      "categoryEn": "Demerits (Damage Negation)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_ae091320",
+      "textJa": "被ダメージ時、冷気を蓄積",
+      "textEn": "Taking Damage Causes Frost Buildup",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（カット率）",
+      "categoryEn": "Demerits (Damage Negation)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_fac7474b",
+      "textJa": "被ダメージ時、睡眠を蓄積",
+      "textEn": "Taking Damage Causes Sleep Buildup",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（カット率）",
+      "categoryEn": "Demerits (Damage Negation)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_1bd5998b",
+      "textJa": "被ダメージ時、発狂を蓄積",
+      "textEn": "Taking Damage Causes Madness Buildup",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（カット率）",
+      "categoryEn": "Demerits (Damage Negation)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_1dd75f26",
+      "textJa": "被ダメージ時、死を蓄積",
+      "textEn": "Taking Damage Causes Death Buildup",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（カット率）",
+      "categoryEn": "Demerits (Damage Negation)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_2a08e944",
+      "textJa": "聖杯瓶の回復量低下",
+      "textEn": "Reduced Flask HP Restoration",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（アクション）",
+      "categoryEn": "Demerits (Action)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_0ebd0d9f",
+      "textJa": "アーツゲージ蓄積鈍化",
+      "textEn": "Ultimate Art Charging Impaired",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（アクション）",
+      "categoryEn": "Demerits (Action)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_c5b484c8",
+      "textJa": "ＨＰ最大未満時、攻撃力低下",
+      "textEn": "Lower Attack When Below Max HP",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（アクション）",
+      "categoryEn": "Demerits (Action)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_a5023f58",
+      "textJa": "ＨＰ最大未満時、毒が蓄積",
+      "textEn": "Poison Buildup When Below Max HP",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（アクション）",
+      "categoryEn": "Demerits (Action)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_9aa33417",
+      "textJa": "ＨＰ最大未満時、腐敗が蓄積",
+      "textEn": "Rot Buildup When Below Max HP",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（アクション）",
+      "categoryEn": "Demerits (Action)",
+      "category": "demerits"
+    },
+    {
+      "id": "e_2e3bf969",
+      "textJa": "瀕死時、最大ＨＰ低下",
+      "textEn": "Near Death Reduces Max HP",
+      "groupJa": "デメリット",
+      "groupEn": "Demerits",
+      "categoryJa": "デメリット（アクション）",
+      "categoryEn": "Demerits (Action)",
+      "category": "demerits"
+    }
+  ]
+}

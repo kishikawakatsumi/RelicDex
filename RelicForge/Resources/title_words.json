@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "sizes": [
+    {
+      "slotCount": 1,
+      "ja": "繊細",
+      "en": "Delicate"
+    },
+    {
+      "slotCount": 2,
+      "ja": "端正",
+      "en": "Polished"
+    },
+    {
+      "slotCount": 3,
+      "ja": "壮大",
+      "en": "Grand"
+    }
+  ],
+  "colors": [
+    {
+      "color": "red",
+      "ja": "燃える",
+      "en": "Burning"
+    },
+    {
+      "color": "blue",
+      "ja": "滴る",
+      "en": "Drizzly"
+    },
+    {
+      "color": "yellow",
+      "ja": "輝く",
+      "en": "Luminous"
+    },
+    {
+      "color": "green",
+      "ja": "静まる",
+      "en": "Tranquil"
+    }
+  ],
+  "depths": [
+    {
+      "depth": "normal",
+      "ja": "景色",
+      "en": "Scene"
+    },
+    {
+      "depth": "deep",
+      "ja": "昏景",
+      "en": "Scene",
+      "enPrefix": "Deep"
+    }
+  ]
+}

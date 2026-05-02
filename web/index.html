@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <!-- viewport-fit=cover: iOS Safari でページが safe area の外側まで広がるように。
+         これで position: fixed; inset: 0 のモーダルバックドロップが status bar /
+         home indicator 領域まで含めてフルスクリーン覆えるようになる。
+         本体 UI は CSS 側で `env(safe-area-inset-*)` を足してノッチ等を避ける。 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>web</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

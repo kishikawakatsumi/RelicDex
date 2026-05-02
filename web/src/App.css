@@ -1,0 +1,737 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  color: #222;
+  background: #f5f5f7;
+
+  /* タイポグラフィスケール (5 段階)。
+     - xs:   バッジ / 微小ラベル
+     - sm:   チップ / ボタン / セカンダリラベル / インライン補足
+     - base: 本文・効果テキストなど読み物 (デフォルト)
+     - lg:   アイコンボタン (× / ★ / ›)
+     - xl:   ページ・モーダルタイトル
+     これ以外の数値を CSS 内で直接書かない。 */
+  --fs-xs: 0.75rem;
+  --fs-sm: 0.875rem;
+  --fs-base: 1rem;
+  --fs-lg: 1.2rem;
+  --fs-xl: 1.4rem;
+}
+
+body {
+  margin: 0;
+}
+
+/* ボタン / 入力要素はブラウザ既定 (~13.3px) ではなく親要素のフォントを継承する。
+   個別に `font-size: var(--fs-...)` を指定したものはそちらが優先される。
+   これで「.row」や「.slot-button」など明示指定のないボタンが本文と同じ
+   1rem で読めるようになり、微小フォントの問題が一掃される。 */
+button, input, select, textarea {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+  /* viewport-fit=cover を有効にしているのでノッチや home indicator の領域まで
+     ページ自体は広がる。本体 UI が隠れないよう、env() で safe area 分を足す。
+     左右は通常の padding を保ち、上下は safe area + ベース padding を加算。 */
+  padding: calc(16px + env(safe-area-inset-top)) calc(16px + env(safe-area-inset-right))
+           calc(16px + env(safe-area-inset-bottom)) calc(16px + env(safe-area-inset-left));
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 16px;
+  margin-bottom: 16px;
+}
+.header-right {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: var(--fs-xl);
+}
+
+.dropzone {
+  position: relative;
+  border: 1.5px dashed #aaa;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background: #fff;
+}
+
+.dropzone input[type="file"] {
+  font-size: var(--fs-sm);
+}
+
+.error {
+  color: #c00;
+  background: #fee;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.empty {
+  color: #888;
+  text-align: center;
+  padding: 48px 0;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  margin: 16px 0 12px;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs button {
+  background: transparent;
+  border: 0;
+  border-bottom: 2px solid transparent;
+  padding: 8px 12px;
+  font-size: var(--fs-base);
+  color: #444;
+  cursor: pointer;
+}
+
+.tabs button.active {
+  border-bottom-color: #0a84ff;
+  color: #0a84ff;
+}
+
+.meta {
+  font-size: var(--fs-sm);
+  color: #888;
+  margin-left: auto;
+}
+
+.relic-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.relic-row {
+  display: flex;
+  gap: 12px;
+  padding: 12px;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  /* 色ドットがタイトルの文字ベースラインに寄り添うよう上端寄せ。 */
+  align-items: flex-start;
+}
+/* RelicRow 内の色ドットはタイトル行の文字に揃えて 4px 下げる (iOS と同じ) */
+.relic-row > .color-dot { margin-top: 4px; }
+
+/* iOS と同じソフトフィルタ表現: 非該当行は dim 表示 (検索ハードフィルタは
+   そもそもリストから消すが、フィルタ chip 系は残して dim する)。 */
+.relic-row.soft-dim { opacity: 0.45; }
+
+.color-badge {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: #fff;
+}
+
+.color-badge.red { background: #d9534f; }
+.color-badge.blue { background: #4285f4; }
+.color-badge.yellow { background: #f0ad4e; }
+.color-badge.green { background: #5cb85c; }
+.color-badge.unknown { background: #999; }
+
+.relic-body {
+  flex: 1;
+  min-width: 0;
+}
+
+.relic-title {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-size: var(--fs-xs);
+  padding: 1px 6px;
+  border-radius: 999px;
+  font-weight: bold;
+}
+
+.badge.unique { background: #efe6f8; color: #7e3fb3; }
+.badge.fav { background: #fff3cd; color: #b07a00; }
+
+/* RelicRow タイトル右端のバッジ。旧 meta 位置で固有 / 深層の識別を 1 つだけ出す。
+   margin-left: auto で flex の右端に押し出す。 */
+.title-badge {
+  font-size: var(--fs-xs);
+  padding: 1px 8px;
+  border-radius: 999px;
+  font-weight: bold;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.title-badge.unique { background: #efe6f8; color: #7e3fb3; }
+.title-badge.depth { background: #e0eaff; color: #2a4d8f; }
+
+.effects {
+  list-style: none;
+  padding: 0;
+  margin: 4px 0 0;
+  font-size: var(--fs-base);
+  color: #444;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+/* iOS Collection の効果行と同じく丸ブレットで 1 行ずつ視認しやすくする。
+   デメリット行はシアン色 + 1 段インデント + 小さめフォントで強調。 */
+.effects li {
+  position: relative;
+  padding-left: 14px;
+}
+.effects li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+}
+.effects li.demerit {
+  color: #1a6fc7;
+  padding-left: 26px;
+  font-size: var(--fs-sm);
+}
+.effects li.demerit::before {
+  left: 14px;
+  background: #1a6fc7;
+}
+
+/* RelicPicker 用: iOS の Collection / BuildRelicPicker と同じ視覚パターン。
+   slotIndex で main + demerit をペアにし、bullet ⚫ で main を区切り、
+   demerit は bullet シアン + インデント + 小さめフォントで段差を作る。 */
+.effect-slots {
+  list-style: none;
+  margin: 4px 0 0;
+  padding: 0;
+}
+.effect-slot { margin-top: 4px; }
+.effect-slot:first-child { margin-top: 0; }
+
+.effect-main, .effect-demerit {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+/* 効果テキストは読み物なので base (1rem)。デメリットは sm。 */
+.effect-main { font-size: var(--fs-base); }
+.effect-demerit {
+  margin-left: 14px;
+  margin-top: 2px;
+  font-size: var(--fs-sm);
+  color: #1a6fc7;
+}
+.effect-main .bullet {
+  flex-shrink: 0;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: rgba(128, 128, 128, 0.55);
+  transform: translateY(-1px);
+}
+.effect-demerit .bullet {
+  flex-shrink: 0;
+  width: 5px; height: 5px;
+  border-radius: 50%;
+  background: #1a6fc7;
+  transform: translateY(-1px);
+}
+
+/* キャラ選択 (.char-tabs) を全幅で上に置き、その下に list + editor の 2 カラム。
+   ワイド画面で chips が左カラムに押し込まれる違和感を解消。 */
+.builds {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.builds-body {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 16px;
+}
+
+/* モバイル / 狭い画面では 2 カラム grid だと editor が潰れるので
+   縦に積み上げる形に切り替える。閾値は iPhone 16 Pro Max の論理幅 (430px) や
+   iPad mini portrait などを目安に 720px。 */
+@media (max-width: 720px) {
+  .builds-body {
+    grid-template-columns: 1fr;
+  }
+  /* dropzone は narrow 画面で右にはみ出ないよう、ファイル名表示を抑える */
+  .dropzone {
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .dropzone input[type="file"] {
+    max-width: 100%;
+  }
+  /* ヘッダー右側のボタン群が増えても折り返せるよう block 寄り表示にする */
+  .header-right {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  /* ビルドエディタの遺物効果サマリ: モバイルでは画面幅が狭いので
+     base (1rem) → sm (0.875rem)、デメリットは sm → xs に少し落とす。 */
+  .summary-list { font-size: var(--fs-sm); }
+  .summary-list li.demerit { font-size: var(--fs-xs); }
+}
+
+/* ビルド 0 件のときの中央寄せ空状態。grid を出さずページ幅で安定して見せる。 */
+.builds-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 64px 0;
+  color: #888;
+  text-align: center;
+}
+
+.build-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.build-list li {
+  padding: 10px 12px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.build-list li.selected {
+  border-color: #0a84ff;
+  background: #eaf4ff;
+}
+
+.build-list .meta { margin-left: 0; }
+
+.build-list-row-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: space-between;
+}
+
+.build-list-row-top strong {
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* iOS の BuildRow と同じく ●●● ●●● の 2 群を少し空けて並べる */
+.build-list-slots {
+  display: inline-flex;
+  gap: 10px;
+  flex: 0 0 auto;
+}
+
+.build-list-row-bottom {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.build-list-row-bottom .meta { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.build-list-row-bottom .updated-at { font-variant-numeric: tabular-nums; flex: 0 0 auto; }
+
+.build-detail {
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  padding: 16px;
+}
+
+.build-detail h2 { margin: 0 0 4px; }
+
+.build-detail h3 {
+  margin: 16px 0 6px;
+  font-size: var(--fs-base);
+  color: #555;
+}
+
+.build-detail ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.build-detail ol li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  background: #f5f5f7;
+  border-radius: 6px;
+}
+
+.slot-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(0, 0, 0, 0.3);
+}
+
+.slot-dot.red { background: #d9534f; }
+.slot-dot.blue { background: #4285f4; }
+.slot-dot.yellow { background: #f0ad4e; }
+.slot-dot.green { background: #5cb85c; }
+.slot-dot.white { background: rgba(180, 180, 180, 0.5); }
+
+/* ===== Phase 2 additions ===== */
+
+/* .header-right はモバイル向けに上の .header 直下で再定義済み (flex-wrap 付き) */
+
+.lang-toggle {
+  display: inline-flex;
+  gap: 0;
+  border: 1px solid rgba(128, 128, 128, 0.3);
+  border-radius: 999px;
+  overflow: hidden;
+}
+.lang-toggle .chip {
+  border-radius: 0;
+  border: none;
+  padding: 4px 10px;
+  font-size: var(--fs-sm);
+}
+
+button.primary {
+  background: #0a84ff; color: #fff; border: 0; padding: 8px 14px;
+  border-radius: 6px; font-size: var(--fs-sm); cursor: pointer;
+}
+button.primary.small { padding: 6px 10px; font-size: var(--fs-sm); }
+button.primary:hover { background: #006edc; }
+
+button.ghost {
+  background: transparent; border: 1px solid #ccc; padding: 6px 12px;
+  border-radius: 6px; cursor: pointer;
+}
+button.ghost.danger { color: #c00; border-color: #f4b8b8; }
+button.ghost.clear { padding: 2px 8px; font-size: var(--fs-lg); line-height: 1; color: #999; border: 0; }
+
+.fav-toggle {
+  background: transparent; border: 0; font-size: var(--fs-lg); cursor: pointer;
+  color: #ccc; align-self: flex-start;
+}
+.fav-toggle.active { color: #f0ad4e; }
+
+/* Filters chips */
+.filters {
+  display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  padding: 10px 0;
+}
+/* モーダル内 (RelicPicker) は親の .modal が padding を持たないため、
+   左右の余白をここで切る。ページ側 .filters は親 .page の padding に依存。 */
+.modal .filters { padding: 10px 16px; }
+.chip {
+  background: #eee; color: #333; border: 0; padding: 6px 12px;
+  border-radius: 999px; font-size: var(--fs-sm); cursor: pointer;
+}
+.chip.active { background: #0a84ff; color: #fff; }
+.search {
+  padding: 6px 10px; border: 1px solid #ccc; border-radius: 6px;
+  font-size: var(--fs-sm); flex: 1; min-width: 160px;
+}
+
+.effect-filter { position: relative; }
+.effect-filter summary {
+  background: #eee; padding: 6px 12px; border-radius: 999px;
+  font-size: var(--fs-sm); cursor: pointer; list-style: none;
+}
+/* 開いたときの強調色は **直接の** summary だけに当てる。子孫の details
+   (effect-group など) の summary まで白文字になって読めなくなるのを防ぐ。 */
+.effect-filter[open] > summary { background: #0a84ff; color: #fff; }
+.effect-options {
+  position: absolute; top: 100%; left: 0; z-index: 10;
+  background: #fff; border: 1px solid #ddd; border-radius: 6px;
+  padding: 8px; max-height: 280px; overflow: auto; min-width: 240px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+.effect-options label {
+  display: flex; align-items: center; gap: 6px;
+  padding: 4px 0; font-size: var(--fs-sm); cursor: pointer;
+}
+
+/* iOS SortSheet 相当: 行タップで選択/昇降切り替え。 */
+.sort-options { min-width: 180px; }
+.sort-row {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; padding: 8px 8px; border: 0; background: transparent;
+  font-size: var(--fs-sm); cursor: pointer; border-radius: 4px;
+}
+.sort-row:hover { background: rgba(0, 0, 0, 0.04); }
+.sort-row.active { color: #0a84ff; font-weight: 600; }
+.sort-arrow { font-size: var(--fs-base); }
+
+/* Character segment selector */
+.char-tabs {
+  display: flex; gap: 6px; flex-wrap: wrap; padding: 6px 0;
+}
+.build-list-header {
+  display: flex; align-items: center; gap: 8px; padding: 6px 0;
+}
+
+/* Build editor */
+.build-editor {
+  background: #fff; border: 1px solid #eee; border-radius: 8px;
+  padding: 16px; display: flex; flex-direction: column; gap: 12px;
+}
+.editor-header { display: flex; justify-content: space-between; align-items: center; }
+.editor-header h2 { margin: 0; }
+
+.field { display: flex; flex-direction: column; gap: 4px; }
+.field > span:first-child { font-size: var(--fs-sm); color: #888; }
+.field input[type="text"] {
+  padding: 8px 10px; border: 1px solid #ccc; border-radius: 6px;
+  font-size: var(--fs-base);
+}
+
+.vessel-row {
+  display: flex; align-items: center; gap: 8px; padding: 12px;
+  background: #f5f5f7; border: 0; border-radius: 8px; cursor: pointer;
+  text-align: left; width: 100%;
+}
+.vessel-info { flex: 1; display: flex; flex-direction: column; gap: 4px; }
+/* 通常 ●●● と深層 ●●● を 14px の隙間で並べる (iOS と同じ表現)。 */
+.vessel-slots { display: flex; align-items: center; gap: 14px; font-size: var(--fs-sm); }
+.slot-dots { display: inline-flex; gap: 3px; }
+.placeholder { color: #999; }
+.chev { color: #aaa; font-size: var(--fs-lg); }
+
+.slots {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.slots li {
+  display: flex; align-items: center; gap: 4px;
+}
+.slots li.disabled { opacity: 0.5; }
+.slot-button {
+  flex: 1; display: flex; align-items: center; gap: 8px;
+  padding: 10px 12px; background: #f5f5f7; border: 0;
+  border-radius: 8px; cursor: pointer; text-align: left;
+}
+.slot-button:disabled { cursor: not-allowed; }
+.slot-relic { flex: 1; display: flex; align-items: center; gap: 6px; }
+.slot-relic.mismatch { opacity: 0.6; }
+.badge.mismatch { background: rgba(0, 0, 0, 0.08); color: #888; }
+
+/* iOS の効果サマリと同じ: 遺物ごとに divider を入れて段落感を出し、
+   デメリット行は 12px インデント + 小さめフォントで視覚的に区別する。 */
+.summary-groups {
+  background: #f5f5f7; border-radius: 8px;
+  padding: 12px;
+  display: flex; flex-direction: column;
+}
+.summary-groups > .summary-list + .summary-list {
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  margin-top: 8px;
+  padding-top: 8px;
+}
+.summary-list {
+  list-style: none; padding: 0; margin: 0;
+  display: flex; flex-direction: column; gap: 4px;
+  font-size: var(--fs-base);
+}
+/* iOS と同じく、メイン効果行は灰色の丸ブレット、デメリット行はインデント
+   + シアンの丸ブレット + 小さめフォント、で 1 行ずつ視認しやすくする。 */
+.summary-list li {
+  position: relative;
+  padding-left: 14px;
+}
+.summary-list li::before {
+  content: "";
+  position: absolute;
+  left: 2px;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.45);
+}
+.summary-list li.demerit {
+  color: #1a6fc7;
+  padding-left: 26px;
+  font-size: var(--fs-sm);
+}
+.summary-list li.demerit::before {
+  left: 14px;
+  background: #1a6fc7;
+}
+
+/* Modal */
+.modal-backdrop {
+  position: fixed; inset: 0; background: rgba(0, 0, 0, 0.4);
+  display: flex; align-items: center; justify-content: center; z-index: 100;
+}
+.modal {
+  background: #fff; border-radius: 12px; max-width: 720px; width: 90%;
+  max-height: 85vh; display: flex; flex-direction: column;
+  overflow: hidden;
+}
+.modal-header {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 12px 16px; border-bottom: 1px solid #eee;
+}
+.modal-header h3 { margin: 0; }
+
+/* iOS BuildRelicPicker のセクションヘッダ相当: 通常 ●●● と深層 ●●● を 14px の
+   隙間で並べ、選択中スロットだけアクセント色のリングで強調する。 */
+.picker-slots-header {
+  display: flex; align-items: center; gap: 14px;
+  padding: 10px 16px; border-bottom: 1px solid #eee;
+  background: #fafafa;
+}
+.picker-slots-group { gap: 6px; }
+.picker-slots-header .slot-dot { width: 14px; height: 14px; }
+.picker-slots-header .slot-dot.selected {
+  outline: 2px solid #0a84ff;
+  outline-offset: 2px;
+}
+
+.picker-list {
+  list-style: none; padding: 8px; margin: 0; overflow: auto; flex: 1;
+}
+.picker-list .row {
+  display: flex; align-items: center; gap: 12px; padding: 14px 14px;
+  background: #fff; border: 1px solid #eee; border-radius: 8px;
+  margin-bottom: 6px; cursor: pointer; text-align: left; width: 100%;
+}
+.picker-list .row:hover { background: #f5f7ff; }
+.picker-list .row.disabled { cursor: not-allowed; }
+.picker-list .row.disabled:hover { background: #fff; }
+/* iOS と同様、ソフトフィルタ (チップ非該当 / 色違い等) は dim 表示で伝える。 */
+.picker-list .row.dim { opacity: 0.45; }
+.badge.equipped { background: rgba(0, 0, 0, 0.12); color: #555; }
+.picker-list .row.remove { color: #c00; }
+.row-body {
+  flex: 1; min-width: 0;
+  /* タイトル ↔ 内部行 (vessel-slots, effect-slots など) を縦に詰めずに
+     一定の余白で離す。 */
+  display: flex; flex-direction: column; gap: 6px;
+}
+/* RelicPicker / VesselPicker の行タイトル。効果テキスト (本文サイズ) との
+   区別をはっきり付けるため、タイトル側を太字 + ややダーク + 1 段大きめにする。 */
+.row-title {
+  display: flex; align-items: center; gap: 6px; flex-wrap: wrap;
+  font-weight: 600;
+  color: #1a1a1a;
+}
+/* 効果テキストはタイトルとの差を出すために色をやや薄める。 */
+.picker-list .row .effect-slots { color: #555; }
+.color-dot {
+  display: inline-block; width: 14px; height: 14px; border-radius: 50%;
+  border: 0.5px solid rgba(0, 0, 0, 0.3); flex-shrink: 0;
+}
+.color-dot.red { background: #d9534f; }
+.color-dot.blue { background: #4285f4; }
+.color-dot.yellow { background: #f0ad4e; }
+.color-dot.green { background: #5cb85c; }
+.color-dot.unknown { background: #999; }
+.check { color: #0a84ff; font-weight: bold; }
+.section-header {
+  font-size: var(--fs-sm); color: #888; padding: 8px 12px 4px; margin: 0;
+}
+.empty-row { padding: 16px; color: #888; }
+
+/* Effect filter sections (Phase 2 改) */
+.effect-group {
+  border-bottom: 1px solid #eee;
+  padding: 4px 0;
+}
+.effect-group:last-child { border-bottom: 0; }
+.effect-group > summary {
+  background: transparent;
+  color: #333;
+  padding: 6px 4px;
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  cursor: pointer;
+  list-style: revert;
+}
+.effect-group[open] > summary { color: #0a84ff; }
+.effect-group-body { padding: 4px 12px 8px; }
+.effect-category { margin-top: 6px; }
+.effect-category h5 {
+  margin: 4px 0;
+  font-size: var(--fs-xs);
+  color: #888;
+  font-weight: 600;
+}
+
+/* Phase 3: 共有モード/URL バナー */
+.banner {
+  padding: 10px 14px;
+  border-radius: 8px;
+  font-size: var(--fs-sm);
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.banner.shared {
+  background: #fff3cd;
+  color: #7a5b00;
+  border: 1px solid #f7d97a;
+}
+.banner.share-url {
+  background: #e7f3ff;
+  color: #0a5fbe;
+  border: 1px solid #b6dbff;
+}
+.banner.share-url a {
+  color: #0a5fbe;
+  word-break: break-all;
+  flex: 1;
+}
+button.ghost.small { padding: 2px 8px; font-size: var(--fs-sm); }

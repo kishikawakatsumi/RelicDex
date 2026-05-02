@@ -1,0 +1,12 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "relicforge",
+  "compatibility_date": "2025-01-01",
+  "pages_build_output_dir": "./dist",
+  "r2_buckets": [
+    {
+      "binding": "SHARES",
+      "bucket_name": "relicforge-shares"
+    }
+  ]
+}

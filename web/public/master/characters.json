@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "characters": [
+    {
+      "id": "wylder",
+      "nameJa": "追跡者",
+      "nameEn": "Wylder",
+      "isForsaken": false
+    },
+    {
+      "id": "guardian",
+      "nameJa": "守護者",
+      "nameEn": "Guardian",
+      "isForsaken": false
+    },
+    {
+      "id": "ironeye",
+      "nameJa": "鉄の目",
+      "nameEn": "Ironeye",
+      "isForsaken": false
+    },
+    {
+      "id": "duchess",
+      "nameJa": "レディ",
+      "nameEn": "Duchess",
+      "isForsaken": false
+    },
+    {
+      "id": "raider",
+      "nameJa": "無頼漢",
+      "nameEn": "Raider",
+      "isForsaken": false
+    },
+    {
+      "id": "revenant",
+      "nameJa": "復讐者",
+      "nameEn": "Revenant",
+      "isForsaken": false
+    },
+    {
+      "id": "recluse",
+      "nameJa": "隠者",
+      "nameEn": "Recluse",
+      "isForsaken": false
+    },
+    {
+      "id": "executor",
+      "nameJa": "執行者",
+      "nameEn": "Executor",
+      "isForsaken": false
+    },
+    {
+      "id": "scholar",
+      "nameJa": "学者",
+      "nameEn": "Scholar",
+      "isForsaken": true
+    },
+    {
+      "id": "undertaker",
+      "nameJa": "葬儀屋",
+      "nameEn": "Undertaker",
+      "isForsaken": true
+    }
+  ]
+}
