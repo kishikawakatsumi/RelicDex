@@ -1,0 +1,590 @@
+		c	重複
+General	Attributes	Increased Maximum HP	
+General	Attributes	Increased Maximum FP	
+General	Attributes	Increased Maximum Stamina	
+General	Attributes	Vigor +1	Yes
+General	Attributes	Vigor +2	Yes
+General	Attributes	Vigor +3	Yes
+General	Attributes	Mind +1	Yes
+General	Attributes	Mind +2	Yes
+General	Attributes	Mind +3	Yes
+General	Attributes	Endurance +1	Yes
+General	Attributes	Endurance +2	Yes
+General	Attributes	Endurance +3	Yes
+General	Attributes	Strength +1	Yes
+General	Attributes	Strength +2	Yes
+General	Attributes	Strength +3	Yes
+General	Attributes	Dexterity +1	Yes
+General	Attributes	Dexterity +2	Yes
+General	Attributes	Dexterity +3	Yes
+General	Attributes	Intelligence +1	Yes
+General	Attributes	Intelligence +2	Yes
+General	Attributes	Intelligence +3	Yes
+General	Attributes	Faith +1	Yes
+General	Attributes	Faith +2	Yes
+General	Attributes	Faith +3	Yes
+General	Attributes	Arcane +1	Yes
+General	Attributes	Arcane +2	Yes
+General	Attributes	Arcane +3	Yes
+General	Attributes	Poise +1	Yes
+General	Attributes	Poise +2	Yes
+General	Attributes	Poise +3	Yes
+General	Attributes	Max FP increased for each Sorcerer's Rise unlocked	
+General	Attributes	Runes and Item Discovery increased for each great enemy defeated at a Fort	
+General	Attributes	Max HP increased for each great enemy defeated at a Great Church	No
+General	Attributes	Max stamina increased for each great enemy defeated at a Great Encampment	No
+General	Attributes	Arcane increased for each great enemy defeated at a Ruin	No
+General	Attack Power	Physical Attack Up	Yes
+General	Attack Power	Physical Attack Up +1	Yes
+General	Attack Power	Physical Attack Up +2	Yes
+General	Attack Power	Physical Attack Up +3	Yes
+General	Attack Power	Physical Attack Up +4	Yes
+General	Attack Power	Improved Affinity Attack Power	Yes
+General	Attack Power	Improved Affinity Attack Power +1	Yes
+General	Attack Power	Improved Affinity Attack Power +2	Yes
+General	Attack Power	Magic Attack Power Up	Yes
+General	Attack Power	Magic Attack Power Up +1	Yes
+General	Attack Power	Magic Attack Power Up +2	Yes
+General	Attack Power	Magic Attack Power Up +3	Yes
+General	Attack Power	Magic Attack Power Up +4	Yes
+General	Attack Power	Fire Attack Power Up	Yes
+General	Attack Power	Fire Attack Power Up +1	Yes
+General	Attack Power	Fire Attack Power Up +2	Yes
+General	Attack Power	Fire Attack Power Up +3	Yes
+General	Attack Power	Fire Attack Power Up +4	Yes
+General	Attack Power	Lightning Attack Power Up	Yes
+General	Attack Power	Lightning Attack Power Up +1	Yes
+General	Attack Power	Lightning Attack Power Up +2	Yes
+General	Attack Power	Lightning Attack Power Up +3	Yes
+General	Attack Power	Lightning Attack Power Up +4	Yes
+General	Attack Power	Holy Attack Power Up	Yes
+General	Attack Power	Holy Attack Power Up +1	Yes
+General	Attack Power	Holy Attack Power Up +2	Yes
+General	Attack Power	Holy Attack Power Up +3	Yes
+General	Attack Power	Holy Attack Power Up +4	Yes
+General	Attack Power	Improved Melee Attack Power	Yes
+General	Attack Power	Improved Skill Attack Power	Yes
+General	Attack Power	Improved Initial Attack Power	Yes
+General	Attack Power	Successive Attacks Boost Attack Power	Self/Other
+General	Attack Power	Improved Critical Hits	Yes
+General	Attack Power	Improved Critical Hits +1	Self/Other
+General	Attack Power	Improved Sorceries	Yes
+General	Attack Power	Improved Sorceries +1	Yes
+General	Attack Power	Improved Sorceries +2	Yes
+General	Attack Power	Improved Incantations	Yes
+General	Attack Power	Improved Incantations +1	Yes
+General	Attack Power	Improved Incantations +2	Yes
+General	Attack Power	Improved Roar & Breath Attacks	Yes
+General	Attack Power	Improved Stance-Breaking when Two-Handing	Yes
+General	Attack Power	Improved Stance-Breaking when Wielding Two Armaments	Yes
+General	Attack Power	Switching Weapons Boosts Attack Power	No
+General	Attack Power	Boosts Attack Power of Added Affinity Attacks	Yes
+General	Attack Power	Taking attacks improves attack power	No
+General	Attack Power	Status Ailment Gauges Slowly Increase Attack Power	TBD
+General	Attack Power	Attack power increased for each evergaol prisoner defeated	No
+General	Attack Power	Attack power increased for each Night Invader defeated	No
+General	Attack Power	Improved Guard Counters	Yes
+General	Attack Power	Improved Guard Counters +1	Yes
+General	Attack Power	Improved Guard Counters +2	Yes
+General	Attack Power	Guard counter is given a boost based on current HP	No
+General	Attack Power	Physical attack power increases after using grease items	Self/Other
+General	Attack Power	Physical attack power increases after using grease items +1	Self/Other
+General	Attack Power	Physical attack power increases after using grease items +2	Self/Other
+General	Attack Power	Improved Throwing Pot Damage	Yes
+General	Attack Power	Improved Throwing Pot Damage +1	Yes
+General	Attack Power	Improved Throwing Pot Damage +2	Yes
+General	Attack Power	Improved Throwing Knife Damage	Yes
+General	Attack Power	Improved Throwing Pot Damage +1	Yes
+General	Attack Power	Improved Throwing Pot Damage +2	Yes
+General	Attack Power	Improved Glintstone and Gravity Stone Damage	Yes
+General	Attack Power	Improved Glintstone and Gravity Stone Damage +1	Yes
+General	Attack Power	Improved Glintstone and Gravity Stone Damage +2	Yes
+General	Attack Power	Improved Perfuming Arts	Yes
+General	Attack Power	Improved Perfuming Arts +1	Yes
+General	Character Skills / Ultimate Arts	Character Skill Cooldown Reduction +1	
+General	Character Skills / Ultimate Arts	Character Skill Cooldown Reduction +2	
+General	Character Skills / Ultimate Arts	Character Skill Cooldown Reduction +3	
+General	Character Skills / Ultimate Arts	Ultimate Art Auto Charge +1	
+General	Character Skills / Ultimate Arts	Ultimate Art Auto Charge +2	
+General	Character Skills / Ultimate Arts	Ultimate Art Auto Charge +3	
+General	Character Skills / Ultimate Arts	Defeating enemies fills more of the Art gauge	Self/Other
+General	Character Skills / Ultimate Arts	Defeating enemies fills more of the Art gauge +1	Self/Other
+General	Character Skills / Ultimate Arts	Critical hits fill more of the Art gauge	Self/Other
+General	Character Skills / Ultimate Arts	Critical hits fill more of the Art gauge +1	Self/Other
+General	Character Skills / Ultimate Arts	Successful guarding fills more of the Art gauge	Self/Other
+General	Character Skills / Ultimate Arts	Successful guarding fills more of the Art gauge +1	Self/Other
+General	Sorceries / Incantations	Extended Spell Duration	
+General	Sorceries / Incantations	Improved Glintblade Sorcery	
+General	Sorceries / Incantations	Improved Stonedigger Sorcery	
+General	Sorceries / Incantations	Improved Carian Sword Sorcery	
+General	Sorceries / Incantations	Improved Invisibility Sorcery	
+General	Sorceries / Incantations	Improved Crystalian Sorcery	
+General	Sorceries / Incantations	Improved Gravity Sorcery	
+General	Sorceries / Incantations	Improved Thorn Sorcery	
+General	Sorceries / Incantations	Improved Fundamentalist Incantations	
+General	Sorceries / Incantations	Improved Dragon Cult Incantations	
+General	Sorceries / Incantations	Improved Giants' Flame Incantations	
+General	Sorceries / Incantations	Improved Godslayer Incantations	
+General	Sorceries / Incantations	Improved Bestial Incantations	
+General	Sorceries / Incantations	Improved Frenzied Flame Incantations	
+General	Sorceries / Incantations	Improved Dragon Communion Incantations	
+General	Damage Negation	Improved Physical Damage Negation	Yes
+General	Damage Negation	Improved Physical Damage Negation +1	Yes
+General	Damage Negation	Improved Physical Damage Negation +2	Yes
+General	Damage Negation	Improved Affinity Damage Negation	Self/Other
+General	Damage Negation	Improved Affinity Damage Negation +1	Yes
+General	Damage Negation	Improved Affinity Damage Negation +2	Yes
+General	Damage Negation	Magic Damage Negation Up	Yes
+General	Damage Negation	Magic Damage Negation Up +1	Yes
+General	Damage Negation	Magic Damage Negation Up +2	Yes
+General	Damage Negation	Fire Damage Negation Up	Yes
+General	Damage Negation	Fire Damage Negation Up +1	Yes
+General	Damage Negation	Fire Damage Negation Up +2	Yes
+General	Damage Negation	Lightning Damage Negation Up	Yes
+General	Damage Negation	Lightning Damage Negation Up +1	Yes
+General	Damage Negation	Lightning Damage Negation Up +2	Yes
+General	Damage Negation	Holy Damage Negation Up	Yes
+General	Damage Negation	Holy Damage Negation Up +1	Yes
+General	Damage Negation	Holy Damage Negation Up +2	Yes
+General	Damage Negation	Improved Physical Damage Negation at Low HP	Yes
+General	Damage Negation	Improved Poise & Damage Negation When Knocked Back by Damage	No
+General	Status Ailment Resistances	Improved Poison Resistance	Yes
+General	Status Ailment Resistances	Improved Poison Resistance +1	Yes
+General	Status Ailment Resistances	Improved Poison Resistance +2	Yes
+General	Status Ailment Resistances	Improved Rot Resistance	Yes
+General	Status Ailment Resistances	Improved Rot Resistance +1	Yes
+General	Status Ailment Resistances	Improved Rot Resistance +2	Yes
+General	Status Ailment Resistances	Improved Blood Loss Resistance	Yes
+General	Status Ailment Resistances	Improved Blood Loss Resistance +1	Yes
+General	Status Ailment Resistances	Improved Blood Loss Resistance +2	Yes
+General	Status Ailment Resistances	Improved Frost Resistance	Yes
+General	Status Ailment Resistances	Improved Frost Resistance +1	Yes
+General	Status Ailment Resistances	Improved Frost Resistance +2	Yes
+General	Status Ailment Resistances	Improved Sleep Resistance	Yes
+General	Status Ailment Resistances	Improved Sleep Resistance +1	Yes
+General	Status Ailment Resistances	Improved Sleep Resistance +2	Yes
+General	Status Ailment Resistances	Improved Madness Resistance	Yes
+General	Status Ailment Resistances	Improved Madness Resistance +1	Yes
+General	Status Ailment Resistances	Improved Madness Resistance +2	Yes
+General	Status Ailment Resistances	Improved Death Blight Resistance	Yes
+General	Status Ailment Resistances	Improved Death Blight Resistance +1	Yes
+General	Status Ailment Resistances	Improved Death Blight Resistance +2	Yes
+General	Restoration	Continuous HP Recovery	
+General	Restoration	"Slowly restore HP for self and nearby allies when HP
+is low"	
+General	Restoration	HP Recovery From Successful Grding	
+General	Restoration	HP Restoration upon Thrusting Counterattack	Self/Other
+General	Restoration	HP Restoration upon Thrusting Counterattack +1	Self/Other
+General	Restoration	Partial HP Restoration upon Post-Damage Attack	Self/TBD
+General	Restoration	Partial HP Restoration upon Post-Damage Attack +1	Self/Custom
+General	Restoration	Partial HP Restoration upon Post-Damage Attack +2	Self/Custom
+General	Restoration	"HP restored when using medicinal boluses, etc."	Self/Other
+General	Restoration	"HP restored when using medicinal boluses, etc. +1"	Yes
+General	Restoration	"HP restored when using medicinal boluses, etc. +2"	Yes
+General	Restoration	Rot in Vicinity Causes Continuous HP Recovery	
+General	Restoration	Improved Flask HP Restoration	
+General	Restoration	Reduced FP Comsumption	Yes
+General	Restoration	Continuous FP Recovery	
+General	Restoration	FP Restoration upon Successive Attacks	
+General	Restoration	Madness Continually Recovers FP	
+General	Restoration	Stamina Recovery upon Landing Attacks	
+General	Restoration	Stamina Recovery upon Landing Attacks +1	
+General	Restoration	Critical Hit Boosts Stamina Recovery Speed	
+General	Restoration	Critical Hit Boosts Stamina Recovery Speed +1	
+General	Actions	Critical Hits Earn Runes	
+General	Actions	Switching Weapons Adds an Affinity Attack	No
+General	Actions	Attacks Inflict Rot when Damage is Taken	
+General	Actions	Draw enemy attention while guarding	No
+General	Actions	"Gesture ""Crossed Legs"" Builds Up Madness"	
+General	Actions	Occasionally Nullify Attacks When Damage Negation is Lowered	
+General	Actions	Attack power up when facing poison-affected enemy	Self/Other
+General	Actions	Attack power up when facing poison-affected enemy +1	Self/Other
+General	Actions	Attack power up when facing poison-affected enemy +2	Self/Other
+General	Actions	"Attack power up when facing rot-affected
+enemy"	Self/Other
+General	Actions	"Attack power up when facing rot-affected
+enemy +1"	Self/Other
+General	Actions	"Attack power up when facing rot-affected
+enemy +2"	Self/Other
+General	Actions	"Attack power up when facing frostbite-affected
+enemy"	Self/Other
+General	Actions	"Attack power up when facing frostbite-affected
+enemy +1"	Self/Other
+General	Actions	"Attack power up when facing frostbite-affected
+enemy +2"	Self/Other
+General	Actions	Poison & Rot in Vicinity Increases Attack Power	Self/Other
+General	Actions	Frostbite in Vicinity Conceals Self	Self/Other
+General	Actions	Sleep in Vicinity Improves Attack Power	Self/Other
+General	Actions	Sleep in Vicinity Improves Attack Power +1	Self/Other
+General	Actions	Madness in Vicinity Improves Attack Power	Self/Other
+General	Actions	Madness in Vicinity Improves Attack Power +1	Self/Other
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Endure at
+start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Quickstep at
+start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Storm Stomp
+at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Determination
+at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Glintblade
+Phalanx at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Gravitas at
+start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Flaming
+Strike at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to
+Eruption at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Thunderbolt
+at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Lightning
+Slash at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Sacred Blade
+at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Prayerful
+Strike at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Poisonous
+Mist at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Poison Moth
+Flight at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Blood Blade
+at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Seppuku at
+start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Chilling Mist
+at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Hoarfrost
+Stomp at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to White
+Shadow's Lure at start of expedition"	
+General	Starting Armaments (Skill)	"Changes compatible armament's skill to Rain of
+Arrows at start of expedition"	
+General	Starting Armaments (Imbue)	Starting armament deals magic damage	
+General	Starting Armaments (Imbue)	Starting armament deals fire damage	
+General	Starting Armaments (Imbue)	Starting armament deals lightning damage	
+General	Starting Armaments (Imbue)	Starting armament deals holy damage	
+General	Starting Armaments (Imbue)	Starting armament inflicts poison	
+General	Starting Armaments (Imbue)	Starting armament inflicts blood loss	
+General	Starting Armaments (Imbue)	Starting armament inflicts frost	
+General	Starting Armaments (Spell)	"Changes compatible armament's sorcery to Magic
+Glintblade at start of expedition"	
+General	Starting Armaments (Spell)	"Changes compatible armament's sorcery to Carian
+Greatsword at start of expedition"	
+General	Starting Armaments (Spell)	"Changes compatible armament's sorcery to Night
+Shard at start of expedition"	
+General	Starting Armaments (Spell)	"Changes compatible armament's sorcery to Magma
+Shot at start of expedition"	
+General	Starting Armaments (Spell)	"Changes compatible armament's sorcery to Briars of
+Punishment at start of expedition"	
+General	Starting Armaments (Spell)	"Changes compatible armament's incantation to
+Wrath of Gold at start of expedition"	
+General	Starting Armaments (Spell)	"Changes compatible armament's incantation to
+Lightning Spear at start of expedition"	
+General	Starting Armaments (Spell)	"Changes compatible armament's incantation to
+O, Flame! at start of expedition"	
+General	Starting Armaments (Spell)	"Changes compatible armament's incantation to
+Beast Claw at start of expedition"	
+General	Starting Armaments (Spell)	"Changes compatible armament's incantation to
+Dragonfire at start of expedition"	
+General	Starting Item	Starlight Shards in possession at start of expedition	
+General	Starting Item	Fire Pots in possession at start of expedition	
+General	Starting Item	Magic Pots in possession at start of expedition	
+General	Starting Item	Lightning Pots in possession at start of expedition	
+General	Starting Item	Holy Pots in possession at start of expedition	
+General	Starting Item	"Poisonbone Darts in possession at start of
+expedition"	
+General	Starting Item	Crystal Darts in possession at start of expedition	
+General	Starting Item	"Throwing Daggers in possession at start of
+expedition"	
+General	Starting Item	"Glintstone Scrap in possession at start of
+expedition"	
+General	Starting Item	"Gravity Stone Chunks in possession at start of
+expedition"	
+General	Starting Item	"Bewitching Branches in possession at start of
+expedition"	
+General	Starting Item	Spark Aromatic in possession at start of expedition	
+General	Starting Item	Poison Spraymist in possession at start of expedition	
+General	Starting Item	Ironjar Aromatic in possession at start of expedition	
+General	Starting Item	Uplifting Aromatic in possession at start of expedition	
+General	Starting Item	Acid Spraymist in possession at start of expedition	
+General	Starting Item	Bloodboil Aromatic in possession at start of expedition	
+General	Starting Item	"Wraith Calling Bell in possession at start of
+expedition"	
+General	Starting Item	Fire Grease in possession at start of expedition	
+General	Starting Item	Magic Grease in possession at start of expedition	
+General	Starting Item	"Lightning Grease in possession at start of
+expedition"	
+General	Starting Item	Holy Grease in possession at start of expedition	
+General	Starting Item	Shield Grease in possession at start of expedition	
+General	Starting Item	Small Pouch in possession at start of expedition	
+General	Starting Item	Stonesword Key in possession at start of expedition	
+General	Starting Item (Tear)	Crimson Crystal Tear in possession at start of expedition	
+General	Starting Item (Tear)	Crimsonspill Crystal Tear in possession at start of expedition	
+General	Starting Item (Tear)	Crimsonburst Crystal Tear in possession at start of expedition	
+General	Starting Item (Tear)	Cerulean Crystal Tear in possession at start of expedition	
+General	Starting Item (Tear)	Greenspill Crystal Tear in possession at start of expedition	
+General	Starting Item (Tear)	Greenburst Crystal Tear in possession at start of expedition	
+General	Starting Item (Tear)	Opaline Hardtear in possession at start of expedition	
+General	Starting Item (Tear)	Sparkled Hardtear in possession at start of expedition	
+General	Starting Item (Tear)	Leaden Hardtear in possession at start of expedition	
+General	Starting Item (Tear)	Magic-Shrouding Cracked Tear in possession at start of expedition	
+General	Starting Item (Tear)	Flame-Shrouding Cracked Tear in possession at start of expedition	
+General	Starting Item (Tear)	Lightning-Shrouding Cracked Tear in possession at start of expedition	
+General	Starting Item (Tear)	Holy-Shrouding Cracked Tear in possession at start of expedition	
+General	Starting Item (Tear)	Stonebarb Cracked Tear in possession at start of expedition	
+General	Starting Item (Tear)	Spiked Cracked Tear in possession at start of expedition	
+General	Starting Item (Tear)	Thorny Cracked Tear in possession at start of expedition	
+General	Starting Item (Tear)	Twiggy Cracked Tear in possession at start of expedition	
+General	Starting Item (Tear)	Windy Crystal Tear in possession at start of expedition	
+General	Starting Item (Tear)	Crimson Bubbletear in possession at start of expedition	
+General	Starting Item (Tear)	Crimsonwhorl Bubbletear in possession at start of expedition	
+General	Starting Item (Tear)	Opaline Bubbletear in possession at start of expedition	
+General	Starting Item (Tear)	Cerulean Hidden Tear in possession at start of expedition	
+General	Starting Item (Tear)	Ruptured Crystal Tear in possession at start of expedition	
+General	Environment	Treasure marked upon map	
+General	Environment	Rune discount for shop purchases while on expedition	
+General	Environment	"Huge rune discount for shop purchases while on
+expedition"	
+General	Team members	Increased rune acquisition for self and allies	
+General	Team members	"Raised stamina recovery for nearby allies, but not
+for self"	
+General	Team members	Flask Also Heals Allies	
+General	Team members	"Defeating enemies restores HP for allies but not for
+self"	
+General	Team members	Items confer effect to all nearby allies	
+Character-specific	Wylder	"[Wylder] Art gauge greatly filled when ability is
+activated"	
+Character-specific	Wylder	"[Wylder] Standard attacks enhanced with fiery
+follow-ups when using Character Skill (greatsword only)"	
+Character-specific	Wylder	[Wylder] +1 additional Character Skill use	
+Character-specific	Wylder	[Wylder] Art activation spreads fire in area	
+Character-specific	Wylder	"[Wylder] Improved Mind, Reduced Vigor"	
+Character-specific	Wylder	"[Wylder] Improved Intelligence and Faith, Reduced Strength and Dexterity"	
+Character-specific	Wylder	[Wylder] Character Skill inflicts Blood Loss	
+Character-specific	Guardian	"[Guardian] Successful guards send out shockwaves while
+ability is active"	
+Character-specific	Guardian	[Guardian] Increased duration for Character Skill	
+Character-specific	Guardian	"[Guardian] Slowly restores nearby allies' HP
+while Art is active"	
+Character-specific	Guardian	"[Guardian] Creates whirlwind when charging halberd
+attacks"	
+Character-specific	Guardian	"[Guardian] Improved Strength and Dexterity, Reduced Vigor"	
+Character-specific	Guardian	"[Guardian] Improved Mind and Faith, Reduced Vigor"	
+Character-specific	Guardian	[Guardian] Character Skill Boosts Damage Negation of Nearby Allies	
+Character-specific	Ironeye	[Ironeye] +1 additional Character Skill use	
+Character-specific	Ironeye	[Ironeye] Art Charge Activation Adds Poison Effect	
+Character-specific	Ironeye	[Ironeye] Boosts thrusting counterattacks after executing Art	
+Character-specific	Ironeye	[Ironeye] Extends duration of weak point	
+Character-specific	Ironeye	"[Ironeye] Improved Vigor and Strength, Reduced Dexterity"	
+Character-specific	Ironeye	"[Ironeye] Improved Arcane, Reduced Dexterity"	
+Character-specific	Ironeye	[Ironeye] Character Skill Inflicts Heavy Poison Damage on Poisoned Enemies	
+Character-specific	Duchess	[Duchess] Improved Character Skill Attack Power	
+Character-specific	Duchess	"[Duchess] Defeating enemies while Art is active ups
+attack power"	
+Character-specific	Duchess	"[Duchess] Reprise events upon nearby enemies by landing the final blow of a chain attack
+with dagger"	
+Character-specific	Duchess	"[Duchess] Become difficult to spot and silence
+footsteps after landing critical from behind"	
+Character-specific	Duchess	"[Duchess] Improved Vigor and Strength, Reduced Mind"	
+Character-specific	Duchess	"[Duchess] Improved Mind and Faith, Reduced Intelligence"	
+Character-specific	Duchess	[Duchess] Use Character Skill for Brief Invulnerability	
+Character-specific	Raider	"[Raider] Damage taken while using Character Skill
+improves attack power and stamina"	
+Character-specific	Raider	[Raider] Duration of Ultimate Art extended	
+Character-specific	Raider	Defeating enemies near Totem Stela restores HP	
+Character-specific	Raider	Improved Pose Near Totem Stela	No
+Character-specific	Raider	"[Raider] Improved Mind and Intelligence, Reduced Vigor and Endurance"	
+Character-specific	Raider	"[Raider] Improved Arcane, Reduced Vigor"	
+Character-specific	Raider	[Raider] Hit With Character Skill to Reduce Enemy Attack Power	
+Character-specific	Revenant	"[Revenant] Trigger ghostflame explosion during
+Ultimate Art activation"	
+Character-specific	Revenant	"[Revenant] Expend own HP to fully heal nearby allies
+when activating Art "	
+Character-specific	Revenant	[Revenant] Strengthens family and allies when Ultimate Art is activated	
+Character-specific	Revenant	[Revenant] Power up while fighting alongside family	
+Character-specific	Revenant	"[Revenant] Improved Vigor and Endurance, Reduced Mind"	
+Character-specific	Revenant	"[Revenant] Improved Strength, Reduced Faith"	
+Character-specific	Revenant	[Revenant] Increased Max FP upon Ability Activation	
+Character-specific	Recluse	[Recluse] Suffer blood loss and increase attack power upon Art activation	
+Character-specific	Recluse	[Recluse] Activating Ultimate Art raises Max HP	
+Character-specific	Recluse	[Recluse] Collecting affinity residue activates Terra Magica 	
+Character-specific	Recluse	"[Recluse] Improved Vigor, Endurance, and Dexterity, Reduced Intelligence and Faith"	
+Character-specific	Recluse	"[Recluse] Improved Intelligence and Faith, Reduced Mind"	
+Character-specific	Recluse	[Recluse] Collect Affinity Residues to Nagate Afinity	
+Character-specific	Executor	[Executor] Character Skill Boosts Attack but Lowers Damage Negation While Attacking	
+Character-specific	Executor	"[Executor] While Character Skill is active,
+unblocking use of cursed sword restores HP"	
+Character-specific	Executor	[Executor] Roaring restores HP while Art is active	
+Character-specific	Executor	"[Executor] Improved Vigor and Endurance, Reduced Arcane"	
+Character-specific	Executor	"[Executor] Improved Dexterity and Arcane, Reduced Vigor"	
+Character-specific	Executor	[Executor] Slowly Restore HP upon Ability Activation	
+Character-specific	Scholar	[Scholar] Prevent slowing of Character Skill progress	
+Character-specific	Scholar	[Scholar] Allies targeted by Character Skill gain boosted attack	
+Character-specific	Scholar	[Scholar] Earn runes for each additional specimen acquired with Character Skill	
+Character-specific	Scholar	[Scholar] Continuous damage inflicted on targets threaded by Ultimate Art	
+Character-specific	Scholar	"[Scholar] Improved Mind, Reduced Vigor"	
+Character-specific	Scholar	"[Scholar] Improved Endurance and Dexterity, Reduced Intelligence and Arcane"	
+Character-specific	Scholar	[Scholar] Reduced FP consumption when using Character Skill on self	
+Character-specific	Undertaker	[Undertaker] Activating Ultimate Art increases attack power	
+Character-specific	Undertaker	[Undertaker] Contact with allies restores their HP while Ultimate Art is activated	
+Character-specific	Undertaker	[Undertaker] Attack power increased by landing the final blow of a chain attack	
+Character-specific	Undertaker	[Undertaker] Physical attacks boosted while assist effect from incantation is active for self	
+Character-specific	Undertaker	"[Undertaker] Improved Dexterity, Reduced Vigor and Faith"	
+Character-specific	Undertaker	"[Undertaker] Improved Mind and Faith, Reduced Strength"	
+Character-specific	Undertaker	[Undertaker] Executing Art readies Character Skill	
+Armament-specific	Dagger	Improved Dagger Attack Power	Yes
+Armament-specific	Dagger	HP Restoration upon Dagger Attacks	
+Armament-specific	Dagger	FP Restoration upon Dagger Attacks	
+Armament-specific	Dagger	Improved Attack Power with 3+ Daggers Equipped	No
+Armament-specific	Dagger	Dormant Power Helps Discover Daggers	
+Armament-specific	Straight Sword	Improved Straight Sword Attack Power	Yes
+Armament-specific	Straight Sword	HP Restoration upon Straight Sword Attacks	
+Armament-specific	Straight Sword	FP Restoration upon Straight Sword Attacks	
+Armament-specific	Straight Sword	Improved Attack Power with 3+ Straight Swords Equipped	No
+Armament-specific	Straight Sword	Dormant Power Helps Discover Straight Swords	
+Armament-specific	Greatsword	Improved Greatsword Attack Power	Yes
+Armament-specific	Greatsword	HP Restoration upon Greatsword Attacks	
+Armament-specific	Greatsword	FP Restoration upon Greatsword Attacks	
+Armament-specific	Greatsword	Improved Attack Power with 3+ Greatswords Equipped	No
+Armament-specific	Greatsword	Dormant Power Helps Discover Greatswords	
+Armament-specific	Colossal Sword	Improved Colossal Sword Attack Power	Yes
+Armament-specific	Colossal Sword	HP Restoration upon Colossal Sword Attacks	
+Armament-specific	Colossal Sword	FP Restoration upon Colossal Sword Attacks	
+Armament-specific	Colossal Sword	Improved Attack Power with 3+ Colossal Swords Equipped	No
+Armament-specific	Colossal Sword	Dormant Power Helps Discover Colossal Swords	
+Armament-specific	Thrusting Sword	Improved Thrusting Sword Attack Power	Yes
+Armament-specific	Thrusting Sword	HP Restoration upon Thrusting Sword Attacks	
+Armament-specific	Thrusting Sword	FP Restoration upon Thrusting Sword Attacks	
+Armament-specific	Thrusting Sword	Improved Attack Power with 3+ Thrusting Swords Equipped	No
+Armament-specific	Thrusting Sword	Dormant Power Helps Discover Thrusting Swords	
+Armament-specific	Heavy Thrusting Sword	Improved Heavy Thrusting Sword Attack Power	Yes
+Armament-specific	Heavy Thrusting Sword	HP Restoration upon Heavy Thrusting Sword Attacks	
+Armament-specific	Heavy Thrusting Sword	FP Restoration upon Heavy Thrusting Sword Attacks	
+Armament-specific	Heavy Thrusting Sword	Improved Attack Power with 3+ Heavy Thrusting Swords Equipped	No
+Armament-specific	Heavy Thrusting Sword	Dormant Power Helps Discover Heavy Thrusting Swords	
+Armament-specific	Curved Sword	Improved Curved Sword Attack Power	Yes
+Armament-specific	Curved Sword	HP Restoration upon Curved Sword Attacks	
+Armament-specific	Curved Sword	FP Restoration upon Curved Sword Attacks	
+Armament-specific	Curved Sword	Improved Attack Power with 3+ Curved Swords Equipped	No
+Armament-specific	Curved Sword	Dormant Power Helps Discover Curved Swords	
+Armament-specific	Curved Greatsword	Improved Curved Greatsword Attack Power	Yes
+Armament-specific	Curved Greatsword	HP Restoration upon Curved Greatsword Attacks	
+Armament-specific	Curved Greatsword	FP Restoration upon Curved Greatsword Attacks	
+Armament-specific	Curved Greatsword	Improved Attack Power with 3+ Curved Greatswords Equipped	No
+Armament-specific	Curved Greatsword	Dormant Power Helps Discover Curved Greatswords	
+Armament-specific	Katana	Improved Katana Attack Power	Yes
+Armament-specific	Katana	HP Restoration upon Katana Attacks	
+Armament-specific	Katana	FP Restoration upon Katana Attacks	
+Armament-specific	Katana	Improved Attack Power with 3+ Katana Equipped	No
+Armament-specific	Katana	Dormant Power Helps Discover Katana	
+Armament-specific	Twinblade	Improved Twinblade Attack Power	Yes
+Armament-specific	Twinblade	HP Restoration upon Twinblade Attacks	
+Armament-specific	Twinblade	FP Restoration upon Twinblade Attacks	
+Armament-specific	Twinblade	Improved Attack Power with 3+ Twinblades Equipped	No
+Armament-specific	Twinblade	Dormant Power Helps Discover Twinblades	
+Armament-specific	Axe	Improved Axe Attack Power	Yes
+Armament-specific	Axe	HP Restoration upon Axe Attacks	
+Armament-specific	Axe	FP Restoration upon Axe Attacks	
+Armament-specific	Axe	Improved Attack Power with 3+ Axes Equipped	No
+Armament-specific	Axe	Dormant Power Helps Discover Axes	
+Armament-specific	Greataxe	Improved Greataxe Attack Power	Yes
+Armament-specific	Greataxe	HP Restoration upon Greataxe Attacks	
+Armament-specific	Greataxe	FP Restoration upon Greataxe Attacks	
+Armament-specific	Greataxe	Improved Attack Power with 3+ Greataxes Equipped	No
+Armament-specific	Greataxe	Dormant Power Helps Discover Greataxes	
+Armament-specific	Hammer	Improved Hammer Attack Power	Yes
+Armament-specific	Hammer	HP Restoration upon Hammer Attacks	
+Armament-specific	Hammer	FP Restoration upon Hammer Attacks	
+Armament-specific	Hammer	Improved Attack Power with 3+ Hammers Equipped	No
+Armament-specific	Hammer	Dormant Power Helps Discover Hammers	
+Armament-specific	Flail	Improved Flail Attack Power	Yes
+Armament-specific	Flail	HP Restoration upon Flail Attacks	
+Armament-specific	Flail	FP Restoration upon Flail Attacks	
+Armament-specific	Flail	Improved Attack Power with 3+ Flails Equipped	No
+Armament-specific	Flail	Dormant Power Helps Discover Flails	
+Armament-specific	Great Hammer	Improved Great Hammer Attack Power	Yes
+Armament-specific	Great Hammer	HP Restoration upon Great Hammer Attacks	
+Armament-specific	Great Hammer	FP Restoration upon Great Hammer Attacks	
+Armament-specific	Great Hammer	Improved Attack Power with 3+ Great Hammers Equipped	No
+Armament-specific	Great Hammer	Dormant Power Helps Discover Great Hammers	
+Armament-specific	Colossal Weapon	Improved Colossal Weapon Attack Power	Yes
+Armament-specific	Colossal Weapon	HP Restoration upon Colossal Weapon Attacks	
+Armament-specific	Colossal Weapon	FP Restoration upon Colossal Weapon Attacks	
+Armament-specific	Colossal Weapon	Improved Attack Power with 3+ Colossal Weapons Equipped	No
+Armament-specific	Colossal Weapon	Dormant Power Helps Discover Colossal Weapons	
+Armament-specific	Spear	Improved Spear Attack Power	Yes
+Armament-specific	Spear	HP Restoration upon Spear Attacks	
+Armament-specific	Spear	FP Restoration upon Spear Attacks	
+Armament-specific	Spear	Improved Attack Power with 3+ Spears Equipped	No
+Armament-specific	Spear	Dormant Power Helps Discover Spears	
+Armament-specific	Great Spear	Improved Great Spear Attack Power	Yes
+Armament-specific	Great Spear	HP Restoration upon Great Spear Attacks	
+Armament-specific	Great Spear	FP Restoration upon Great Spear Attacks	
+Armament-specific	Great Spear	Improved Attack Power with 3+ Great Spears Equipped	No
+Armament-specific	Great Spear	Dormant Power Helps Discover Great Spears	
+Armament-specific	Halberd	Improved Halberd Attack Power	Yes
+Armament-specific	Halberd	HP Restoration upon Halberd Attacks	
+Armament-specific	Halberd	FP Restoration upon Halberd Attacks	
+Armament-specific	Halberd	Improved Attack Power with 3+ Halberds Equipped	No
+Armament-specific	Halberd	Dormant Power Helps Discover Halberds	
+Armament-specific	Reaper	Improved Reaper Attack Power	Yes
+Armament-specific	Reaper	HP Restoration upon Reaper Attacks	
+Armament-specific	Reaper	FP Restoration upon Reaper Attacks	
+Armament-specific	Reaper	Improved Attack Power with 3+ Reapers Equipped	No
+Armament-specific	Reaper	Dormant Power Helps Discover Reapers	
+Armament-specific	Whip	Improved Whip Attack Power	Yes
+Armament-specific	Whip	HP Restoration upon Whip Attacks	
+Armament-specific	Whip	FP Restoration upon Whip Attacks	
+Armament-specific	Whip	Improved Attack Power with 3+ Whips Equipped	No
+Armament-specific	Whip	Dormant Power Helps Discover Whips	
+Armament-specific	Fist	Improved Fist Attack Power	Yes
+Armament-specific	Fist	HP Restoration upon Fist Attacks	
+Armament-specific	Fist	FP Restoration upon Fist Attacks	
+Armament-specific	Fist	Improved Attack Power with 3+ Fists Equipped	No
+Armament-specific	Fist	Dormant Power Helps Discover Fists	
+Armament-specific	Claw	Improved Claw Attack Power	Yes
+Armament-specific	Claw	HP Restoration upon Claw Attacks	
+Armament-specific	Claw	FP Restoration upon Claw Attacks	
+Armament-specific	Claw	Improved Attack Power with 3+ Claws Equipped	No
+Armament-specific	Claw	Dormant Power Helps Discover Claws	
+Armament-specific	Bow	Improved Bow Attack Power	Yes
+Armament-specific	Bow	HP Restoration upon Bow Attacks	
+Armament-specific	Bow	FP Restoration upon Bow Attacks	
+Armament-specific	Bow	Improved Attack Power with 3+ Bows Equipped	No
+Armament-specific	Bow	Dormant Power Helps Discover Bows	
+Armament-specific	Greatbow	Dormant Power Helps Discover Greatbows	
+Armament-specific	Crossbow	Dormant Power Helps Discover Crossbows	
+Armament-specific	Ballista	Dormant Power Helps Discover Ballistas	
+Armament-specific	Small Shield	Max FP Up with 3+ Small Shields Equipped	No
+Armament-specific	Small Shield	Dormant Power Helps Discover Small Shields	
+Armament-specific	Medium Shield	Max FP Up with 3+ Medium Shields Equipped	No
+Armament-specific	Medium Shield	Dormant Power Helps Discover Medium Shields	
+Armament-specific	Greatshield	Max FP Up with 3+ Greatshields Equipped	No
+Armament-specific	Greatshield	Dormant Power Helps Discover Greatshields	
+Armament-specific	Glintstone Staff	Max FP Up with 3+ Staves Equipped	No
+Armament-specific	Glintstone Staff	Dormant Power Helps Discover Staves	
+Armament-specific	Sacred Seal	Max FP Up with 3+ Sacred Seals Equipped	No
+Armament-specific	Sacred Seal	Dormant Power Helps Discover Sacred Seals	
+Demerits	Demerits (Attributes)	Reduced Vigor and Arcane	Yes
+Demerits	Demerits (Attributes)	Reduced Strength and Intelligence	Yes
+Demerits	Demerits (Attributes)	Reduced Dexterity and Faith	Yes
+Demerits	Demerits (Attributes)	Reduced Intelligence and Dexterity	Yes
+Demerits	Demerits (Attributes)	Reduced Faith and Strength	Yes
+Demerits	Demerits (Attributes)	Reduced Rune Acquisition	Yes
+Demerits	Demerits (Damage Negation)	Continuous HP Loss	Yes
+Demerits	Demerits (Damage Negation)	All Resistances Down	Yes
+Demerits	Demerits (Damage Negation)	Reduced Damage Negation for Flask Usage	Yes
+Demerits	Demerits (Damage Negation)	Reduced Damage Negation After Evading	Yes
+Demerits	Demerits (Damage Negation)	Repeated Evasions Lower Damage Negation	Yes
+Demerits	Demerits (Damage Negation)	Taking Damage Causes Poison Buildup	Yes
+Demerits	Demerits (Damage Negation)	Taking Damage Causes Rot Buildup	Yes
+Demerits	Demerits (Damage Negation)	Taking Damage Causes Blood Loss Buildup	Yes
+Demerits	Demerits (Damage Negation)	Taking Damage Causes Frost Buildup	Yes
+Demerits	Demerits (Damage Negation)	Taking Damage Causes Sleep Buildup	Yes
+Demerits	Demerits (Damage Negation)	Taking Damage Causes Madness Buildup	Yes
+Demerits	Demerits (Damage Negation)	Taking Damage Causes Death Buildup	Yes
+Demerits	Demerits (Action)	Reduced Flask HP Restoration	Yes
+Demerits	Demerits (Action)	Ultimate Art Charging Impaired	Yes
+Demerits	Demerits (Action)	Lower Attack When Below Max HP	Yes
+Demerits	Demerits (Action)	Poison Buildup When Below Max HP	Yes
+Demerits	Demerits (Action)	Rot Buildup When Below Max HP	Yes
+Demerits	Demerits (Action)	Near Death Reduces Max HP	Yes

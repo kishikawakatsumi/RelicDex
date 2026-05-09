@@ -190,7 +190,29 @@ function AppInner() {
   return (
     <div className="page">
       <header className="header">
-        <h1>RelicForge</h1>
+        <div className="header-left">
+          <h1>RelicForge</h1>
+          {/* iOS アプリ本体と GitHub への導線。Web 版に来た人が
+              「これ iOS でも使えるの?」「ソースは?」を辿れるように。 */}
+          <nav className="header-links" aria-label="External links">
+            <a
+              href="https://apps.apple.com/us/app/relicforge/id6765926303"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <AppleIcon />
+              <span>App Store</span>
+            </a>
+            <a
+              href="https://github.com/kishikawakatsumi/RelicForge"
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <GitHubIcon />
+              <span>GitHub</span>
+            </a>
+          </nav>
+        </div>
         <div className="header-right">
           <LangToggle lang={lang} onChange={setLang} />
           <FileDrop onFile={handleFile} />
@@ -280,6 +302,24 @@ function AppInner() {
         </p>
       )}
     </div>
+  );
+}
+
+/// App Store ロゴ (Apple マーク)。currentColor で文字色に追従させる。
+function AppleIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+      <path d="M16.7 12.7c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.8-3.5.8-.7 0-1.9-.8-3.1-.8-1.6 0-3.1.9-3.9 2.4-1.7 2.9-.4 7.2 1.2 9.6.8 1.2 1.7 2.5 3 2.4 1.2-.1 1.7-.8 3.1-.8 1.4 0 1.9.8 3.1.8 1.3 0 2.1-1.2 2.9-2.3.9-1.3 1.3-2.6 1.3-2.7-.1 0-2.7-1.1-2.7-4.1zm-2.4-7.5c.6-.8 1-1.9.9-3-1 0-2.1.7-2.8 1.5-.6.7-1.1 1.8-1 2.9 1.1.1 2.2-.6 2.9-1.4z" />
+    </svg>
+  );
+}
+
+/// GitHub Octocat マーク。
+function GitHubIcon() {
+  return (
+    <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor" aria-hidden="true">
+      <path d="M12 .3a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2.2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.9 1.2 1.9 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-6 0-1.3.5-2.4 1.3-3.2-.1-.4-.6-1.6.1-3.2 0 0 1-.3 3.4 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.2.8.8 1.3 1.9 1.3 3.2 0 4.6-2.8 5.6-5.5 5.9.5.4.9 1.2.9 2.4v3.5c0 .3.2.7.8.6A12 12 0 0 0 12 .3" />
+    </svg>
   );
 }
 

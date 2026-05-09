@@ -1,0 +1,141 @@
+	Effect	Type
+Night of the Beast	Stamina Recovery upon Landing Attacks +1	Green
+	Starting armament deals fire damage	
+Night of the Baron	Improved Critical Hits +1	Blue
+	Defeating enemies fills more of the Art gauge	
+	Critical Hit Boosts Stamina Recovery Speed	
+Night of the Wise	Increased Maximum FP	Yellow
+	Starting armament inflicts poison	
+	Poison & Rot in Vicinity Increases Attack Power	
+Night of the Fathom	Increased Maximum HP	Red
+	Flask Also Heals Allies	
+	Items confer effect to all nearby allies	
+Night of the Demon	"Huge rune discount for shop purchases while on
+expedition"	Red
+	"Gesture ""Crossed Legs"" Builds Up Madness"	
+	Madness Continually Recovers FP	
+Night of the Champion	Increased Maximum Stamina	Green
+	Guard counter is given a boost based on current HP	
+	HP Restoration upon Thrusting Counterattack	
+Night of the Miasma	Frostbite in Vicinity Conceals Self	Yellow
+	"Changes compatible armament's skill to Chilling Mist
+at start of expedition"	
+	"Attack power up when facing frostbite-affected
+enemy"	
+Night of the Lord	Switching Weapons Adds an Affinity Attack	Blue
+	Boosts Attack Power of Added Affinity Attacks	
+	Switching Weapons Boosts Attack Power	
+The Will of the Balancers	Improved Melee Attack Power	Blue
+	Improved Skill Attack Power	
+	Continuous FP Recovery	
+The Night of Dregs	Status Ailment Gauges Slowly Increase Attack Power	Red
+	Attacks Inflict Rot when Damage is Taken	
+	Rot in Vicinity Causes Continuous HP Recovery	
+Dark Night of the Beast	Stamina Recovery upon Landing Attacks +1	Yellow
+	Taking attacks improves attack power	
+	Fire Attack Power Up +2	
+Dark Night of the Baron	Improved Critical Hits +1	Red
+	Improved Critical Hits	
+	Critical Hits Earn Runes	
+Dark Night of the Wise	Increased Maximum FP	Green
+	FP Restoration upon Successive Attacks	
+	Max FP increased for each Sorcerer's Rise unlocked	
+Dark Night of the Fathom	Increased Maximum HP	Blue
+	Continuous HP Recovery	
+	"Slowly restore HP for self and nearby allies when HP
+is low"	
+Dark Night of the Demon	Taking attacks improves attack power	Blue
+	"Gesture ""Crossed Legs"" Builds Up Madness"	
+	Madness Continually Recovers FP	
+Dark Night of the Champion	Increased Maximum Stamina	Yellow
+	Boosts Attack Power of Added Affinity Attacks	
+	Defeating enemies fills more of the Art gauge	
+Dark Night of the Miasma	Frostbite in Vicinity Conceals Self	Green
+	Starting armament inflicts frost	
+	Improved Physical Damage Negation	
+The Will of Balance	Improved Melee Attack Power	Red
+	Improved Skill Attack Power	
+	Occasionally Nullify Attacks When Damage Negation is Lowered	
+Old Pocketwatch	FP Restoration upon Successive Attacks	Green
+	Dexterity +3	
+Besmirched Freame	Taking attacks improves attack power	Blue
+	Faith +3	
+Fell Omen Fetish	Switching Weapons Boosts Attack Power	Blue
+	Improved Throwing Knife Damage	
+	Vigor +1	
+Slate Whetstone	"[Wylder] Standard attacks enhanced with fiery
+follow-ups when using Character Skill (greatsword only) "	Red
+	Physical Attack Up	
+The Wylder's Earring	[Wylder] +1 additional Character Skill use	Red
+	[Wylder] Art activation spreads fire in area	
+	Stamina Recovery upon Landing Attacks	
+Silver Tear	"[Wylder] Art gauge greatly filled when ability is
+activated"	Red
+	Arcane +3	
+	Ultimate Art Auto Charge +3	
+Third Volume	"[Guardian] Creates whirlwind when charging halberd
+attacks"	Red
+	HP Restoration upon Halberd Attacks	
+Stone Stake	[Guardian] Increased duration for Character Skill	Red
+	Character Skill Cooldown Reduction +3	
+Witch's Brooch	"[Guardian] Slowly restores nearby allies' HP
+while Art is active"	Blue
+	"[Guardian] Successful guards send out shockwaves while
+ability is active"	
+	Vigor +3	
+Cracked Witch's Brooch	"[Guardian] Slowly restores nearby allies' HP
+while Art is active"	Blue
+	"[Guardian] Successful guards send out shockwaves while
+ability is active"	
+	Vigor +3	
+Cracked Sealing Wax	[Ironeye] Extends duration of weak point	Yellow
+	Critical Hits Earn Runes	
+Edge of Order	[Ironeye] Boosts thrusting counterattacks after executing Art	Yellow
+	Improved Bow Attack Power	
+	Starting armament deals holy damage	
+Golden Dew	[Duchess] Improved Character Skill Attack Power	Yellow
+	Boosts Attack Power of Added Affinity Attacks	
+Crown Medal	"[Duchess] Reprise events upon nearby enemies by landing the final blow of a chain attack
+with dagger"	Green
+	Improved Dagger Attack Power	
+Blessed Iron Coin	"[Duchess] Defeating enemies while Art is active ups
+attack power"	Green
+	Continuous HP Recovery	
+	Vigor +3	
+Torn Braided Cord	"[Raider] Damage taken while using Character Skill
+improves attack power and stamina"	Blue
+	Strength +3	
+Black Claw Necklace	Defeating enemies near Totem Stela restores HP	Yellow
+	Defeating enemies fills more of the Art gauge	
+	Poise +3	
+Small Makeup Brush	[Revenant] Power up while fighting alongside family	Blue
+	Increased rune acquisition for self and allies	
+Old Portrait	"[Revenant] Trigger ghostflame explosion during
+Ultimate Art activation"	Blue
+	"[Revenant] Expend own HP to fully heal nearby allies
+when activating Art "	
+	Defeating enemies fills more of the Art gauge	
+Vestige of Night	[Recluse] Collecting affinity residue activates Terra Magica 	Green
+	Magic Attack Power Up +2	
+Bone-Like Stone	[Recluse] Activating Ultimate Art raises Max HP	Green
+	[Recluse] Suffer blood loss and increase attack power upon Art activation	
+	Intelligence +3	
+Blessed Flowers	"[Executor] While Character Skill is active,
+unblocking use of cursed sword restores HP"	Green
+	Dexterity +3	
+Golden Sprout	[Executor] Roaring restores HP while Art is active	Red
+	HP Recovery From Successful Grding	
+	"Slowly restore HP for self and nearby allies when HP
+is low"	
+Cleansing Tear	[Scholar] Continuous damage inflicted on targets threaded by Ultimate Art	Red
+	Defeating enemies fills more of the Art gauge	
+	Improved Affinity Damage Negation	
+"Note ""My Dear Successor"""	[Scholar] Prevent slowing of Character Skill progress	Yellow
+	[Scholar] Allies targeted by Character Skill gain boosted attack	
+	Character Skill Cooldown Reduction +3	
+Leather Monocle Case	[Undertaker] Physical attacks boosted while assist effect from incantation is active for self	Blue
+	Extended Spell Duration	
+	Physical Attack Up +2	
+Glass Necklace	[Undertaker] Activating Ultimate Art increases attack power	Green
+	Successive Attacks Boost Attack Power	
+	Ultimate Art Auto Charge +3	

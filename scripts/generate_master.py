@@ -2,11 +2,11 @@
 """
 公式に近いTSVデータから、アプリで扱う2つのマスターJSONを生成する。
 
-入力:
-  /Users/katsumi/Documents/Relics/遺物-遺物.tsv         JP一般遺物効果一覧
-  /Users/katsumi/Documents/Relics/Relics-Relics.tsv     EN（グループ/カテゴリ翻訳のみ）
-  /Users/katsumi/Documents/Relics/固有遺物-Table 1.tsv  JP固有遺物
-  /Users/katsumi/Documents/Relics/Unique Relics-Table 1.tsv  EN固有遺物（未翻訳）
+入力（このスクリプトと同じディレクトリに置く）:
+  遺物.tsv          JP一般遺物効果一覧
+  Relics.tsv        EN（グループ/カテゴリ翻訳のみ）
+  固有遺物.tsv      JP固有遺物
+  Unique Relics.tsv EN固有遺物（未翻訳）
 
 出力:
   RelicForge/Resources/effects.json
@@ -20,11 +20,11 @@ import re
 import unicodedata
 from pathlib import Path
 
-ROOT = Path("/Users/katsumi/Documents/Relics")
-JP_FX = ROOT / "遺物-遺物.tsv"
-EN_FX = ROOT / "Relics-Relics.tsv"
-JP_UQ = ROOT / "固有遺物-Table 1.tsv"
-EN_UQ = ROOT / "Unique Relics-Table 1.tsv"
+ROOT = Path(__file__).resolve().parent
+JP_FX = ROOT / "遺物.tsv"
+EN_FX = ROOT / "Relics.tsv"
+JP_UQ = ROOT / "固有遺物.tsv"
+EN_UQ = ROOT / "Unique Relics.tsv"
 
 OUT_DIR = Path(__file__).resolve().parent.parent / "RelicForge/Resources"
 WEB_OUT_DIR = Path(__file__).resolve().parent.parent / "web/public/master"
