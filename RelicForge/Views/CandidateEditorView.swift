@@ -50,7 +50,6 @@ struct CandidateEditorView: View {
     self.input = input
     self.onSave = onSave
     self.onCancel = onCancel
-    self._edits = State(initialValue: input.initialEdits)
     self._isSelected = State(initialValue: input.initialIsSelected)
     self._color = State(initialValue: input.recognized.color)
     // recognized.slotCount が 0 (= parse 失敗) のときは安全策で 2 (端正) を default
@@ -58,6 +57,12 @@ struct CandidateEditorView: View {
     self._slotCount = State(initialValue: initSlot)
     self._depth = State(initialValue: input.recognized.depth == .unknown ? .normal : input.recognized.depth)
     self._uniqueId = State(initialValue: input.recognized.uniqueMatch?.relic.id)
+    // OCR で検出された効果数が title の slotCount より少ない場合、ここで
+    // edits をスロット数に合わせてパディングしないと「未検出スロットを編集
+    // しても保存先が無くて反映されない」現象が起きる。
+    var e = input.initialEdits
+    e.resize(to: initSlot)
+    self._edits = State(initialValue: e)
   }
 
   struct PickerTarget: Identifiable {
@@ -229,20 +234,21 @@ struct CandidateEditorView: View {
         .font(.caption.weight(.semibold))
         .foregroundStyle(.secondary)
       HStack(spacing: 8) {
+        // value (= 選択後のトリガー表示) は短い形、メニュー選択肢は補足付きの長い形。
         attributeMenu(label: "Size", value: AttributeLabel.size(slotCount: slotCount, ja: ja)) {
-          Button { slotCount = 1 } label: { Text(AttributeLabel.size(slotCount: 1, ja: ja)) }
-          Button { slotCount = 2 } label: { Text(AttributeLabel.size(slotCount: 2, ja: ja)) }
-          Button { slotCount = 3 } label: { Text(AttributeLabel.size(slotCount: 3, ja: ja)) }
+          Button { slotCount = 1 } label: { Text(AttributeLabel.sizeWithHint(slotCount: 1, ja: ja)) }
+          Button { slotCount = 2 } label: { Text(AttributeLabel.sizeWithHint(slotCount: 2, ja: ja)) }
+          Button { slotCount = 3 } label: { Text(AttributeLabel.sizeWithHint(slotCount: 3, ja: ja)) }
         }
         attributeMenu(label: "Color", value: AttributeLabel.color(color, ja: ja), swatch: color.swatch) {
-          Button { color = .red } label: { Text(AttributeLabel.color(.red, ja: ja)) }
-          Button { color = .blue } label: { Text(AttributeLabel.color(.blue, ja: ja)) }
-          Button { color = .yellow } label: { Text(AttributeLabel.color(.yellow, ja: ja)) }
-          Button { color = .green } label: { Text(AttributeLabel.color(.green, ja: ja)) }
+          Button { color = .red } label: { Text(AttributeLabel.colorWithHint(.red, ja: ja)) }
+          Button { color = .blue } label: { Text(AttributeLabel.colorWithHint(.blue, ja: ja)) }
+          Button { color = .yellow } label: { Text(AttributeLabel.colorWithHint(.yellow, ja: ja)) }
+          Button { color = .green } label: { Text(AttributeLabel.colorWithHint(.green, ja: ja)) }
         }
         attributeMenu(label: "Depth", value: AttributeLabel.depth(depth, ja: ja)) {
-          Button { depth = .normal } label: { Text(AttributeLabel.depth(.normal, ja: ja)) }
-          Button { depth = .deep } label: { Text(AttributeLabel.depth(.deep, ja: ja)) }
+          Button { depth = .normal } label: { Text(AttributeLabel.depthWithHint(.normal, ja: ja)) }
+          Button { depth = .deep } label: { Text(AttributeLabel.depthWithHint(.deep, ja: ja)) }
         }
       }
     }
@@ -289,10 +295,7 @@ struct CandidateEditorView: View {
 
   /// slotCount に合わせて edits.mains/demerits の長さを揃える。
   private func resizeEditsIfNeeded() {
-    while edits.mains.count < slotCount { edits.mains.append(nil) }
-    while edits.mains.count > slotCount { edits.mains.removeLast() }
-    while edits.demerits.count < slotCount { edits.demerits.append(nil) }
-    while edits.demerits.count > slotCount { edits.demerits.removeLast() }
+    edits.resize(to: slotCount)
   }
 
   @ViewBuilder

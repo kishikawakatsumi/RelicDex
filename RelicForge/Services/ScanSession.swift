@@ -28,12 +28,15 @@ struct ScanCandidate: Identifiable {
     self.recognized = recognized
     self.addedAt = .now
     self.isSelected = true
-    self.edits = CandidateEdits(from: recognized)
     self.color = recognized.color
     // recognized.slotCount が 0 (= parse 失敗) のときは安全策で 2 (端正) を default
-    self.slotCount = max(1, min(3, recognized.slotCount == 0 ? 2 : recognized.slotCount))
+    let initSlot = max(1, min(3, recognized.slotCount == 0 ? 2 : recognized.slotCount))
+    self.slotCount = initSlot
     self.depth = recognized.depth == .unknown ? .normal : recognized.depth
     self.uniqueId = recognized.uniqueMatch?.relic.id
+    var e = CandidateEdits(from: recognized)
+    e.resize(to: initSlot)
+    self.edits = e
   }
 
   /// 編集を反映した最終的なスロット配列（保存・表示時に使う）。
@@ -63,6 +66,17 @@ struct CandidateEdits: Equatable {
     let resolved = recognized.resolvedSlots
     self.mains = resolved.map { $0.main }
     self.demerits = resolved.map { $0.demerit }
+  }
+
+  /// `n` 件分にサイズを揃える (不足は nil で埋め、過剰は末尾を切り捨て)。
+  /// OCR で検出された効果数と title の slotCount が食い違ったまま編集画面に
+  /// 入ると「N 番目のスロットを編集しても保存先が存在せず無視される」現象が
+  /// 起きるので、init 直後 / slotCount 変更後に必ずこれを呼ぶ。
+  mutating func resize(to n: Int) {
+    while mains.count < n { mains.append(nil) }
+    while mains.count > n { mains.removeLast() }
+    while demerits.count < n { demerits.append(nil) }
+    while demerits.count > n { demerits.removeLast() }
   }
 
   func apply() -> [ResolvedSlot] {

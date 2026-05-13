@@ -65,11 +65,15 @@ struct VideoIngestView: View {
       self.frameImage = frameImage
       self.ocrImage = ocrImage
       self.include = include
-      self.edits = CandidateEdits(from: recognized)
       self.color = recognized.color
       self.slotCount = recognized.slotCount
       self.depth = recognized.depth
       self.uniqueId = recognized.uniqueMatch?.relic.id
+      // OCR で取れた効果数が title の slotCount に足りない場合に備えて、
+      // edits を slotCount に揃えてから保持する (詳細は CandidateEdits.resize)。
+      var e = CandidateEdits(from: recognized)
+      e.resize(to: max(1, recognized.slotCount))
+      self.edits = e
     }
 
     var finalSlots: [ResolvedSlot] {

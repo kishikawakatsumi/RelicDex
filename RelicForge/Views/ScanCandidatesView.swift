@@ -262,24 +262,25 @@ private struct CandidateRow: View {
   private var titleAttributesRow: some View {
     let ja = candidate.recognized.isJapaneseScan
     return HStack(spacing: 8) {
+      // value (= 選択後のトリガー表示) は短い形、選択肢は補足付き。
       attributeMenu(label: "Size",
                     value: AttributeLabel.size(slotCount: candidate.slotCount, ja: ja)) {
-        Button { setSlotCount(1) } label: { Text(AttributeLabel.size(slotCount: 1, ja: ja)) }
-        Button { setSlotCount(2) } label: { Text(AttributeLabel.size(slotCount: 2, ja: ja)) }
-        Button { setSlotCount(3) } label: { Text(AttributeLabel.size(slotCount: 3, ja: ja)) }
+        Button { setSlotCount(1) } label: { Text(AttributeLabel.sizeWithHint(slotCount: 1, ja: ja)) }
+        Button { setSlotCount(2) } label: { Text(AttributeLabel.sizeWithHint(slotCount: 2, ja: ja)) }
+        Button { setSlotCount(3) } label: { Text(AttributeLabel.sizeWithHint(slotCount: 3, ja: ja)) }
       }
       attributeMenu(label: "Color",
                     value: AttributeLabel.color(candidate.color, ja: ja),
                     swatch: candidate.color.swatch) {
-        Button { candidate.color = .red } label: { Text(AttributeLabel.color(.red, ja: ja)) }
-        Button { candidate.color = .blue } label: { Text(AttributeLabel.color(.blue, ja: ja)) }
-        Button { candidate.color = .yellow } label: { Text(AttributeLabel.color(.yellow, ja: ja)) }
-        Button { candidate.color = .green } label: { Text(AttributeLabel.color(.green, ja: ja)) }
+        Button { candidate.color = .red } label: { Text(AttributeLabel.colorWithHint(.red, ja: ja)) }
+        Button { candidate.color = .blue } label: { Text(AttributeLabel.colorWithHint(.blue, ja: ja)) }
+        Button { candidate.color = .yellow } label: { Text(AttributeLabel.colorWithHint(.yellow, ja: ja)) }
+        Button { candidate.color = .green } label: { Text(AttributeLabel.colorWithHint(.green, ja: ja)) }
       }
       attributeMenu(label: "Depth",
                     value: AttributeLabel.depth(candidate.depth, ja: ja)) {
-        Button { candidate.depth = .normal } label: { Text(AttributeLabel.depth(.normal, ja: ja)) }
-        Button { candidate.depth = .deep } label: { Text(AttributeLabel.depth(.deep, ja: ja)) }
+        Button { candidate.depth = .normal } label: { Text(AttributeLabel.depthWithHint(.normal, ja: ja)) }
+        Button { candidate.depth = .deep } label: { Text(AttributeLabel.depthWithHint(.deep, ja: ja)) }
       }
     }
   }
@@ -287,10 +288,7 @@ private struct CandidateRow: View {
   /// slotCount の上書きに合わせて edits.mains/demerits の長さを揃える。
   private func setSlotCount(_ n: Int) {
     candidate.slotCount = n
-    while candidate.edits.mains.count < n { candidate.edits.mains.append(nil) }
-    while candidate.edits.mains.count > n { candidate.edits.mains.removeLast() }
-    while candidate.edits.demerits.count < n { candidate.edits.demerits.append(nil) }
-    while candidate.edits.demerits.count > n { candidate.edits.demerits.removeLast() }
+    candidate.edits.resize(to: n)
   }
 
   /// 属性 1 項目分の Menu ボタン (CandidateEditorView と同じ見た目)。
