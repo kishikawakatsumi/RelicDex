@@ -24,6 +24,7 @@ struct CollectionView: View {
   @State private var sortConfig = RelicSortConfig(option: .registered, ascending: false)
   @State private var showingCapture = false
   @State private var showingManualEntry = false
+  @State private var showingVideoIngest = false
   @State private var favoritesOnly = false
   /// 使用中/お気に入りの遺物の削除を試みた時の警告 alert
   @State private var inUseAlertMessage: String?
@@ -89,6 +90,11 @@ struct CollectionView: View {
             } label: {
               Label("Add Manually", systemImage: "rectangle.and.pencil.and.ellipsis")
             }
+            Button {
+              showingVideoIngest = true
+            } label: {
+              Label("Add from Video", systemImage: "film.stack")
+            }
           } label: {
             Image(systemName: "plus")
           }
@@ -114,6 +120,9 @@ struct CollectionView: View {
       }
       .sheet(isPresented: $showingManualEntry) {
         ManualRelicEntryView()
+      }
+      .sheet(isPresented: $showingVideoIngest) {
+        VideoIngestView()
       }
       // Universal Link で /s/{key} が開かれたら自動でインポート画面を開く
       .sheet(item: incomingShareBinding) { incoming in

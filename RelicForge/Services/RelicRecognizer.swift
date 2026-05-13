@@ -175,10 +175,13 @@ final class RelicRecognizer {
   func recognize(
     image: UIImage,
     mode: OCRMode = .accurate,
-    languages: [String] = ["ja-JP", "en-US"]
+    languages: [String] = ["ja-JP", "en-US"],
+    lineFilterROI: CGRect? = nil
   ) async throws -> RecognizedRelic {
     let normalized = image.normalizedOrientation()
-    return try await recognize(image: normalized, ocrTarget: normalized, mode: mode, languages: languages)
+    return try await recognize(image: normalized, ocrTarget: normalized,
+                               mode: mode, languages: languages,
+                               lineFilterROI: lineFilterROI)
   }
 
   // MARK: - 内部実装
@@ -187,9 +190,24 @@ final class RelicRecognizer {
     image: UIImage,
     ocrTarget: UIImage,
     mode: OCRMode,
-    languages: [String]
+    languages: [String],
+    lineFilterROI: CGRect? = nil
   ) async throws -> RecognizedRelic {
-    let lines = try await ocr.recognizeLines(in: ocrTarget, mode: mode, languages: languages)
+    let allLines = try await ocr.recognizeLines(in: ocrTarget, mode: mode, languages: languages)
+    // ROI フィルタ: bounding box の中心が ROI 内にある行だけ残す。
+    // ROI は画像座標 (左上原点) で渡される。OCRLine の boundingBox は Vision 座標
+    // (左下原点) なので、Y を flip して比較する。
+    let lines: [OCRLine]
+    if let roi = lineFilterROI {
+      let visionROI = CGRect(x: roi.minX, y: 1.0 - roi.maxY,
+                             width: roi.width, height: roi.height)
+      lines = allLines.filter { line in
+        let center = CGPoint(x: line.boundingBox.midX, y: line.boundingBox.midY)
+        return visionROI.contains(center)
+      }
+    } else {
+      lines = allLines
+    }
     let topToBottom = lines.sorted { $0.boundingBox.maxY > $1.boundingBox.maxY }
 
     // 1） タイトル抽出 → depth が決まる
@@ -273,17 +291,16 @@ final class RelicRecognizer {
       }
 
       // 1〜3行の組み合わせを試す。
-      // - 効果はゲーム画面で複数行に折り返されるケースがあるため、長い k に小さな
-      //   ボーナス（+0.05/行） を加えて選びやすくする。
-      // - 各行の OCR は Vision の上位3候補を持つので、行内の代替テキスト
-      //   （例: 「刀」と誤読された行に「鞭」候補） も含めて全組み合わせを試す。
-      //   これにより Vision の漢字誤認識をマスター照合段階で補正できる。
+      // - 効果はゲーム画面で複数行に折り返されるケースがあるため、k=2/3 で
+      //   **同じ効果** の raw score が高くなるなら採用する (折り返し効果の救済)。
+      // - **違う効果** が長い k で勝つ場合は偶然のマッチである可能性が高いので
+      //   閾値 (+0.10) を要求する (= 例: 隣の独立 effect が結合で混ざったケース)。
+      // - 各行の OCR は Vision の上位3候補を持つので、行内の代替テキストも試す。
       var bestK = 0
       var bestRawScore = 0.0
-      var bestWeighted = 0.0
       var bestCands: [EffectMatch] = []
       let maxLookahead = min(3, lines.count - i)
-      let lengthBonus = 0.05
+      let differentEffectThreshold = 0.10
       let maxCombinationsPerK = 12
 
       for k in 1...maxLookahead {
@@ -327,9 +344,22 @@ final class RelicRecognizer {
         let merged = pool.values.sorted { $0.score > $1.score }
         guard let top = merged.first else { continue }
         let raw = top.score
-        let weighted = raw + Double(k - 1) * lengthBonus
-        if weighted > bestWeighted {
-          bestWeighted = weighted
+
+        // k > 1 の採用基準:
+        //   - 直前の bestCands (これまで見つかった top 効果) と同じ効果なら raw が
+        //     strict に高い時のみ更新 (= 折り返し効果がフルテキストでスコアアップしたケース)
+        //   - 違う効果なら、偶然のマッチを排除するために +0.10 の差を要求する
+        //     (ex: 0643 で k=3 が "持久カ+1睡眠耐性上昇" を結合して別 effect が
+        //      0.600 を出すケース → k=1 の 0.591 を超えても 0.10 差なし → 不採用)
+        let isImprovement: Bool
+        if bestK == 0 {
+          isImprovement = true
+        } else if let cur = bestCands.first?.effect, top.effect.id == cur.id {
+          isImprovement = raw > bestRawScore
+        } else {
+          isImprovement = raw >= bestRawScore + differentEffectThreshold
+        }
+        if isImprovement {
           bestRawScore = raw
           bestK = k
           // ピッカーで「鞭」を救えるよう、上位5件まで候補として残す

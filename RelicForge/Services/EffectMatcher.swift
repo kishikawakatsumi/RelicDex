@@ -83,6 +83,18 @@ final class EffectMatcher {
     result = result.replacingOccurrences(of: "\\s+", with: "", options: .regularExpression)
     result = result.applyingTransform(.fullwidthToHalfwidth, reverse: false) ?? result
     result = result.applyingTransform(.hiraganaToKatakana, reverse: false) ?? result
+    // 数値 / 符号の直前にある単独 カ (カタカナ) を 力 (漢字) に置換する。
+    // ゲームのフォントで 力 と カ がほぼ同じ字形のため OCR が頻繁に取り違える。
+    // 例: "持久カ+1" → "持久力+1" / "筋カ+2" → "筋力+2"
+    // 「カット率」「カウンター」など正当な カ には影響しない (次が +/-/数字でないため)。
+    //
+    // 注: 上の `.fullwidthToHalfwidth` で全角カナが半角カナ ｶ に変換されているので
+    // 全角 カ と半角 ｶ の両方を含む文字クラスでマッチさせる必要がある。
+    result = result.replacingOccurrences(
+      of: "[カｶ](?=[0-9+\\-])",
+      with: "力",
+      options: .regularExpression
+    )
     return result
   }
 
