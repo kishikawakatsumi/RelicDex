@@ -19,7 +19,17 @@ struct EffectPickerView: View {
   let mode: Mode
   /// nil で「デメリットなし」を表現できる（mode == .demerit のみ有効）
   let allowNil: Bool
+  /// `true` を渡すと、UI 言語に関わらず効果テキストを日本語で表示する。
+  /// スキャン取り込みフローでタイトルが日本語のときに、効果も日本語で揃えて
+  /// 「読んだ画面」と一致させるため。`nil` のときは UI ロケールに従う。
+  var prefersJapanese: Bool? = nil
   let onPick: (RelicEffect?) -> Void
+
+  /// 実際にテキスト表示で使う言語フラグ。
+  private var ja: Bool {
+    if let p = prefersJapanese { return p }
+    return Locale.current.language.languageCode?.identifier == "ja"
+  }
 
   @Environment(\.dismiss) private var dismiss
   @State private var search: String = ""
@@ -75,6 +85,7 @@ struct EffectPickerView: View {
                     category: cat,
                     effects: effects(in: cat),
                     currentEffect: currentEffect,
+                    prefersJapanese: prefersJapanese,
                     onPick: { effect in
                       onPick(effect)
                       dismiss()
@@ -163,7 +174,7 @@ struct EffectPickerView: View {
   @ViewBuilder
   private func candidateRow(_ effect: RelicEffect, scoreSuffix: String?) -> some View {
     HStack(alignment: .firstTextBaseline, spacing: 8) {
-      Text(effect.localizedText)
+      Text(effect.text(forJapanese: ja))
         .font(.body)
         .foregroundStyle(.primary)
       Spacer()
@@ -185,10 +196,10 @@ struct EffectPickerView: View {
   private func searchResultRow(_ effect: RelicEffect) -> some View {
     HStack(alignment: .top, spacing: 8) {
       VStack(alignment: .leading, spacing: 2) {
-        Text(effect.localizedText)
+        Text(effect.text(forJapanese: ja))
           .font(.body)
           .foregroundStyle(.primary)
-        Text("\(effect.localizedGroupName) / \(effect.localizedCategoryName)")
+        Text("\(effect.groupName(forJapanese: ja)) / \(effect.categoryName(forJapanese: ja))")
           .font(.caption2)
           .foregroundStyle(.secondary)
       }
@@ -207,7 +218,14 @@ struct EffectPickerCategoryView: View {
   let category: EffectFilterCategory
   let effects: [RelicEffect]
   let currentEffect: RelicEffect?
+  /// 親 picker から伝播する「日本語表示を強制するか」フラグ。
+  var prefersJapanese: Bool? = nil
   let onPick: (RelicEffect) -> Void
+
+  private var ja: Bool {
+    if let p = prefersJapanese { return p }
+    return Locale.current.language.languageCode?.identifier == "ja"
+  }
 
   var body: some View {
     List {
@@ -216,7 +234,7 @@ struct EffectPickerCategoryView: View {
           onPick(effect)
         } label: {
           HStack {
-            Text(effect.localizedText)
+            Text(effect.text(forJapanese: ja))
               .foregroundStyle(.primary)
             Spacer()
             if effect.id == currentEffect?.id {
@@ -241,4 +259,6 @@ private extension RelicEffect {
   var localizedCategoryName: String {
     Locale.current.language.languageCode?.identifier == "ja" ? categoryJa : categoryEn
   }
+  func groupName(forJapanese ja: Bool) -> String { ja ? groupJa : groupEn }
+  func categoryName(forJapanese ja: Bool) -> String { ja ? categoryJa : categoryEn }
 }

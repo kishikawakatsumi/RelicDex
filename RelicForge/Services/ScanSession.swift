@@ -15,17 +15,40 @@ struct ScanCandidate: Identifiable {
   /// 初期値は `RecognizedRelic.resolvedSlots` の通り。
   var edits: CandidateEdits
 
+  // タイトル属性 (size/color/depth/unique) の override。
+  // OCR が誤認識した場合、ユーザーがスキャン候補画面の Menu で直接修正できる。
+  // recognized は immutable のまま残し、保存時はこちらの値を使う。
+  var color: RelicColor
+  var slotCount: Int
+  var depth: RelicDepth
+  var uniqueId: String?
+
   init(recognized: RecognizedRelic) {
     self.id = UUID()
     self.recognized = recognized
     self.addedAt = .now
     self.isSelected = true
     self.edits = CandidateEdits(from: recognized)
+    self.color = recognized.color
+    // recognized.slotCount が 0 (= parse 失敗) のときは安全策で 2 (端正) を default
+    self.slotCount = max(1, min(3, recognized.slotCount == 0 ? 2 : recognized.slotCount))
+    self.depth = recognized.depth == .unknown ? .normal : recognized.depth
+    self.uniqueId = recognized.uniqueMatch?.relic.id
   }
 
-  /// 編集を反映した最終的なスロット配列（保存・表示時に使う）
+  /// 編集を反映した最終的なスロット配列（保存・表示時に使う）。
+  /// `slotCount` 上書きが反映されるよう、表示時は先頭 `slotCount` 件に絞る。
   var finalSlots: [ResolvedSlot] {
-    edits.apply()
+    Array(edits.apply().prefix(slotCount))
+  }
+
+  /// override 値から組み立てた title。スキャン元の言語で表示する。
+  var displayName: String {
+    let ja = recognized.isJapaneseScan
+    return MasterDataStore.shared.relicName(
+      slotCount: slotCount, color: color, depth: depth,
+      uniqueId: uniqueId, forJapanese: ja
+    )
   }
 }
 
@@ -87,11 +110,13 @@ final class ScanSession: ObservableObject {
   func commitSelected(to repository: RelicRepository) -> Int {
     let toSave = candidates.filter { $0.isSelected }
     for c in toSave {
+      // override 値を優先 (recognized ではなく)。OCR 誤認識をユーザーが
+      // 修正していた場合、その結果が保存される。
       repository.save(
-        color: c.recognized.color,
-        slotCount: c.recognized.slotCount,
-        depth: c.recognized.depth,
-        uniqueId: c.recognized.uniqueMatch?.relic.id,
+        color: c.color,
+        slotCount: c.slotCount,
+        depth: c.depth,
+        uniqueId: c.uniqueId,
         slots: c.finalSlots
       )
     }

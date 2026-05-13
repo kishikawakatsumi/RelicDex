@@ -104,7 +104,8 @@ struct CandidateEditorView: View {
           candidates: target.line?.candidates ?? [],
           currentEffect: target.current,
           mode: target.kind == .main ? .main : .demerit,
-          allowNil: target.kind == .demerit
+          allowNil: target.kind == .demerit,
+          prefersJapanese: input.recognized.isJapaneseScan
         ) { picked in
           applyPick(picked, target: target)
         }
@@ -219,26 +220,29 @@ struct CandidateEditorView: View {
   }
 
   /// タイトル属性 (size/color/depth) を Menu で選び替えできる行。
+  /// メニューの各項目はスキャン元の言語 (`isJapaneseScan`) に合わせて
+  /// 「大 (壮大)」「Red (Burning)」のように in-game 用語を補足表示する。
   private var titleAttributesRow: some View {
-    VStack(alignment: .leading, spacing: 8) {
+    let ja = input.recognized.isJapaneseScan
+    return VStack(alignment: .leading, spacing: 8) {
       Text("Title attributes")
         .font(.caption.weight(.semibold))
         .foregroundStyle(.secondary)
       HStack(spacing: 8) {
-        attributeMenu(label: "Size", value: sizeName(slotCount)) {
-          Button { slotCount = 1 } label: { Label("Small (1 effect)", systemImage: "1.circle") }
-          Button { slotCount = 2 } label: { Label("Medium (2 effects)", systemImage: "2.circle") }
-          Button { slotCount = 3 } label: { Label("Large (3 effects)", systemImage: "3.circle") }
+        attributeMenu(label: "Size", value: AttributeLabel.size(slotCount: slotCount, ja: ja)) {
+          Button { slotCount = 1 } label: { Text(AttributeLabel.size(slotCount: 1, ja: ja)) }
+          Button { slotCount = 2 } label: { Text(AttributeLabel.size(slotCount: 2, ja: ja)) }
+          Button { slotCount = 3 } label: { Text(AttributeLabel.size(slotCount: 3, ja: ja)) }
         }
-        attributeMenu(label: "Color", value: colorName(color), swatch: color.swatch) {
-          Button { color = .red } label: { Text("Red") }
-          Button { color = .blue } label: { Text("Blue") }
-          Button { color = .yellow } label: { Text("Yellow") }
-          Button { color = .green } label: { Text("Green") }
+        attributeMenu(label: "Color", value: AttributeLabel.color(color, ja: ja), swatch: color.swatch) {
+          Button { color = .red } label: { Text(AttributeLabel.color(.red, ja: ja)) }
+          Button { color = .blue } label: { Text(AttributeLabel.color(.blue, ja: ja)) }
+          Button { color = .yellow } label: { Text(AttributeLabel.color(.yellow, ja: ja)) }
+          Button { color = .green } label: { Text(AttributeLabel.color(.green, ja: ja)) }
         }
-        attributeMenu(label: "Depth", value: depthName(depth)) {
-          Button { depth = .normal } label: { Text("Normal (景色)") }
-          Button { depth = .deep } label: { Text("Deep (昏景)") }
+        attributeMenu(label: "Depth", value: AttributeLabel.depth(depth, ja: ja)) {
+          Button { depth = .normal } label: { Text(AttributeLabel.depth(.normal, ja: ja)) }
+          Button { depth = .deep } label: { Text(AttributeLabel.depth(.deep, ja: ja)) }
         }
       }
     }
@@ -283,31 +287,6 @@ struct CandidateEditorView: View {
     }
   }
 
-  private func sizeName(_ n: Int) -> String {
-    switch n {
-    case 1: return String(localized: "Small")
-    case 2: return String(localized: "Medium")
-    case 3: return String(localized: "Large")
-    default: return "—"
-    }
-  }
-  private func colorName(_ c: RelicColor) -> String {
-    switch c {
-    case .red: return String(localized: "Red")
-    case .blue: return String(localized: "Blue")
-    case .yellow: return String(localized: "Yellow")
-    case .green: return String(localized: "Green")
-    case .unknown: return "—"
-    }
-  }
-  private func depthName(_ d: RelicDepth) -> String {
-    switch d {
-    case .normal: return String(localized: "Normal")
-    case .deep: return String(localized: "Deep")
-    case .unknown: return "—"
-    }
-  }
-
   /// slotCount に合わせて edits.mains/demerits の長さを揃える。
   private func resizeEditsIfNeeded() {
     while edits.mains.count < slotCount { edits.mains.append(nil) }
@@ -349,8 +328,10 @@ struct CandidateEditorView: View {
             .font(.caption)
             .foregroundStyle(.secondary)
           // value 有り → 値を表示 / 無し → ローカライズされたプレースホルダ
+          // スキャン元 (タイトル) と効果テキストの言語を揃えるため、
+          // recognized.isJapaneseScan を使って forJapanese 指定する。
           if let v = value {
-            Text(v.localizedText)
+            Text(v.text(forJapanese: input.recognized.isJapaneseScan))
               .font(.body)
               .lineLimit(3)
               .multilineTextAlignment(.leading)

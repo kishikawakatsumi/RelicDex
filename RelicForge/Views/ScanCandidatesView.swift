@@ -64,13 +64,19 @@ struct ScanCandidatesView: View {
         Button("Cancel", role: .cancel) {}
       }
       .sheet(item: $pickerTarget) { target in
+        // 対応する候補の OCR 言語に合わせてピッカーも日本語/英語で表示する。
+        // 添え字範囲外のときだけ Locale 既定 (nil) にフォールバック。
+        let prefersJa: Bool? = target.candidateIndex < session.candidates.count
+          ? session.candidates[target.candidateIndex].recognized.isJapaneseScan
+          : nil
         EffectPickerView(
           title: target.kind == .main ? "Change main effect" : "Change demerit",
           ocrText: target.ocrText,
           candidates: target.candidates,
           currentEffect: target.current,
           mode: target.kind == .main ? .main : .demerit,
-          allowNil: target.allowNil
+          allowNil: target.allowNil,
+          prefersJapanese: prefersJa
         ) { picked in
           apply(picked, target: target)
         }
@@ -200,9 +206,9 @@ private struct CandidateRow: View {
       VStack(alignment: .leading, spacing: 12) {
         HStack(spacing: 6) {
           Circle()
-            .fill(candidate.recognized.color.swatch)
+            .fill(candidate.color.swatch)
             .frame(width: 14, height: 14)
-          Text(candidate.recognized.displayName)
+          Text(candidate.displayName)
             .font(.headline)
             .lineLimit(1)
           if candidate.recognized.isUnique {
@@ -212,7 +218,7 @@ private struct CandidateRow: View {
               .background(.purple.opacity(0.18), in: Capsule())
               .foregroundStyle(.purple)
           }
-          if candidate.recognized.depth == .deep {
+          if candidate.depth == .deep {
             Text("Deep")
               .font(.caption2.weight(.bold))
               .padding(.horizontal, 6).padding(.vertical, 2)
@@ -220,9 +226,14 @@ private struct CandidateRow: View {
               .foregroundStyle(.indigo)
           }
           Spacer()
-          Text("◆ \(candidate.recognized.slotCount)")
+          Text("◆ \(candidate.slotCount)")
             .font(.subheadline.weight(.semibold).monospacedDigit())
             .foregroundStyle(.secondary)
+        }
+
+        // 固有遺物は属性が全て確定しているので Menu を出さない。
+        if !candidate.recognized.isUnique {
+          titleAttributesRow
         }
 
         VStack(spacing: 8) {
@@ -246,6 +257,79 @@ private struct CandidateRow: View {
     }
   }
 
+  /// タイトル属性 (size/color/depth) を Menu で選び替えできる行。
+  /// `CandidateEditorView` (動画スキャン用) と同じパターンを再利用する。
+  private var titleAttributesRow: some View {
+    let ja = candidate.recognized.isJapaneseScan
+    return HStack(spacing: 8) {
+      attributeMenu(label: "Size",
+                    value: AttributeLabel.size(slotCount: candidate.slotCount, ja: ja)) {
+        Button { setSlotCount(1) } label: { Text(AttributeLabel.size(slotCount: 1, ja: ja)) }
+        Button { setSlotCount(2) } label: { Text(AttributeLabel.size(slotCount: 2, ja: ja)) }
+        Button { setSlotCount(3) } label: { Text(AttributeLabel.size(slotCount: 3, ja: ja)) }
+      }
+      attributeMenu(label: "Color",
+                    value: AttributeLabel.color(candidate.color, ja: ja),
+                    swatch: candidate.color.swatch) {
+        Button { candidate.color = .red } label: { Text(AttributeLabel.color(.red, ja: ja)) }
+        Button { candidate.color = .blue } label: { Text(AttributeLabel.color(.blue, ja: ja)) }
+        Button { candidate.color = .yellow } label: { Text(AttributeLabel.color(.yellow, ja: ja)) }
+        Button { candidate.color = .green } label: { Text(AttributeLabel.color(.green, ja: ja)) }
+      }
+      attributeMenu(label: "Depth",
+                    value: AttributeLabel.depth(candidate.depth, ja: ja)) {
+        Button { candidate.depth = .normal } label: { Text(AttributeLabel.depth(.normal, ja: ja)) }
+        Button { candidate.depth = .deep } label: { Text(AttributeLabel.depth(.deep, ja: ja)) }
+      }
+    }
+  }
+
+  /// slotCount の上書きに合わせて edits.mains/demerits の長さを揃える。
+  private func setSlotCount(_ n: Int) {
+    candidate.slotCount = n
+    while candidate.edits.mains.count < n { candidate.edits.mains.append(nil) }
+    while candidate.edits.mains.count > n { candidate.edits.mains.removeLast() }
+    while candidate.edits.demerits.count < n { candidate.edits.demerits.append(nil) }
+    while candidate.edits.demerits.count > n { candidate.edits.demerits.removeLast() }
+  }
+
+  /// 属性 1 項目分の Menu ボタン (CandidateEditorView と同じ見た目)。
+  @ViewBuilder
+  private func attributeMenu<Content: View>(
+    label: LocalizedStringKey,
+    value: String,
+    swatch: Color? = nil,
+    @ViewBuilder content: () -> Content
+  ) -> some View {
+    Menu {
+      content()
+    } label: {
+      VStack(alignment: .leading, spacing: 2) {
+        Text(label)
+          .font(.caption2)
+          .foregroundStyle(.secondary)
+        HStack(spacing: 4) {
+          if let swatch {
+            Circle().fill(swatch).frame(width: 10, height: 10)
+          }
+          Text(value)
+            .font(.footnote.weight(.medium))
+            .foregroundStyle(.primary)
+            .lineLimit(1)
+            .minimumScaleFactor(0.7)
+          Image(systemName: "chevron.up.chevron.down")
+            .font(.caption2)
+            .foregroundStyle(.tertiary)
+        }
+      }
+      .frame(maxWidth: .infinity, alignment: .leading)
+      .padding(.horizontal, 10)
+      .padding(.vertical, 8)
+      .background(Color(uiColor: .secondarySystemBackground),
+                  in: RoundedRectangle(cornerRadius: 8))
+    }
+  }
+
   @ViewBuilder
   private func slotEditor(slotIdx: Int, slot: ResolvedSlot) -> some View {
     VStack(alignment: .leading, spacing: 6) {
@@ -258,7 +342,8 @@ private struct CandidateRow: View {
             .font(.system(size: 6))
             .baselineOffset(4)
             .foregroundStyle(.tertiary)
-          Text(slot.main?.localizedText ?? String(localized: "(not selected)"))
+          Text(slot.main?.text(forJapanese: candidate.recognized.isJapaneseScan)
+               ?? String(localized: "(not selected)"))
             .font(.subheadline)
             .foregroundStyle(slot.main == nil ? .secondary : .primary)
             .lineLimit(3)
@@ -289,7 +374,7 @@ private struct CandidateRow: View {
               .font(.system(size: 6))
               .baselineOffset(4)
               .foregroundStyle(Color.demeritEffect)
-            Text(demerit.localizedText)
+            Text(demerit.text(forJapanese: candidate.recognized.isJapaneseScan))
               .font(.subheadline)
               .foregroundStyle(Color.demeritEffect)
               .lineLimit(3)

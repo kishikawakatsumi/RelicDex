@@ -562,7 +562,8 @@ struct VideoIngestView: View {
           .lineLimit(1)
         ForEach(Array(c.finalSlots.enumerated()), id: \.offset) { _, slot in
           if let main = slot.main {
-            Text("• \(main.localizedText)")
+            // スキャン元の言語に合わせて表示 (タイトルも同様)。
+            Text("• \(main.text(forJapanese: c.recognized.isJapaneseScan))")
               .font(.caption2)
               .foregroundStyle(.secondary)
               .lineLimit(1)
@@ -624,7 +625,7 @@ struct VideoIngestView: View {
       }
       ForEach(Array(c.finalSlots.enumerated()), id: \.offset) { _, slot in
         if let main = slot.main {
-          Text("• \(main.localizedText)")
+          Text("• \(main.text(forJapanese: c.recognized.isJapaneseScan))")
             .font(.caption)
             .foregroundStyle(.secondary)
             .lineLimit(2)
