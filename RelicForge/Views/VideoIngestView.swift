@@ -12,6 +12,16 @@ import UniformTypeIdentifiers
 struct VideoIngestView: View {
   @Environment(\.modelContext) private var modelContext
   @Environment(\.dismiss) private var dismiss
+  @Query private var allRelics: [StoredRelic]
+  @Query private var allBuilds: [StoredBuild]
+
+  /// 取り込み時の動作。
+  /// - `replace`: 既存の遺物を全て削除してから新しい候補を保存する。動画 1 本で
+  ///   セーブデータ全体を取り直すのが想定の主用途なので default はこちら。
+  /// - `append`: 既存に追加するだけ。差分撮影に使う。
+  enum ImportMode: Hashable { case replace, append }
+  @State private var importMode: ImportMode = .replace
+  @State private var showingReplaceConfirm = false
 
   @State private var pickerItem: PhotosPickerItem?
   @State private var isShowingFilePicker = false
@@ -33,8 +43,6 @@ struct VideoIngestView: View {
   @State private var ingestMode: VideoIngestService.Mode = .full
   @State private var ingestTask: Task<Void, Never>?
   @State private var diagnostics: VideoIngestService.Diagnostics?
-  @State private var exportedDirURL: URL?
-  @State private var showingDiagnostics: Bool = false
 
   private struct DetectedFrame: Identifiable {
     let id = UUID()
@@ -132,22 +140,6 @@ struct VideoIngestView: View {
               dismiss()
             }
           }
-          // 処理中は Import ボタンを出さない
-          // (誤タップで不完全な状態で保存・dismiss されるのを防ぐ)
-          if !candidates.isEmpty && !isProcessing {
-            ToolbarItem(placement: .topBarTrailing) {
-              Button {
-                importIncluded()
-              } label: {
-                HStack(spacing: 4) {
-                  Text("Import")
-                  Text("\(includedCount)")
-                    .monospacedDigit()
-                }
-              }
-              .disabled(includedCount == 0)
-            }
-          }
         }
         .onChange(of: pickerItem) { _, item in
           guard let item else { return }
@@ -199,7 +191,10 @@ struct VideoIngestView: View {
     } else if ingestMode != .full && !detectedFrames.isEmpty {
       detectedFramesGrid
     } else if !candidates.isEmpty {
-      resultsList
+      VStack(spacing: 0) {
+        resultsList
+        saveBar
+      }
     } else {
       ContentUnavailableView(
         "No frames detected",
@@ -354,20 +349,6 @@ struct VideoIngestView: View {
     let validCandidates = candidates.filter { $0.effectiveIsValid }
     return List {
       summarySection
-      if let exportedDirURL {
-        Section {
-          exportInfoCard(url: exportedDirURL)
-            .listRowInsets(EdgeInsets())
-            .listRowBackground(Color.clear)
-        }
-      }
-      if let d = diagnostics, showingDiagnostics {
-        Section {
-          diagnosticsCard(d)
-            .listRowInsets(EdgeInsets(top: 0, leading: 16, bottom: 0, trailing: 16))
-            .listRowBackground(Color.clear)
-        }
-      }
       if !invalidCandidates.isEmpty {
         Section {
           ForEach(invalidCandidates) { c in
@@ -451,20 +432,6 @@ struct VideoIngestView: View {
             .font(.subheadline)
             .foregroundStyle(.secondary)
           Spacer()
-          if diagnostics != nil {
-            Button {
-              withAnimation(.snappy) { showingDiagnostics.toggle() }
-            } label: {
-              Image(systemName: showingDiagnostics ? "chevron.up" : "info.circle")
-                .font(.title3)
-            }
-            .buttonStyle(.borderless)
-            .accessibilityLabel(
-              showingDiagnostics
-                ? String(localized: "Hide stats")
-                : String(localized: "Show stats")
-            )
-          }
         }
         HStack(spacing: 8) {
           Button {
@@ -491,54 +458,6 @@ struct VideoIngestView: View {
       }
       .listRowInsets(EdgeInsets(top: 16, leading: 16, bottom: 16, trailing: 16))
     }
-  }
-
-  private func diagnosticsCard(_ d: VideoIngestService.Diagnostics) -> some View {
-    VStack(alignment: .leading, spacing: 6) {
-      Grid(alignment: .leading, horizontalSpacing: 12, verticalSpacing: 4) {
-        statRow("Frames sampled", "\(d.sampledFrames)")
-        statRow("Segments", "\(d.keptRuns)")
-        statRow("OCR ok / fail / extract", "\(d.ocrSucceeded) / \(d.ocrFailed) / \(d.frameExtractFailed)")
-        statRow("Diff median / p90 / max",
-                String(format: "%.2f / %.2f / %.2f", d.diffMedian, d.diffP90, d.diffMax))
-        statRow("Frame size",
-                "\(Int(d.firstFrameSize.width))×\(Int(d.firstFrameSize.height))")
-      }
-    }
-    .padding(12)
-    .background(.thinMaterial, in: RoundedRectangle(cornerRadius: 10))
-  }
-
-  @ViewBuilder
-  private func statRow(_ label: String, _ value: String) -> some View {
-    GridRow {
-      Text(label)
-        .font(.caption2)
-        .foregroundStyle(.secondary)
-      Text(value)
-        .font(.caption2.monospaced())
-    }
-  }
-
-  private func exportInfoCard(url: URL) -> some View {
-    HStack(spacing: 10) {
-      Image(systemName: "tray.and.arrow.down.fill")
-        .font(.title3)
-        .foregroundStyle(.green)
-      VStack(alignment: .leading, spacing: 2) {
-        Text("Exported to Files")
-          .font(.caption.weight(.semibold))
-        Text("On My iPhone › RelicForge › \(url.lastPathComponent)")
-          .font(.caption2)
-          .foregroundStyle(.secondary)
-          .lineLimit(2)
-      }
-      Spacer()
-    }
-    .padding(.horizontal, 14)
-    .padding(.vertical, 10)
-    .background(Color.green.opacity(0.10), in: RoundedRectangle(cornerRadius: 10))
-    .padding(.horizontal, 16)
   }
 
   // インデックス管理を避けるため、トグルは id 経由で binding する。
@@ -808,35 +727,79 @@ struct VideoIngestView: View {
     case .diagnostics(let d):
       diagnostics = d
     case .finished:
-      // 完了した時点で Documents/ingest_<timestamp>/ にエクスポート
-      exportToDocuments()
+      break
     case .failed(let msg):
       errorMessage = msg
     }
   }
 
-  private func exportToDocuments() {
-    let exportInput = VideoIngestExporter.Input(
-      diagnostics: diagnostics,
-      panelROI: configuredROI,
-      samplingFPS: 60,  // 表示用。startIngest で渡した値を保持できないので近似
-      expectedSegments: candidates.count > 0 ? candidates.count : nil,
-      candidates: candidates.map { c in
-        VideoIngestExporter.Input.Candidate(
-          recognized: c.recognized,
-          frameImage: c.frameImage,
-          invalidReason: c.recognized.isValid ? nil : invalidReason(for: c.recognized)
-        )
+  // MARK: - 保存バー (画面下部)
+
+  /// 画面下部に固定する保存バー。Camera scan の `ScanCandidatesView` と同じ
+  /// 構造で、左に「Replace / Append」のセグメント、右に Save ボタン。
+  private var saveBar: some View {
+    VStack(spacing: 0) {
+      Divider()
+      VStack(alignment: .leading, spacing: 10) {
+        Picker("Import mode", selection: $importMode) {
+          Text("Replace all").tag(ImportMode.replace)
+          Text("Append").tag(ImportMode.append)
+        }
+        .pickerStyle(.segmented)
+
+        HStack(alignment: .firstTextBaseline) {
+          Text(importMode == .replace
+               ? String(localized: "Existing: \(allRelics.count) → \(includedCount)")
+               : String(localized: "Will add \(includedCount) to \(allRelics.count) existing"))
+            .font(.footnote.monospacedDigit())
+            .foregroundStyle(.secondary)
+          Spacer()
+          Button {
+            attemptSave()
+          } label: {
+            Text(importMode == .replace
+                 ? String(localized: "Replace with \(includedCount)")
+                 : String(localized: "Save \(includedCount)"))
+              .monospacedDigit()
+              .frame(minWidth: 160)
+          }
+          .buttonStyle(.borderedProminent)
+          .disabled(includedCount == 0)
+        }
       }
-    )
-    if let url = VideoIngestExporter.export(exportInput) {
-      exportedDirURL = url
+      .padding()
+      .background(.ultraThinMaterial)
+    }
+    .alert("Replace all relics?", isPresented: $showingReplaceConfirm) {
+      Button("Replace", role: .destructive) { performSave() }
+      Button("Cancel", role: .cancel) {}
+    } message: {
+      let buildRefs = allBuilds.reduce(0) { acc, b in
+        acc + allRelics.filter { b.uses(relicId: $0.id) }.count
+      }
+      if buildRefs > 0 {
+        Text("\(allRelics.count) existing relics will be deleted and replaced with \(includedCount) new ones. \(buildRefs) build slot(s) currently reference relics that will be deleted.")
+      } else {
+        Text("\(allRelics.count) existing relics will be deleted and replaced with \(includedCount) new ones.")
+      }
     }
   }
 
   // MARK: - Import
 
-  private func importIncluded() {
+  private func attemptSave() {
+    if importMode == .replace && !allRelics.isEmpty {
+      showingReplaceConfirm = true
+    } else {
+      performSave()
+    }
+  }
+
+  private func performSave() {
+    if importMode == .replace {
+      for relic in allRelics { modelContext.delete(relic) }
+      try? modelContext.save()
+    }
     let repo = RelicRepository(context: modelContext)
     var saved = 0
     for c in candidates where c.include {

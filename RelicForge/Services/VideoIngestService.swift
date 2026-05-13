@@ -333,9 +333,6 @@ final class VideoIngestService: @unchecked Sendable {
       )
       done += 1
       yield(.ocrProgress(done: done, total: segments.count, current: idx + 1))
-      if idx % 25 == 0 {
-        print("[VideoIngest] processed segment \(idx + 1)/\(segments.count)")
-      }
     }
     yield(.diagnostics(diag))
     yield(.finished(totalRecognized: done))

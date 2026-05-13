@@ -96,7 +96,7 @@ struct VideoROIAlignmentView: View {
       .onAppear { setupPlayer() }
       .onDisappear { player.pause() }
       .alert("Number of relics", isPresented: $showingExpectedAlert) {
-        TextField("e.g. 1931", text: $alertDraftText)
+        TextField("1-1950", text: $alertDraftText)
           .keyboardType(.numberPad)
         Button("Cancel", role: .cancel) {
           // Cancel は確定しない。次回開いたとき直前の確定値からやり直し。
