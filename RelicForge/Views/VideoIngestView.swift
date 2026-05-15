@@ -15,12 +15,7 @@ struct VideoIngestView: View {
   @Query private var allRelics: [StoredRelic]
   @Query private var allBuilds: [StoredBuild]
 
-  /// 取り込み時の動作。
-  /// - `replace`: 既存の遺物を全て削除してから新しい候補を保存する。動画 1 本で
-  ///   セーブデータ全体を取り直すのが想定の主用途なので default はこちら。
-  /// - `append`: 既存に追加するだけ。差分撮影に使う。
-  enum ImportMode: Hashable { case replace, append }
-  @State private var importMode: ImportMode = .replace
+  /// Replace 確認 alert の表示制御。Append には alert を出さない (非破壊なので)。
   @State private var showingReplaceConfirm = false
 
   @State private var pickerItem: PhotosPickerItem?
@@ -28,7 +23,7 @@ struct VideoIngestView: View {
   @State private var videoURL: URL?
   @State private var videoSize: CGSize?
   @State private var videoNominalFPS: Double = 60
-  @State private var showingAlignment = false
+  // showingAlignment / editingWrapper は `activeCover` に統一済み。
   @State private var configuredROI: CGRect?
   @State private var isProcessing = false
   @State private var scanProgress: Double = 0
@@ -119,11 +114,22 @@ struct VideoIngestView: View {
     }
   }
 
-  /// 編集画面に渡す候補 ID
-  private struct EditingWrapper: Identifiable {
-    let id: UUID
+  /// 画面に被せる全画面モーダルの種類。SwiftUI は **同じ view 階層に複数の
+  /// `.fullScreenCover` modifier** があると presentation を取り合って
+  /// 「両方乗ったまま片方が sheet 風にダウングレード」されるバグ的挙動を起こす
+  /// (実際 alignment + editor が同時に出るスクリーン録画で確認)。
+  /// 1 つの cover 状態に enum で束ねて、構造的に排他にする。
+  private enum ActiveCover: Identifiable {
+    case alignment
+    case editor(UUID)
+    var id: String {
+      switch self {
+      case .alignment: return "alignment"
+      case .editor(let uid): return "editor-\(uid.uuidString)"
+      }
+    }
   }
-  @State private var editingWrapper: EditingWrapper?
+  @State private var activeCover: ActiveCover?
 
   var body: some View {
     NavigationStack {
@@ -157,24 +163,64 @@ struct VideoIngestView: View {
           case .failure(let err): errorMessage = err.localizedDescription
           }
         }
-        .fullScreenCover(isPresented: $showingAlignment) {
-          if let url = videoURL, let size = videoSize {
-            VideoROIAlignmentView(
-              videoURL: url,
-              videoSize: size,
-              onConfirm: { roi, expected in
-                showingAlignment = false
-                configuredROI = roi
-                ingestMode = .full
-                startIngest(url: url, roi: roi, fps: videoNominalFPS, expected: expected)
-              },
-              onCancel: {
-                showingAlignment = false
-                videoURL = nil
-                videoSize = nil
-              },
-              initialROI: nil
-            )
+        // 全画面モーダル (alignment / editor) は 1 つの `activeCover` に
+        // 統一して、複数 fullScreenCover modifier の取り合いを構造的に防ぐ。
+        .fullScreenCover(item: $activeCover) { cover in
+          switch cover {
+          case .alignment:
+            if let url = videoURL, let size = videoSize {
+              VideoROIAlignmentView(
+                videoURL: url,
+                videoSize: size,
+                onConfirm: { roi, expected in
+                  activeCover = nil
+                  configuredROI = roi
+                  ingestMode = .full
+                  startIngest(url: url, roi: roi, fps: videoNominalFPS, expected: expected)
+                },
+                onCancel: {
+                  activeCover = nil
+                  videoURL = nil
+                  videoSize = nil
+                },
+                initialROI: nil
+              )
+            } else {
+              // url/size が無いのに alignment を立てようとした → 即閉じる安全弁
+              Color.clear.onAppear { activeCover = nil }
+            }
+          case .editor(let id):
+            if let candidate = candidates.first(where: { $0.id == id }) {
+              CandidateEditorView(
+                input: CandidateEditorView.Input(
+                  title: candidate.displayName,
+                  recognized: candidate.recognized,
+                  frameImage: candidate.frameImage,
+                  ocrImage: candidate.ocrImage,
+                  initialEdits: candidate.edits,
+                  initialIsSelected: candidate.include,
+                  reason: candidate.recognized.isValid ? nil : invalidReason(for: candidate.recognized)
+                ),
+                onSave: { newEdits, newSelected, newColor, newSlotCount, newDepth, newUniqueId in
+                  if let idx = candidates.firstIndex(where: { $0.id == id }) {
+                    candidates[idx].edits = newEdits
+                    candidates[idx].include = newSelected
+                    candidates[idx].color = newColor
+                    candidates[idx].slotCount = newSlotCount
+                    candidates[idx].depth = newDepth
+                    candidates[idx].uniqueId = newUniqueId
+                  }
+                  activeCover = nil
+                },
+                onCancel: {
+                  activeCover = nil
+                }
+              )
+            } else {
+              // 該当候補が見つからない (= 別スキャンで candidates クリア等)
+              // 即閉じる
+              Color.clear.onAppear { activeCover = nil }
+            }
           }
         }
     }
@@ -275,7 +321,11 @@ struct VideoIngestView: View {
             .font(.system(size: 36, weight: .bold, design: .rounded))
             .monospacedDigit()
             .contentTransition(.numericText())
-          Text("relic candidate(s) so far")
+          // count は上の大きい Text にあるので、ここでは見せない。
+          // 代わりに `morphology: {"number": ...}` で文法数を直接指定して
+          // inflector に名詞を単複変化させる (Automatic Grammar Agreement)。
+          // GrammaticalNumber の JSON エンコードは "one" / "other" / "zero".
+          Text(candidatesSoFarLabel)
             .font(.caption)
             .foregroundStyle(.secondary)
         }
@@ -389,35 +439,6 @@ struct VideoIngestView: View {
       }
     }
     .listStyle(.insetGrouped)
-    .fullScreenCover(item: $editingWrapper) { editing in
-      if let candidate = candidates.first(where: { $0.id == editing.id }) {
-        CandidateEditorView(
-          input: CandidateEditorView.Input(
-            title: candidate.displayName,
-            recognized: candidate.recognized,
-            frameImage: candidate.frameImage,
-            ocrImage: candidate.ocrImage,
-            initialEdits: candidate.edits,
-            initialIsSelected: candidate.include,
-            reason: candidate.recognized.isValid ? nil : invalidReason(for: candidate.recognized)
-          ),
-          onSave: { newEdits, newSelected, newColor, newSlotCount, newDepth, newUniqueId in
-            if let idx = candidates.firstIndex(where: { $0.id == editing.id }) {
-              candidates[idx].edits = newEdits
-              candidates[idx].include = newSelected
-              candidates[idx].color = newColor
-              candidates[idx].slotCount = newSlotCount
-              candidates[idx].depth = newDepth
-              candidates[idx].uniqueId = newUniqueId
-            }
-            editingWrapper = nil
-          },
-          onCancel: {
-            editingWrapper = nil
-          }
-        )
-      }
-    }
   }
 
   private var summarySection: some View {
@@ -498,7 +519,7 @@ struct VideoIngestView: View {
     }
     .contentShape(Rectangle())
     .onTapGesture {
-      editingWrapper = EditingWrapper(id: c.id)
+      activeCover = .editor(c.id)
     }
   }
 
@@ -564,7 +585,7 @@ struct VideoIngestView: View {
     }
     .contentShape(Rectangle())
     .onTapGesture {
-      editingWrapper = EditingWrapper(id: c.id)
+      activeCover = .editor(c.id)
     }
   }
 
@@ -660,12 +681,22 @@ struct VideoIngestView: View {
           videoURL = url
           videoSize = size
           videoNominalFPS = nominalFPS > 0 ? Double(nominalFPS) : 60
-          showingAlignment = true
+          activeCover = .alignment
         }
       } catch {
         await MainActor.run { errorMessage = error.localizedDescription }
       }
     }
+  }
+
+  /// "X relic candidate(s) so far" の label。count は別 Text にあるので
+  /// markdown の `morphology: {"number": ...}` で文法数を直接指定して
+  /// AGA に複数形を選ばせる。
+  private var candidatesSoFarLabel: AttributedString {
+    let num = candidates.count == 1 ? "one" : "other"
+    return AttributedString(
+      localized: "^[relic candidate](morphology: {\"number\": \"\(num)\"}, inflect: true) so far"
+    )
   }
 
   private func startIngest(url: URL, roi: CGRect, fps: Double, expected: Int?) {
@@ -735,68 +766,78 @@ struct VideoIngestView: View {
 
   // MARK: - 保存バー (画面下部)
 
-  /// 画面下部に固定する保存バー。Camera scan の `ScanCandidatesView` と同じ
-  /// 構造で、左に「Replace / Append」のセグメント、右に Save ボタン。
+  /// 画面下部に固定する保存バー。動作 (Append / Replace all) を **2 つの
+  /// 並列ボタン** として並べる。モード選択 → 実行の 2 段にせず、押したボタン
+  /// 自体が動作を表すので意図が読みやすい。Replace は destructive 色で
+  /// 危険性を視覚化、押下時に確認 alert を出す。
   private var saveBar: some View {
     VStack(spacing: 0) {
       Divider()
       VStack(alignment: .leading, spacing: 10) {
-        Picker("Import mode", selection: $importMode) {
-          Text("Replace all").tag(ImportMode.replace)
-          Text("Append").tag(ImportMode.append)
-        }
-        .pickerStyle(.segmented)
-
-        HStack(alignment: .firstTextBaseline) {
-          Text(importMode == .replace
-               ? String(localized: "Existing: \(allRelics.count) → \(includedCount)")
-               : String(localized: "Will add \(includedCount) to \(allRelics.count) existing"))
-            .font(.footnote.monospacedDigit())
-            .foregroundStyle(.secondary)
-          Spacer()
+        Text("Existing: \(allRelics.count)  ·  New: \(includedCount)")
+          .font(.footnote.monospacedDigit())
+          .foregroundStyle(.secondary)
+        HStack(spacing: 12) {
           Button {
-            attemptSave()
+            performSave(replacing: false)
           } label: {
-            Text(importMode == .replace
-                 ? String(localized: "Replace with \(includedCount)")
-                 : String(localized: "Save \(includedCount)"))
-              .monospacedDigit()
-              .frame(minWidth: 160)
+            Text("Add to Collection")
+              .frame(maxWidth: .infinity)
+              .lineLimit(1)
+              .minimumScaleFactor(0.8)
+          }
+          .buttonStyle(.bordered)
+          .controlSize(.large)
+          .disabled(includedCount == 0)
+
+          Button {
+            attemptReplace()
+          } label: {
+            Text("Replace Collection")
+              .frame(maxWidth: .infinity)
+              .lineLimit(1)
+              .minimumScaleFactor(0.8)
           }
           .buttonStyle(.borderedProminent)
+          .controlSize(.large)
+          .tint(.red)
           .disabled(includedCount == 0)
         }
       }
       .padding()
       .background(.ultraThinMaterial)
     }
-    .alert("Replace all relics?", isPresented: $showingReplaceConfirm) {
-      Button("Replace", role: .destructive) { performSave() }
+    .alert("Replace existing data?", isPresented: $showingReplaceConfirm) {
+      Button("Replace", role: .destructive) { performSave(replacing: true) }
       Button("Cancel", role: .cancel) {}
     } message: {
       let buildRefs = allBuilds.reduce(0) { acc, b in
         acc + allRelics.filter { b.uses(relicId: $0.id) }.count
       }
+      // count が text にインラインで含まれるので、シンプルな
+      // `^[\(N) noun](inflect: true)` 形式で AGA が複数形を自動選択する。
       if buildRefs > 0 {
-        Text("\(allRelics.count) existing relics will be deleted and replaced with \(includedCount) new ones. \(buildRefs) build slot(s) currently reference relics that will be deleted.")
+        Text("^[\(allRelics.count) existing relic](inflect: true) will be deleted and replaced with ^[\(includedCount) new one](inflect: true). ^[\(buildRefs) build slot](inflect: true) currently reference relics that will be deleted.")
       } else {
-        Text("\(allRelics.count) existing relics will be deleted and replaced with \(includedCount) new ones.")
+        Text("^[\(allRelics.count) existing relic](inflect: true) will be deleted and replaced with ^[\(includedCount) new one](inflect: true).")
       }
     }
   }
 
   // MARK: - Import
 
-  private func attemptSave() {
-    if importMode == .replace && !allRelics.isEmpty {
+  /// Replace ボタンの動作: 既存があれば確認 alert、無ければ即実行 (= Append と同じ結果)。
+  private func attemptReplace() {
+    if !allRelics.isEmpty {
       showingReplaceConfirm = true
     } else {
-      performSave()
+      performSave(replacing: true)
     }
   }
 
-  private func performSave() {
-    if importMode == .replace {
+  /// 実保存。`replacing == true` のとき既存遺物を全削除してから新規 insert する。
+  private func performSave(replacing: Bool) {
+    if replacing {
       for relic in allRelics { modelContext.delete(relic) }
       try? modelContext.save()
     }

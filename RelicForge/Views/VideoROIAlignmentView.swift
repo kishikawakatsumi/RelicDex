@@ -67,48 +67,58 @@ struct VideoROIAlignmentView: View {
   }
 
   var body: some View {
-    GeometryReader { geo in
-      let fit = aspectFit(videoSize, in: geo.size)
-      let videoTL = CGPoint(
-        x: (geo.size.width - fit.width) / 2,
-        y: (geo.size.height - fit.height) / 2
-      )
-
-      ZStack {
-        Color.black.ignoresSafeArea()
-        PlayerLayerView(player: player)
-          .frame(width: fit.width, height: fit.height)
-
-        CropBoxOverlay(
-          roi: $roi,
-          videoOrigin: videoTL,
-          videoSize: fit,
-          screenSize: geo.size
-        )
-
+    // NavigationStack で包んでナビバーを隠す。これで `.fullScreenCover` 内の
+    // safe area context が SwiftUI から確実に提供される。VStack は body 直下
+    // ではなく NavigationStack の中なので、status bar / dynamic island /
+    // home indicator を自動で避ける。背景の黒だけ ignoresSafeArea で全画面。
+    NavigationStack {
+      VStack(spacing: 0) {
         VStack(spacing: 12) {
           topBar
           expectedCountControl
-          Spacer()
-          recognizeButton
         }
+        .padding(.bottom, 8)
+
+        GeometryReader { geo in
+          let fit = aspectFit(videoSize, in: geo.size)
+          let videoTL = CGPoint(
+            x: (geo.size.width - fit.width) / 2,
+            y: (geo.size.height - fit.height) / 2
+          )
+          ZStack {
+            PlayerLayerView(player: player)
+              .frame(width: fit.width, height: fit.height)
+              .position(x: geo.size.width / 2, y: geo.size.height / 2)
+            CropBoxOverlay(
+              roi: $roi,
+              videoOrigin: videoTL,
+              videoSize: fit,
+              screenSize: geo.size
+            )
+          }
+        }
+
+        recognizeButton
+          .padding(.top, 8)
       }
-      .onAppear { setupPlayer() }
-      .onDisappear { player.pause() }
-      .alert("Number of relics", isPresented: $showingExpectedAlert) {
-        TextField("1-1950", text: $alertDraftText)
-          .keyboardType(.numberPad)
-        Button("Cancel", role: .cancel) {
-          // Cancel は確定しない。次回開いたとき直前の確定値からやり直し。
-          alertDraftText = expectedCountText
-        }
-        Button("OK") {
-          // OK で初めて committed 値に反映する。
-          expectedCountText = alertDraftText
-        }
-      } message: {
-        Text("Enter the exact count of relics shown in the video. Required for accurate segmentation.")
+      .background(Color.black.ignoresSafeArea())
+      .toolbar(.hidden, for: .navigationBar)
+    }
+    .onAppear { setupPlayer() }
+    .onDisappear { player.pause() }
+    .alert("Number of relics", isPresented: $showingExpectedAlert) {
+      TextField("1-1950", text: $alertDraftText)
+        .keyboardType(.numberPad)
+      Button("Cancel", role: .cancel) {
+        // Cancel は確定しない。次回開いたとき直前の確定値からやり直し。
+        alertDraftText = expectedCountText
       }
+      Button("OK") {
+        // OK で初めて committed 値に反映する。
+        expectedCountText = alertDraftText
+      }
+    } message: {
+      Text("Enter the exact count of relics shown in the video. Required for accurate segmentation.")
     }
   }
 
@@ -141,7 +151,7 @@ struct VideoROIAlignmentView: View {
         .padding(.horizontal, 56)  // ✕ ボタンに被らないよう左右に余白
     }
     .padding(.horizontal, 16)
-    .padding(.top, 8)
+    // safeAreaInset により status bar の下に配置されるので、追加の上 padding は不要
   }
 
   // MARK: - 遺物数入力 (上部に配置)
@@ -209,7 +219,7 @@ struct VideoROIAlignmentView: View {
     // TextField 入力で「ボタンだけ enable に見える」混乱を避ける。
     .disabled(validExpectedCount == nil || showingExpectedAlert)
     .padding(.horizontal, 16)
-    .padding(.bottom, 32)
+    .padding(.bottom, 8)  // safeAreaInset により home indicator は別に確保される
   }
 
   // MARK: - Player
