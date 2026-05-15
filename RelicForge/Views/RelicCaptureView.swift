@@ -263,7 +263,7 @@ struct RelicCaptureView: View {
         Button {
           dismissHowTo()
         } label: {
-          Text("Got it")
+          Text("Close")
             .font(.headline)
             .frame(maxWidth: .infinity)
             .padding(.vertical, 12)

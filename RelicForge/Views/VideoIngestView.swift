@@ -24,6 +24,10 @@ struct VideoIngestView: View {
   @State private var videoSize: CGSize?
   @State private var videoNominalFPS: Double = 60
   // showingAlignment / editingWrapper は `activeCover` に統一済み。
+  /// 「動画の撮り方」チュートリアル。初回必ず自動表示し、ユーザーが閉じたら
+  /// 永続化フラグで以降は出さない。toolbar の info ボタンで手動再表示可能。
+  @AppStorage("relicforge.videoIngest.howToSeen.v1") private var howToSeen = false
+  @State private var showingHowTo = false
   @State private var configuredROI: CGRect?
   @State private var isProcessing = false
   @State private var scanProgress: Double = 0
@@ -139,6 +143,27 @@ struct VideoIngestView: View {
         // スワイプでの dismiss は常に無効。状況によって挙動が変わると分かりにくい
         // ので、画面を閉じるには必ず Close ボタンを押す。
         .interactiveDismissDisabled()
+        // 取り込み処理中は自動ロック (スリープ) を抑止する。`isProcessing` の
+        // 状態に追従させ、view が破棄されたときも必ず timer を戻す。
+        .onChange(of: isProcessing) { _, processing in
+          UIApplication.shared.isIdleTimerDisabled = processing
+        }
+        .onAppear {
+          if isProcessing {
+            UIApplication.shared.isIdleTimerDisabled = true
+          }
+          // 初回のみチュートリアル自動表示
+          if !howToSeen {
+            // 画面遷移直後の見映えのため少し遅延
+            Task {
+              try? await Task.sleep(nanoseconds: 300_000_000)
+              await MainActor.run { showingHowTo = true }
+            }
+          }
+        }
+        .onDisappear {
+          UIApplication.shared.isIdleTimerDisabled = false
+        }
         .toolbar {
           ToolbarItem(placement: .topBarLeading) {
             Button("Close") {
@@ -146,6 +171,19 @@ struct VideoIngestView: View {
               dismiss()
             }
           }
+          ToolbarItem(placement: .topBarTrailing) {
+            Button {
+              showingHowTo = true
+            } label: {
+              Image(systemName: "info.circle")
+            }
+          }
+        }
+        .sheet(isPresented: $showingHowTo) {
+          // 閉じたら次回以降は自動表示しない。
+          howToSeen = true
+        } content: {
+          VideoHowToView()
         }
         .onChange(of: pickerItem) { _, item in
           guard let item else { return }
@@ -629,9 +667,10 @@ struct VideoIngestView: View {
       return s
     }
     if scanTotalSamples > 0 {
-      return String(localized: "Scanning frame \(scanCurrentSample) / \(scanTotalSamples) (\(Int(scanProgress * 100))%)")
+      // 全体の % は下に別 Text で出しているので、ここではカウントだけ。
+      return String(localized: "Scanning frame \(scanCurrentSample) / \(scanTotalSamples)")
     }
-    return String(localized: "Scanning frames \(Int(scanProgress * 100))%")
+    return String(localized: "Scanning frames")
   }
 
   private var includedCount: Int { candidates.filter { $0.include }.count }
@@ -734,8 +773,7 @@ struct VideoIngestView: View {
     ocrDone = 0
     ocrCurrent = 0
     errorMessage = nil
-    // 長時間処理中に画面ロックされないように
-    UIApplication.shared.isIdleTimerDisabled = true
+    // 自動ロック抑止は `isProcessing` の `.onChange` フックで一元管理。
     var settings = VideoIngestService.Settings()
     settings.panelROI = roi
     settings.mode = mode
@@ -755,7 +793,6 @@ struct VideoIngestView: View {
       }
       await MainActor.run {
         isProcessing = false
-        UIApplication.shared.isIdleTimerDisabled = false
       }
     }
   }
