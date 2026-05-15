@@ -159,8 +159,13 @@ struct VideoIngestView: View {
         .fileImporter(isPresented: $isShowingFilePicker,
                       allowedContentTypes: [.movie, .mpeg4Movie, .quickTimeMovie]) { result in
           switch result {
-          case .success(let url): loadVideo(url: url)
-          case .failure(let err): errorMessage = err.localizedDescription
+          case .success(let url):
+            // Files から渡る URL は security-scoped。直接 AVURLAsset に渡すと
+            // 「アクセス権がない」エラーになるので、scope を開いて一旦 temp に
+            // コピーし、以降はその copy を扱う。
+            copyFromSecurityScopedURL(url)
+          case .failure(let err):
+            errorMessage = err.localizedDescription
           }
         }
         // 全画面モーダル (alignment / editor) は 1 つの `activeCover` に
@@ -644,6 +649,23 @@ struct VideoIngestView: View {
   }
 
   // MARK: - Loading
+
+  /// `.fileImporter` 経由で渡る URL は **security-scoped**。
+  /// 直接 AVURLAsset/AVAssetImageGenerator に流すと「アクセス権がない」エラー
+  /// になる (とくに iCloud Drive や他アプリのフォルダ)。scope を開いて temp に
+  /// コピーし、それ以降は sandbox 内 path として扱う。
+  private func copyFromSecurityScopedURL(_ url: URL) {
+    let accessing = url.startAccessingSecurityScopedResource()
+    defer { if accessing { url.stopAccessingSecurityScopedResource() } }
+    do {
+      let ext = url.pathExtension.isEmpty ? "mov" : url.pathExtension
+      let dest = URL.temporaryDirectory.appending(path: "ingest_\(UUID().uuidString).\(ext)")
+      try FileManager.default.copyItem(at: url, to: dest)
+      loadVideo(url: dest)
+    } catch {
+      errorMessage = error.localizedDescription
+    }
+  }
 
   private func loadFromPhotosItem(_ item: PhotosPickerItem) {
     Task {

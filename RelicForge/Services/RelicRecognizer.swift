@@ -37,20 +37,27 @@ struct RecognizedRelic {
 
   var isUnique: Bool { uniqueMatch != nil }
 
-  /// 認識したゲーム画面の言語が日本語か。OCR で取れた全行のいずれかに CJK が
-  /// 含まれていれば JA とみなす。
+  /// 認識したゲーム画面の言語が日本語か。
   ///
-  /// title 1 個だけ見ていたが、固有遺物ではタイトル組み立てが「壮大な燃える景色」
-  /// パターンに合致せず `extractTitle` のフォールバックで先頭 OCR 行（= ボタン
-  /// ヒント等） が title になり、CJK 検出に失敗するケースがあった。OCR 行全体を
-  /// 見れば、JA ゲーム画面はどこかに必ず CJK 文字が出るので確実に判定できる。
+  /// 単に「CJK が 1 文字でもあれば JA」とすると、英語ゲーム画面でも Vision の
+  /// 誤読でわずかに CJK っぽい字が混入したケース (例: 似形の漢字 1 文字) で
+  /// 日本語扱いになり、表示が混在する事故が起きる。OCR 全行を集計して
+  /// **CJK 文字数 vs Latin アルファベット文字数** を比べ、多数派を採用する。
   var isJapaneseScan: Bool {
-    if let title, title.unicodeScalars.contains(where: { $0.value >= 0x3000 }) {
-      return true
+    var cjk = 0
+    var latin = 0
+    func tally(_ s: String) {
+      for sc in s.unicodeScalars {
+        let v = sc.value
+        if v >= 0x3000 { cjk += 1 }
+        else if (0x41...0x5A).contains(v) || (0x61...0x7A).contains(v) { latin += 1 }
+      }
     }
-    return ocrLines.contains { line in
-      line.text.unicodeScalars.contains { $0.value >= 0x3000 }
-    }
+    if let title { tally(title) }
+    for line in ocrLines { tally(line.text) }
+    // 文字がほぼ無いときは title 単独に従う (安全側で英語)。
+    if cjk == 0 && latin == 0 { return false }
+    return cjk > latin
   }
 
   /// 表示名はロケールではなく **スキャンした言語** に追従させる。

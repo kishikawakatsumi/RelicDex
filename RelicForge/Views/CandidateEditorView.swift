@@ -34,6 +34,7 @@ struct CandidateEditorView: View {
   @State private var depth: RelicDepth
   @State private var uniqueId: String?
   @State private var pickerTarget: PickerTarget?
+  @State private var showingUniquePicker = false
 
   // ピンチズーム状態
   @State private var scale: CGFloat = 1
@@ -210,27 +211,141 @@ struct CandidateEditorView: View {
         titleAttributesRow
         Divider()
 
-        ForEach(Array(0..<slotCount), id: \.self) { slotIdx in
-          effectRow(slotIndex: slotIdx, kind: .main)
-          Divider()
-          if depth == .deep {
-            effectRow(slotIndex: slotIdx, kind: .demerit)
+        // 固有遺物として確定している場合は効果は master データで固定なので
+        // 読み取り専用表示。スロット編集 UI は隠す。
+        if uniqueId != nil {
+          uniqueResolvedEffectsList
+        } else {
+          ForEach(Array(0..<slotCount), id: \.self) { slotIdx in
+            effectRow(slotIndex: slotIdx, kind: .main)
             Divider()
+            if depth == .deep {
+              effectRow(slotIndex: slotIdx, kind: .demerit)
+              Divider()
+            }
           }
         }
       }
       .padding(.bottom, 24)
     }
     .onChange(of: slotCount) { _, _ in resizeEditsIfNeeded() }
+    .sheet(isPresented: $showingUniquePicker) {
+      // Picker は master データから探して選ぶ UI なので、表示言語は **アプリの
+      // UI ロケール** に従う方が自然 (英語 UI なら英語名で検索、日本語 UI なら
+      // 日本語名で検索)。スキャン言語に追従させると、英語ゲームをスキャン中の
+      // 日本語ユーザーに英語のリストを見せてしまい使いづらい。
+      UniqueRelicPickerView(
+        current: uniqueId,
+        prefersJapanese: Locale.current.language.languageCode?.identifier == "ja"
+      ) { picked in
+        applyUniquePick(picked)
+      }
+      .presentationDetents([.large])
+    }
+  }
+
+  /// Base Properties グループの中に並べる固有遺物セル。size/color/depth の
+  /// attributeMenu とサイズ・見た目を揃え、「これはタイトル属性の一部」と
+  /// 認識できるようにする。タップで UniqueRelicPickerView を開く。
+  private var uniqueRelicCell: some View {
+    Button {
+      showingUniquePicker = true
+    } label: {
+      VStack(alignment: .leading, spacing: 2) {
+        Text("Unique relic")
+          .font(.caption2)
+          .foregroundStyle(.secondary)
+        HStack(spacing: 4) {
+          Text(currentUniqueLabel)
+            .font(.subheadline.weight(.medium))
+            .foregroundStyle(uniqueId == nil ? .secondary : .primary)
+            .lineLimit(1)
+            .truncationMode(.tail)
+          Spacer()
+          Image(systemName: "chevron.right")
+            .font(.caption2)
+            .foregroundStyle(.tertiary)
+        }
+      }
+      .frame(maxWidth: .infinity, alignment: .leading)
+      .padding(.horizontal, 10)
+      .padding(.vertical, 8)
+      .background(Color(uiColor: .secondarySystemBackground),
+                  in: RoundedRectangle(cornerRadius: 8))
+    }
+    .buttonStyle(.plain)
+  }
+
+  private var currentUniqueLabel: String {
+    guard let uid = uniqueId,
+          let u = MasterDataStore.shared.uniqueRelic(forId: uid)
+    else { return String(localized: "(none — regular relic)") }
+    // Cell の値表示は picker と揃えて UI ロケールに従う (picker で日本語名を
+    // 見て選んだ直後に cell が英語名になる、といった違和感を避ける)。
+    let ja = Locale.current.language.languageCode?.identifier == "ja"
+    return ja ? u.nameJa : u.nameEn
+  }
+
+  /// 固有遺物として確定した場合の効果一覧 (読み取り専用)。
+  @ViewBuilder
+  private var uniqueResolvedEffectsList: some View {
+    if let uid = uniqueId,
+       let u = MasterDataStore.shared.uniqueRelic(forId: uid) {
+      let resolved = MasterDataStore.shared.resolvedEffects(for: u)
+      let ja = input.recognized.isJapaneseScan
+      VStack(alignment: .leading, spacing: 0) {
+        ForEach(Array(resolved.enumerated()), id: \.offset) { idx, eff in
+          HStack(spacing: 12) {
+            Image(systemName: "checkmark.square")
+              .foregroundStyle(.tertiary)
+              .frame(width: 20)
+            VStack(alignment: .leading, spacing: 2) {
+              Text("Slot \(idx + 1)")
+                .font(.caption)
+                .foregroundStyle(.secondary)
+              Text(eff.text(forJapanese: ja))
+                .font(.body)
+                .lineLimit(3)
+                .multilineTextAlignment(.leading)
+            }
+            Spacer()
+          }
+          .padding(.horizontal, 16)
+          .padding(.vertical, 12)
+          Divider()
+        }
+        Text("Effects of a unique relic are fixed and not editable.")
+          .font(.caption2)
+          .foregroundStyle(.secondary)
+          .padding(.horizontal, 16)
+          .padding(.vertical, 8)
+      }
+    }
+  }
+
+  /// UniqueRelicPickerView での選択を反映する。
+  /// 固有遺物を選んだ場合は color / slotCount / depth も master データに揃え、
+  /// edits 配列の長さも合わせる。`nil` のときは通常遺物に戻す。
+  private func applyUniquePick(_ picked: UniqueRelic?) {
+    if let u = picked {
+      uniqueId = u.id
+      color = u.color
+      slotCount = u.slotCount
+      // 固有遺物に "深度" の概念は事実上無いが、保存時の整合性のため normal にする。
+      depth = .normal
+      edits.resize(to: u.slotCount)
+    } else {
+      uniqueId = nil
+    }
   }
 
   /// タイトル属性 (size/color/depth) を Menu で選び替えできる行。
-  /// メニューの各項目はスキャン元の言語 (`isJapaneseScan`) に合わせて
-  /// 「大 (壮大)」「Red (Burning)」のように in-game 用語を補足表示する。
+  /// Size / Color / Depth は **UI コントロール** なので、表示は UI ロケールに
+  /// 従う。in-game 用語の補足 (壮大な / Grand など) も同じ言語に揃える。
   private var titleAttributesRow: some View {
-    let ja = input.recognized.isJapaneseScan
+    let ja = Locale.current.language.languageCode?.identifier == "ja"
     return VStack(alignment: .leading, spacing: 8) {
-      Text("Title attributes")
+      Text("Base Properties")
         .font(.caption.weight(.semibold))
         .foregroundStyle(.secondary)
       HStack(spacing: 8) {
@@ -251,6 +366,7 @@ struct CandidateEditorView: View {
           Button { depth = .deep } label: { Text(AttributeLabel.depthWithHint(.deep, ja: ja)) }
         }
       }
+      uniqueRelicCell
     }
     .padding(.horizontal, 16)
     .padding(.vertical, 12)

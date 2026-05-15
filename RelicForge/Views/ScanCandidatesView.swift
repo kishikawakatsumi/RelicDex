@@ -258,9 +258,9 @@ private struct CandidateRow: View {
   }
 
   /// タイトル属性 (size/color/depth) を Menu で選び替えできる行。
-  /// `CandidateEditorView` (動画スキャン用) と同じパターンを再利用する。
+  /// Size / Color / Depth は UI コントロールなので、表示は UI ロケールに従う。
   private var titleAttributesRow: some View {
-    let ja = candidate.recognized.isJapaneseScan
+    let ja = Locale.current.language.languageCode?.identifier == "ja"
     return HStack(spacing: 8) {
       // value (= 選択後のトリガー表示) は短い形、選択肢は補足付き。
       attributeMenu(label: "Size",
